@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script type="text/javascript" src="./tpl/jquery.min.js"></script>
+	<script type="text/javascript" src="./tpl/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./tpl/bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="./tpl/animate.min.css"/>
+	<style type="text/css">
+		#box{width:400px;height:400px;position: fixed;top:30%;left:40%;}
+		.dv{width:250px;height:250px;border-radius: 50%;background:url(./tpl/images/<?php echo mt_rand(1,9) ?>.jpg)no-repeat;background-size: cover; overflow: hidden;text-align: center;padding:30px; float:left;position: absolute;}
+		/*.dv li{width:200px;height: 200px;text-align: ;}*/
+		.obtn{width:200px;}
+		#fa{width:60%;height: 80%; margin:20px 300px;}
+		body{background:url(./tpl/images/22.jpg);background-size: cover;}
+		
+		li{list-style: none;}
+	</style>
+		<script src="./tpl/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		var lisArr = [];
+			$(function(){
+				//登录开始
+				$('.log').submit(function(){
+					//表单提交时间
+					var l=$(this).serialize();
+					//发异步
+					$.ajax({
+						//请求方式
+						type:'post',
+						//请求地址
+						url:'./index.php?c=member&a=login',
+						//发送数据
+						data:l,
+						//服务器的响应
+						//指定php返回的数据类
+						dataType:'json',
+						//PHPData就是服务器的响应
+						success:function(phpData){
+							if(phpData==11){
+								alert('验证按错误');
+							}
+							
+						}
+					})
+				})
+				//登录结束
+				//密码框失去焦点事件
+				$('.userp').blur(function(){
+					//获取表单内容（密码是否为空）
+					var upwd=$(this).val();
+					//发异步
+					$.ajax({
+						//请求方式
+						type:"post",
+						//请求地址
+						url:"./index.php?c=index&a=sh",
+						//发送数据
+						data:{p:upwd},
+						//得到服务器的响应
+						//phpData就是服务器响应的数据
+						success:function(phpData){
+						if(phpData==1){
+							$('#ms').html('<span style="color:red;">请输入密码</span>');
+						}
+						if(phpData==2){
+							$('#ms').html('<span style="color:red;">密码强度 弱</span>');
+						}
+						if(phpData==3){
+							$('#ms').html('<span style="color:red;">密码强度  中</span>');
+						}
+						if(phpData==4){
+							$('#ms').html('<span style="color:red;">密码强度 强</span>');
+						}
+						}
+						
+					});
+				})
+				//密码框失去焦点事件结束
+				//用户名失去焦点事件
+				$('.userb').blur(function(){
+					//获取表单的内容（用户名）
+					var uname=$(this).val();
+					//发异步
+					$.ajax({
+						//发送方式
+						type:"post",
+						//请求地址
+						url:"./index.php?c=index&a=ss",
+					//发送数据
+					data:{u:uname},
+					//得到服务器的响应
+					//phpData就是服务器响应的数据
+					success:function(phpData){
+						if(phpData==1){
+						$('#msg').html('<span style="color:red;">用户名已存在</span>');	
+						}else{
+						$('#msg').html('<span style="color:green;">O(∩_∩)O~</span>')
+						}
+					}
+					});
+				})
+				//用户名失去焦点事件结束
+				//注册
+				$('#second').submit(function(){
+
+					var cc=$(this).serialize();
+					$.ajax({
+						//请求地址
+						url:'./index.php?c=member&a=reg',
+						//请求方式
+						type:'post',
+						//发送数据
+						data:cc,
+						//指定php返回的类型
+						dataType:'json',
+						//服务器的响应
+						success:function(phpData){
+							if(phpData=='1'){
+								alert('验证码错误');
+								return;
+							}
+							document.getElementById("loginBtn").click();
+							$('.modal-sm').slideUp(500);
+						}
+					})
+					
+				})
+			//注册结束	
+				//表单提交事件
+				$('.first').submit(function(){
+					//抓多个数据的时候用序列化
+					var d=$(this).serialize();
+					//发异步
+					$.ajax({
+						//请求地址
+						url:"./index.php?a=add",
+						//请求方式
+						type:"post",
+						//发送数据
+						data:d,
+						//指定php返回的数据类型
+						dataType:'json',
+						//服务器的响应 phpData就是服务器的响应
+						success:function(phpData){
+							//新创建一个元素div
+							var newElm=document.createElement('div');
+							var rom=Math.ceil(Math.random()*9);
+							newElm.style.background='url(./tpl/images/'+rom+'.jpg)';
+						
+							//元素(div)的class 名称 是 dv
+							newElm.className='dv';
+							//元素(div)里面的内容
+							newElm.innerHTML = '<li>'+phpData.title+'</li><li>'+phpData.time+'</li><li>'+phpData.content+'</li>';
+							//新增一个鼠标移入的属性  回调函数，让当前这个div停止
+							newElm.setAttribute('onmouseover','stopThis.call(this)');
+							//新增一个鼠标移出的属性  回调函数，让当前这个div开始运动
+							newElm.setAttribute('onmouseout','moveThis.call(this)');
+							$('#fa').append(newElm);
+							lisArr.push(
+								{
+									'oElm':newElm,
+									'speedx':1,
+									'speedy':1
+								}
+							)
+						}
+					});			
+				})				
+				$('#exampleModal').on('show.bs.modal', function (event) {
+			  var button = $(event.relatedTarget) // Button that triggered the modal
+			  var recipient = button.data('whatever') // Extract info from data-* attributes
+			  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+			  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+			  var modal = $(this)
+			  modal.find('.modal-title').text('New message to ' + recipient)
+			  modal.find('.modal-body input').val(recipient)
+			});
+			
+			//抓取元素，
+			$('.dv').each(function(i,elm){
+				var sx = Math.ceil(Math.random()*3);
+				var sy = Math.ceil(Math.random()*3);
+				lisArr.push(
+					{
+						'oElm':this,
+						'speedx':sx,
+						'speedy':sy
+					}
+				)
+				
+			})
+			var winWid = document.documentElement.clientWidth || document.body.clientWidth;
+			var winHei = document.documentElement.clientHeight || document.body.clientHeight;
+			var iTimer = setInterval(function(){
+				for(var i=0;i<lisArr.length;i++){
+					var elm = lisArr[i].oElm;
+					var l = elm.offsetLeft;
+					var t = elm.offsetTop;
+					l = l+lisArr[i].speedx;
+					t = t+lisArr[i].speedy;
+					if(l<0){
+						lisArr[i].speedx = -lisArr[i].speedx;
+						l=0;
+					}else if(l>winWid-elm.offsetWidth){
+						lisArr[i].speedx = -lisArr[i].speedx;
+						l = winWid-elm.offsetWidth;
+					}
+					
+					if(t<0){
+						lisArr[i].speedy = -lisArr[i].speedy;
+						t=0;
+					}else if(t>winHei-elm.offsetHeight){
+						lisArr[i].speedy = -lisArr[i].speedy;
+						t = winHei-elm.offsetHeight;
+					}
+					elm.style.left = l+'px';
+					elm.style.top = t+'px';
+				}
+			},30)
+			
+			})
+			function stopThis(){
+				for(var i=0;i<lisArr.length;i++){
+					if(lisArr[i]['oElm']==this){
+						lisArr.splice(i,1);
+						break;
+					}
+				}
+			}
+			function moveThis(){
+				var sx = Math.ceil(Math.random()*3);
+				var sy = Math.ceil(Math.random()*3);
+				lisArr.push(
+					{
+						'oElm':this,
+						'speedx':sx,
+						'speedy':sy
+					}
+				)
+			}
+		</script>
+</head>
+<body>
+	<?php if(isset($_SESSION['username'])): ?>
+		欢迎<?php echo $_SESSION['username']?>回来
+		<a href="./index.php?c=member&a=out">退出</a>
+	<?php else: ?>
+
+	<?php endif ?>
+	<div id="fa">
+				<button type="button" class="btn btn-primary animated rotateIn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="float:right;">许个愿吧(make a wish)</button>
+		<?php foreach($data as $k=> $v): ?>
+		
+
+			<div class="animated flipInX dv" onmouseover="stopThis.call(this)" onmouseout="moveThis.call(this)" style="background:url(./tpl/images/<?php echo mt_rand(1,9) ?>.jpg)no-repeat;background-size: cover; ">
+			<li><?php echo $v['title'] ?></li>
+			<li><?php echo $v['time'] ?></li>
+			<li><?php echo $v['content'] ?></li>
+			<li><a  class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">编辑</a>
+			<a  class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm" lyk="<?php echo $k; ?>">删除</a></li>
+		</div>
+		<?php endforeach ?>
+	</div>
+
+<!--//注册-->
+			<!-- Small modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">注册</button>
+		<div id="third" style="border:1px solid red;">
+			
+		
+			<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" >
+			  <div class="modal-dialog modal-sm">
+			    <div class="modal-content" style="width:450px;height:300px;">
+			    	<form class="form-horizontal " action="javascript:void(0);" method="post" id="second">
+					  <div class="form-group oform" style="margin-top:40px;">
+					    <label for="inputEmail3" class="col-sm-2 control-label" >用户名</label>
+					    <div class="col-sm-10">
+					      <input type="text" name="username" id="inputEmail3" class="userb">
+					      	<span id="msg">
+					      		
+					      	</span>
+					    </div>
+					  </div>
+					   <div class="form-group oform">
+					    <label for="inputEmail3" class="col-sm-2 control-label">密码</label>
+					    <div class="col-sm-10">
+					      <input type="password" name="password" id="inputEmail3" class="userp">
+					      	<span id="ms">
+					      		
+					      	</span>
+					    </div>
+					  </div>
+					  <div class="form-group oform">
+					    <label for="inputPassword3" class="col-sm-2 control-label">验证码</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control obtn" name="code" >
+					    </div>
+					    <div class="form-group oform" style="margin:20px 95px;">
+					   	<img src="./index.php?c=member&a=code" onclick="this.src=this.src+'&mt='+Math.random()"/>
+					  </div>
+
+					  </div>
+					  <div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <button type="submit" class="btn btn-default">注册</button>
+					    </div>
+					  </div>
+					</form>
+			    </div>
+			  </div>
+			</div>
+		</div>	
+	<!--注册-->
+	<!--登录-->
+		<!-- Button trigger modal -->
+<button type="button" id="loginBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  登录
+</button>
+
+<!-- Modal -->
+<div id="fouth">
+			
+		
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document" id="ro" style="border:1px solid red;">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">欢迎登录</h4>
+		      </div>
+		      <div class="modal-body">
+		        	<form class="form-horizontal log" action="javascript:void(0);" method="post">
+							  <div class="form-group oform" style="margin-top:40px;">
+							    <label for="inputEmail3" class="col-sm-2 control-label" >用户名</label>
+							    <div class="col-sm-10">
+							      <input type="text" class="form-control obtn" id="inputEmail3" name="username">
+							    </div>
+							  </div>
+							   <div class="form-group oform">
+							    <label for="inputEmail3" class="col-sm-2 control-label">密码</label>
+							    <div class="col-sm-10">
+							      <input type="password" class="form-control obtn" id="inputEmail3" name="password">
+							    </div>
+							  </div>
+							  <div class="form-group oform">
+							    <label for="inputPassword3" class="col-sm-2 control-label">验证码</label>
+							    <div class="col-sm-10">
+							      <input type="text" class="form-control obtn" id="inputPassword3" name="code">
+							    </div>
+							    <div class="form-group oform" style="margin:20px 120px;">
+							   	<img src="./index.php?c=Member&a=code" onclick="this.src=this.src+'&mt='+Math.random()"/>
+							  </div>
+							  </div>
+							  <div class="form-group oform">
+							    <div class="col-sm-offset-2 col-sm-10">
+							      <div class="checkbox">
+							        <label>
+							          <input type="checkbox" name="auto"> 7天免登录
+							        </label>
+							      </div>
+							    </div>
+							  </div>
+							  <div class="form-group">
+							    <div class="col-sm-offset-2 col-sm-10">
+							      <button type="submit" class="btn btn-default">登录</button>
+							    </div>
+							  </div>
+							</form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <!--<button type="button" class="btn btn-primary">登录</button>-->
+		      </div>
+		    </div>
+		  </div>
+		</div>
+</div>
+	<!--登录-->
+<!--愿望版-->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="exampleModalLabel">梦想从这里起航</h4>
+		      </div>
+		      <div class="modal-body">
+		        <form action="javascript:void(0);" method="post" class="first">
+		          <div class="form-group">
+		            <label for="recipient-name" class="control-label">姓名:</label>
+		            <input type="text" class="form-control" id="recipient-name" name="title">
+		          </div>
+		          <div class="form-group">
+		            <label for="message-text" class="control-label">愿望:</label>
+		            <textarea class="form-control" id="message-text" name="content"></textarea>
+		          </div>
+		           <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <input type="submit" class="btn btn-primary"  value="许愿" />
+		      </div>
+		        </form>
+		      </div>
+		     
+		    </div>
+		  </div>
+		</div>
+	<!--愿望版-->	
+</body>
+</html>
