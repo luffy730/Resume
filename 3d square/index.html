@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+				*{margin: 0; padding: 0;}
+			body{
+				perspective: 800px;
+				perspective-origin: 50% 50%;
+			}
+			#stage{
+				width: 500px;
+				height: 500px;
+				margin: 50px auto;
+				animation: show 10s infinite linear;
+				transform-style: preserve-3d;
+				position: relative;
+			}
+			
+			@-webkit-keyframes show{
+				0% {
+					transform: rotateX(0deg) rotateY(0deg);
+				}
+				100% {
+					transform: rotateX(720deg) rotateY(720deg);
+				}
+			}
+			
+			#stage div{
+				font-family: "微软雅黑";
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				left: 150px;
+				top: 150px;
+				transform-style: preserve-3d;
+				line-height: 200px;
+				font-size: 30px;
+				text-align: center;
+			}
+			
+			#stage div:nth-of-type(1){
+				background: url(./car_3.jpg)no-repeat;
+				transform:translateZ(100px) ;
+			}
+			#stage div:nth-of-type(2){
+				background: url(./car_5.jpg)no-repeat;
+				transform:translateZ(-100px) rotateY(180deg);
+			}
+			#stage div:nth-of-type(3){
+				background: url(./car_6.jpg)no-repeat;
+				transform: translateZ(-100px) rotateY(270deg);
+				transform-origin: left;
+			}
+			#stage div:nth-of-type(4){
+				background: url(./car_8.jpg)no-repeat;
+				transform: translateZ(-100px) rotateY(90deg);
+				transform-origin: right;
+			}
+			#stage div:nth-of-type(5){
+				background: url(./car_10.jpg)no-repeat;
+				transform: translateY(-100px) rotateX(90deg);
+				transform-origin: right;
+			}
+			#stage div:nth-of-type(6){
+				background: url(./car_3.jpg)no-repeat;
+				transform: translateY(100px) rotateX(270deg);
+				transform-origin: right;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="stage">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+</html>

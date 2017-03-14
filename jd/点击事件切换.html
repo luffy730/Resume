@@ -1,0 +1,304 @@
+<!-- <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	#box{
+		width:200px;
+		height:50px;
+		margin:20px auto;
+		position:relative;
+		border:5px solid blue;
+	}
+	#top{
+		width:200px;
+		height: 50px;
+		background: purple;
+		position: absolute;
+		left:0px; top:0px;
+		color:#fff;
+		line-height:50px;
+		text-align:center;
+		font-size:25px;
+		cursor:pointer;
+	}
+	#bottom{
+		width:300px;
+		height:300px;
+		background:absolute;
+		top:50px;left:0;
+		color:white;
+		text-align: center;
+		line-height:300px;
+		font-size:25px;
+		display:none;
+	}
+
+	</style>
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript">
+	
+	$(function(){
+		var c=0;
+		$('#top').click(function(event){
+			//阻止事件冒泡
+			event.stopPropagation();
+		//判断进行显隐切换
+		if(c==0)
+		{
+			$('#bottom').fadeIn('fast');
+			c=1;
+		}else{
+			$('#bottom').fadeOut('fast');
+			c=0;
+		}
+		});
+		//点击当前元素阻止冒泡
+		$('#bottom').click(function(){
+			event.stopPropagation();
+		})
+		//点击任意个元素都让他消失
+		$('#bottom').click(function(){
+			$('#bottom').fadeOut('fast');
+			c=0;
+		})
+	})
+</script>
+</head>
+<body>
+	<div id="box">
+		<div id="top">点我切换</div>
+		<div id="bottom">我是隐藏的区域</div>
+	</div>
+</body>
+</html> -->
+
+<!-- <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	.box{
+		width:200px;
+		height:50px;
+		margin:20px auto;
+		position:relative;
+		border:5px solid blue;
+	}
+	.top{
+		width:200px;
+		height: 50px;
+		background:purple;
+		position:absolute;
+		left:0;top:0;
+		color:white;
+		text-align:center;
+		line-height:50px;
+		font-size:25px;
+		cursor:pointer;
+	}
+	.bottom{
+		width:300px;
+		height:300px;
+		background:green;
+		position:absolute;
+		top:50px;
+		left:0;
+		color:white;
+		text-align: center;
+		line-height: 300px;
+		font-size:25px;
+		display: none;
+	}
+	</style>
+	<script type="text/javascript" src='jquery-1.9.1.js'></script>
+	<script type="text/javascript">
+	$(function(){
+		var c=0;
+		$('.top').click(function(event){
+			//阻止事件冒泡
+			event.stopPropagation();
+			//判断进行显隐切换
+			if(c==0){
+				$('.bottom').fadeIn();
+				c=1;
+			}else{
+				$('.bottom').fadeOut();
+				c=0;
+			}
+		});
+		//点击当前元素阻止冒泡
+	 $('.bottom').click(function(event){
+	 	event.stopPropagation();
+	 })
+	 //点击任何元素都让他消失
+	 $(document).click(function(){
+	 	$('.bottom').fadeOut('fast');
+	 	c=0;
+	 })
+	})
+	</script>
+</head>
+<body>
+	
+	<div class="box">
+		<div class="top">点我切换</div>
+		<div class="bottom">我是隐藏的区域</div>
+	</div>
+</body>
+</html> -->
+
+<!-- <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	.box{
+		width:200px;
+		height: 50px;
+		position:relative;
+		margin:20px auto;
+		border:10px dotted #adadea;
+	}
+	.top{
+		width:200px;
+		height: 50px;
+		background: #aeddee;
+		color:#fff;
+		text-align:center;
+		line-height:50px;
+		font-size:25px;
+		cursor:pointer;
+	}
+	.bottom{
+		width:300px;
+		height:300px;
+		background:green;
+		position: absolute;
+		top:50px; left:0px;
+		color:#fff;
+		line-height:50px;
+		font-size:25px;
+		display: none;
+	}
+	</style>
+
+	<script type="text/javascript" src=
+	'jquery-1.9.1.js'></script>
+	<script type="text/javascript">
+	$(function(){
+		var c=0;
+		$('.top').click(function(event){
+		//阻止事件冒泡
+		event.stopPropagation();
+		//判断进行显隐切换
+		if(c==0){
+			$('.bottom').fadeIn();
+			c=1;
+		}else{
+			$('.bottom').fadeOut();
+			c=0;
+		}
+	});
+		//点击当前元素阻止冒泡
+		$('.bottom').click(function(event){
+			event.stopPropagation();
+		});
+		//点击任何一个元素都让他消失
+		$(document).click(function(){
+			$('.bottom').fadeOut();
+			c=0;
+		})
+	})
+
+	</script>
+</head>
+<body>
+	<div class="box">
+		<div class="top">点我切换</div>
+		<div class="bottom">我是隐藏的</div>
+	</div>
+</body>
+</html> -->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	.box{
+		width:200px;
+		height: 50px;
+		position:relative;
+		border:20px dotted #adedee;
+		background: #aedeae;
+		margin:20px auto;
+	}
+	.box .top{
+		width:200px;
+		height:50px;
+		background: #ad33ad;
+		position: absolute;
+		top:0;left: 0;
+		text-align:center;
+		line-height:50px;
+		cursor:pointer;
+	}
+	.bottom{
+		width:300px;
+		height:300px;
+		background: #adeeee;
+		position:absolute;
+		top:50px;left:0;
+		text-align: center;
+		line-height: 50px;
+		display: none;
+	}
+	</style>
+
+	<script type="text/javascript" src='jquery-1.9.1.js'></script>
+	<script type="text/javascript">
+	$(function(){
+		var c=0;
+		$('.top').click(function(event){
+			//阻止事件冒泡
+			event.stopPropagation();
+			//判断进行显隐切换
+			if(c==0){
+				$('.bottom').fadeIn();
+				c=1;
+			}else{
+				$('.bottom').fadeOut();
+				c=0;
+			}
+		});
+		//点击当前元素阻止冒泡
+		$('.bottom').click(function(event){
+			event.stopPropagation();
+		})
+		//点击任何元素都要他消失
+		$(document).click(function(){
+			$('.bottom').fadeOut();
+			c=0;
+		})
+
+	})
+
+	</script>
+</head>
+<body>
+	<div class="box">
+		<div class="top">点击切换</div>
+		<div class="bottom">我是隐藏的</div>
+	</div>
+</body>
+</html>

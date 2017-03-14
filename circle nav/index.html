@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			#box{
+				width:500px;
+				height:500px;
+				position: relative;
+			}
+			#box p, #box #center{
+				width:80px;
+				height:80px;
+				background:red;
+				position: absolute;
+				left:250px;
+				top:250px;
+				line-height: 80px;
+				text-align: center;
+				border-radius: 50%;
+				color:white;
+				cursor:pointer;
+			}
+			#center{
+				transition: all 1s;
+			}
+			#center:hover{
+				transform:rotate(1080deg);
+			}
+			#box p:nth-of-type(1){
+				background:darkblue;
+			}
+			#box p:nth-of-type(2){
+				background:darkcyan;
+			}
+			#box p:nth-of-type(3){
+				background:darkgoldenrod;
+			}
+			#box p:nth-of-type(4){
+				background:darkorchid;
+			}
+			#box p:nth-of-type(5){
+				background:lightblue;
+			}
+			#box p:nth-of-type(1){
+				background:lightsteelblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<p>后盾</p>
+			<p>PHP</p>
+			<p>JS</p>
+			<p>LINUX</p>
+			<p>CSS3</p>
+			<p>HTML5</p>
+			<div id="center">
+				teacher Ma
+			</div>
+		</div>
+		<script>
+			var nav = function(){
+				var hdThis = this;
+				//中间的圆
+				hdThis.center = document.getElementById("center");
+				//弹出的圆
+				hdThis.pList = document.getElementById("box").getElementsByTagName('p');
+				//每一个弹出圆的平均弧度
+				hdThis.rad = 360 / hdThis.pList.length * Math.PI / 180;
+				//半径
+				hdThis.r = 200;
+				
+				hdThis.run = function(){
+					var flag = true;
+					//点击中心圆
+					hdThis.center.onclick = function(){
+						if(flag){
+							for (var i=0;i<hdThis.pList.length;i++) {
+								hdThis.pList[i].style.transition = 'all 1s ' + i * 200 + 'ms';
+								hdThis.pList[i].style.transform = 'rotateY(1080deg)';
+								hdThis.pList[i].style.left = Math.cos(hdThis.rad * i) * hdThis.r + hdThis.center.offsetLeft + 'px';
+								hdThis.pList[i].style.top = Math.sin(hdThis.rad * i) * hdThis.r + hdThis.center.offsetTop +'px';
+							}
+							flag = false;
+						}else{
+							for (var i=0;i<hdThis.pList.length;i++) {
+								hdThis.pList[i].style.transform = 'rotateY(0deg)';
+								hdThis.pList[i].style.left = hdThis.center.offsetLeft + 'px';
+								hdThis.pList[i].style.top = hdThis.center.offsetTop +'px';
+							}
+							flag = true;
+						}
+						
+					}
+				}
+			}
+			var obj = new nav;
+			obj.r = 150;
+			obj.run();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.floorTwo{
+		width: 436px;
+		height: 313px;
+		margin:0 auto;
+		position: relative;
+		border: 10px dotted #adeedd;
+		overflow: hidden;
+	}
+	.floorTwo img{
+		width: 435px;
+		height: 312px;
+		display: none;
+	}
+	#an1{
+		width: 30px;
+		height: 60px;
+		position: absolute;
+		left: 0;top: 100px;
+		opacity: 0.3;
+		background: #2b2b2b;
+		display: none;
+	}
+	#an2{
+		width: 30px;
+		height: 60px;
+		position: absolute;
+		right: 0;top: 100px;
+		opacity: 0.3;
+		background: #2b2b2b;
+		display: none;
+	}
+	#list{
+		position: absolute;
+		bottom: 10px; left:120px;
+	}
+	#list li{
+		width: 9px;
+		height: 9px;
+		border-radius: 50%;
+		background: #3e3e3e;
+		list-style: none;
+		float: left;
+		margin-left: 15px;
+	}
+	</style>
+	<script type="text/javascript"src='js/jquery-1.9.1.js'></script>
+	<script type="text/javascript">
+
+	$(function(){
+		$('.floorTwo').hover(function(){
+		$('.an').fadeIn('fast');
+		clearInterval(timer)
+	},function(){
+		$('.an').fadeOut('fast');
+		timer=setInterval(run,1000);
+	});
+		var e=0;
+		function run(){
+			e++;
+			if(e==4){
+				e=0;
+			}
+		
+			$('.floorTwo img').eq(e).css({display:'block'}).siblings('img').css({display:'none'});
+				$('#list li').eq(e).css({background:'#B861BF'}).siblings().css({background:"#3e3e3e"});
+		}
+		timer=setInterval(run,1000);
+		$('#list li').mouseover(function() {
+			e=$(this).index();
+			$('.floorTwo img').eq(e).css({display:'block'}).siblings('img').css({display:'none'});
+				$('#list li').eq(e).css({background:'#B861BF'}).siblings().css({background:"#3e3e3e"});
+		});
+		var w=0;
+		$('#an1 ').click(function(){
+			if(w==1){
+				return;
+			}
+			setTimeout(function(){
+				w=0;
+			},1000);
+			w=1;
+			e--;
+			if(e<0)
+			{
+				e=4;
+			}
+			$('.floorTwo img').eq(e).css({display:'block'}).siblings('img').css({display:'none'});
+				$('#list li').eq(e).css({background:'#B861BF'}).siblings().css({background:"#3e3e3e"});
+		});
+		$('#an2').click(function(){
+			e++;
+			if(e>4)
+			{
+				e=0;
+			}
+			$('.floorTwo img').eq(e).css({display:'block'}).siblings('img').css({display:'none'});
+				$('#list li').eq(e).css({background:'#B861BF'}).siblings().css({background:"#3e3e3e"});
+		})
+
+	})
+	</script>
+</head>
+<body>
+	
+
+	<div class="floorTwo">
+		<img src="images/onelunbo1.jpg" alt="" style="display:block" />
+		<img src="images/onelunbo2.jpg" alt="" />
+		<img src="images/onelunbo3.jpg" alt="" />
+		<img src="images/onelunbo4.jpg" alt="" />
+		<input id="an1" class="an"type="button" value="<" />
+		<input id="an2" class="an"type="button" value=">" />
+		<ul id="list">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>

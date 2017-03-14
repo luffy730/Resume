@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="swiper-3.3.1.min.css"/>
+		<link rel="stylesheet" type="text/css" href="animate.min.css"/>
+	</head>
+	<style type="text/css">
+		*{
+			padding: 0;margin: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+		}
+		.swiper-container{
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+		
+		.one{
+			background-color: #F1F1F1;
+			background:url(image/bing.jpg) no-repeat;
+			background-size: 100% 100%;
+			
+		}
+		.two{
+			background-color: #F1F1F1;
+			background:url(image/bing.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		.three{
+			background-color: #F1F1F1;
+			background:url(image/bing2.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		.four{
+			background-color: #F1F1F1;
+			background:url(image/bing2.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		.fine{
+			background-color: #F1F1F1;
+			background:url(image/three.jpg) no-repeat;
+			background-size: 100% 100%;
+			
+		}
+		.liu{
+			background-color: #F1F1F1;
+			background:url(image/bing3.jpg) no-repeat;
+			background-size: 100% 100%;
+			
+		}
+		.six{
+			background-color: #F1F1F1;
+			background:url(image/bing4.jpg) no-repeat;
+			background-size: 100% 100%;
+			
+		}
+		.qi{
+			background-color: #F1F1F1;
+			background:url(image/three.jpg) no-repeat;
+			background-size: 100% 100%;
+			
+		}
+		#music{
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			width: 30px;
+			z-index: 20;
+			animation: musicRotate 3s infinite linear;
+		}
+		@-webkit-keyframes musicRotate{
+			from{
+				transform: rotate(0deg);
+			}
+			to{
+				transform: rotate(360deg);
+			}
+		}
+		#music_fly{
+			position: absolute;
+			top: 12px;
+			right: 12px;
+			width: 50px;
+			z-index:19;
+		}
+		.arr{
+			/*position: absolute;*/
+			display: flex;
+			justify-content: center;
+			/*background: red;*/
+			
+		}
+		#arrow{
+			bottom:30px;
+			position: absolute;
+			/*top: auto;*/
+			/*right: 12px;*/
+			z-index: 19;
+			width: 30px;
+			animation: run 1.5s infinite;
+			/*transform: rotate(-90deg)*/
+		}
+		@-webkit-keyframes run{
+			from{
+				transform: rotateY(0deg);
+			}
+			to{
+				transform: rotateY(-20deg);
+				opacity: 0;
+			}
+		}
+		.swiper-title{
+			text-align: center;
+			margin-top: 30px;
+			font-size: 34px;
+			font-family: "微软雅黑";
+			
+		}
+		.swiper-title p{
+			display: inline-block;
+		}
+		.swiper-title_fly{
+			position: relative;
+			text-align: center;
+			margin-top: 20px;
+			color:#666666;
+			font-size: 16px;
+			font-family: "微软雅黑";
+		}
+		.swiper-img{
+			padding-top: 50px;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+		}
+		.swiper-img img{
+			height: 360px;
+			/*width:250px;*/
+		}
+		
+		.swiper-foot_fly{
+			padding-top: 20px;
+			text-align: center;
+			color:#334275;
+			margin-top: 10px;
+			font-size: 20px;
+			font-family: "微软雅黑";
+		}
+		.swiper-title2{
+			text-align: center;
+			margin-top:100px;
+			font-size: 26px;
+			font-family: "微软雅黑";
+		}
+		.swiper-two-img{
+			/*height:515px;*/
+			/*padding-top: 30px;*/
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+		}
+		.swiper-two-img img{
+			height:340px;
+			/*width:250px;*/
+		}
+		.swiper-two-foot_fly{
+			
+			margin-top: -30px;
+			color:#666666;
+			font-size:16px;
+			font-family: "微软雅黑";
+		}
+		.swiper-two-foot_fly p{
+			text-align: center;
+			margin: 0 auto;
+			width: 85%;
+		}
+		.swiper-three-title{
+			box-sizing: border-box;
+			padding-top: 50px;
+			text-align: center;
+			margin-top:100px;
+			color: white;
+			font-size: 26px;
+			font-family: "微软雅黑";
+		}
+		.swiper-three-img{
+			padding-top: 10px;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+		}
+		.swiper-three-img img{
+			/*margin: 0 auto;*/
+			height:300px;
+			/*width:250px;*/
+		}
+		.swiper-three-foot_fly{
+			margin-top: -80px;
+			color:white;
+			font-size:16px;
+			font-family: "微软雅黑";
+		}
+		.swiper-three-foot_fly p{
+			text-align: center;
+			margin: 0 auto;
+			width: 85%;
+		}
+		.swiper-four-img{
+			margin-top: -30px;
+			/*padding-top: 10px;*/
+			box-sizing: border-box;
+			display: flex;
+			justify-content:flex-start;
+		}
+		.swiper-four-img img{
+			margin-left: -50px;
+			/*margin: 0 auto;*/
+			height:360px;
+			/*width:250px;*/
+		}
+		.swiper-four-title{
+			box-sizing: border-box;
+			padding-top: 50px;
+			text-align: center;
+			margin-top:100px;
+			color: white;
+			font-size: 30px;
+			font-family: "微软雅黑";
+		}
+		.swiper-four-foot_fly{
+			/*margin-top: -50px;*/
+			color:white;
+			font-size:16px;
+			font-family: "微软雅黑";
+		}
+		.swiper-four-foot_fly p{
+			text-align: center;
+			margin: 0 auto;
+			width: 85%;
+		}
+		.swiper-four-img{
+			margin-top: -30px;
+			/*padding-top: 10px;*/
+			box-sizing: border-box;
+			display: flex;
+			justify-content:flex-start;
+		}
+		.swiper-four-img img{
+			margin-left: -50px;
+			/*margin: 0 auto;*/
+			height:360px;
+			/*width:250px;*/
+		}
+		/****************************************************/
+		.swiper-liu-img{
+			margin-top: -30px;
+			/*padding-top: 10px;*/
+			box-sizing: border-box;
+			display: flex;
+			justify-content:flex-start;
+		}
+		.swiper-liu-img img{
+			/*margin-left: -50px;*/
+			/*margin: 0 auto;*/
+			height:400px;
+			/*width:250px;*/
+		}
+		.swiper-liu-title{
+			box-sizing: border-box;
+			padding-top: 10px;
+			text-align: center;
+			/*margin-top:100px;*/
+			color: white;
+			font-size:24px;
+			font-family: "微软雅黑";
+		}
+		.swiper-four-foot_fly{
+			box-sizing: border-box;
+			padding-top: 10px;
+			/*margin-top: -50px;*/
+			color:white;
+			font-size:14px;
+			font-family: "微软雅黑";
+		}
+		.swiper-liu-foot_fly p{
+			text-align: center;
+			margin: 0 auto;
+			width: 85%;
+		}
+		.swiper-liu-img{
+			/*margin-top: -30px;*/
+			padding-top: 100px;
+			box-sizing: border-box;
+			display: flex;
+			justify-content:center;
+		}
+		.swiper-liu-img img{
+			/*margin-left: -50px;*/
+			/*margin: 0 auto;*/
+			height:400px;
+			/*width:250px;*/
+		}
+		/****************************************************/
+		.swiper-six-img{
+			margin-top: -30px;
+			/*padding-top: 10px;*/
+			box-sizing: border-box;
+			display: flex;
+			justify-content:flex-start;
+		}
+		.swiper-six-img img{
+			/*margin-left: -50px;*/
+			/*margin: 0 auto;*/
+			height:400px;
+			/*width:250px;*/
+		}
+		.swiper-six-title{
+			box-sizing: border-box;
+			padding-top: 10px;
+			text-align: center;
+			/*margin-top:100px;*/
+			color:#666666;
+			font-size:24px;
+			font-family: "微软雅黑";
+			-webkit-animation: hd 1s linear 0 1 alternate;
+		}
+		@-webkit-keyframes hd{
+			0%{
+				-webkit-transform: scale(1);
+			}
+			100%{
+				-webkit-transform: scale(3);
+				/*opacity: 0;*/
+			}
+		}
+		.swiper-six-foot_fly{
+			box-sizing: border-box;
+			padding-top: 30px;
+			/*margin-top: -50px;*/
+			color:#666666;
+			font-size:14px;
+			font-family: "微软雅黑";
+			
+		}
+		.swiper-six-foot_fly p{
+			text-align: center;
+			margin: 0 auto;
+			width: 85%;
+		}
+		.swiper-six-img{
+			/*margin-top: -30px;*/
+			padding-top: 80px;
+			box-sizing: border-box;
+			margin-left: -50px;
+			display: flex;
+			justify-content:center;
+		}
+		.swiper-six-img img{
+			/*margin-left: -50px;*/
+			/*margin: 0 auto;*/
+			height:360px;
+			/*width:250px;*/
+		}
+		.swiper-fine-title{
+			box-sizing: border-box;
+			/*padding-top: 50px;*/
+			text-align: center;
+			margin-top:100px;
+			color:#666666;
+			font-size:26px;
+			font-family: "微软雅黑";
+		}
+		.swiper-fine-img{
+			width: 100%;
+			/*margin-top: 0px;*/
+			position: absolute;
+			/*left: 0px;*/
+			bottom: 0px;
+			/*padding-top: 10px;*/
+			box-sizing: border-box;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+		}
+		.swiper-fine-img img{
+			/*margin-bottom: -20px;*/
+			margin: 0 auto;
+			height:450px;
+			/*width:250px;*/
+			
+		}
+		.swiper-fine-foot_fly{
+			/*margin-top: -50px;*/
+			color:white;
+			font-size:16px;
+			font-family: "微软雅黑";
+		}
+		.swiper-four-foot_fly p{
+			text-align: center;
+			margin: 0 auto;
+			width: 85%;
+		}
+		.swiper-fine-title_fly{
+			position: relative;
+			text-align: center;
+			margin-top:10px;
+			color:#666666;
+			font-size: 16px;
+			font-family: "微软雅黑";
+		}
+		.swiper-fine-title1_fly{
+			position: relative;
+			text-align: center;
+			/*margin-top: 20px;*/
+			color:#666666;
+			font-size: 16px;
+			font-family: "微软雅黑";
+		}
+		/**************************************************/
+		.swiper-qi-title{
+			box-sizing: border-box;
+			/*padding-top: 50px;*/
+			text-align: center;
+			margin-top:20px;
+			color:#666666;
+			font-size:18px;
+			font-family: "微软雅黑";
+		}
+		.swiper-qi-img{
+			margin-top: 30px;
+			box-sizing: border-box;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+		}
+		.swiper-qi-img img{
+			/*margin-bottom: -20px;*/
+			margin: 0 auto;
+			height:250px;
+			/*width:250px;*/
+			
+		}
+		.swiper-qi1-img{
+			margin-top: 20px;
+			box-sizing: border-box;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+		}
+		.swiper-qi1-img img{
+			/*margin-bottom: -20px;*/
+			margin: 0 auto;
+			height:40px;
+			/*width:250px;*/
+			
+		}
+		.swiper-qi-foot_fly{
+			/*margin-top: -50px;*/
+			color:white;
+			font-size:16px;
+			font-family: "微软雅黑";
+		}
+		.swiper-qi-foot_fly p{
+			text-align: center;
+			margin: 0 auto;
+			width: 85%;
+		}
+		.swiper-qi-title_fly{
+			margin-top: 20px;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 30px;
+		}
+		.swiper-qi-title_fly a{
+			
+			/*margin: 0 auto;*/
+			border-radius: 4px;
+			/*position: relative;*/
+			text-align: center;
+			margin-top:10px;
+			color:white;
+			font-size: 22px;
+			font-family: "微软雅黑";
+			text-decoration: none;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top:5px;
+			padding-bottom:5px;
+		}
+		.swiper-qi-title1_fly{
+			/*position: relative;*/
+			margin-left: 30px;
+			text-align:center;
+			/*margin-top: 20px;*/
+			color:#666666;
+			font-size: 18px;
+			font-family: "微软雅黑";
+		}
+		/*#fine{
+			position: absolute;
+			bottom: 0px;
+		}*/
+	</style>
+	<body>
+		<div class="swiper-container">
+			<audio loop="loop" autoplay="autoplay" id="au" >
+				<source src="image/Brian Tyler - Furious 7.mp3" />
+			</audio>
+			<img src="image/music.png" id="music"/>
+			<img src="image/music_fly.gif" id="music_fly"/>
+			<div class="arr">
+				<img src="image/arrow.png" id="arrow"/>
+			</div>
+			<div class="swiper-wrapper">
+				
+				<div class="swiper-slide one">
+					<div class="swiper-title">
+						<p class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="2s" swiper-animate-delay="0s">曲之有道</p>
+					</div>
+					<div class="swiper-title_fly" >
+						<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="4.5s" swiper-animate-delay="0s">双面2.5D曲面屏幕，精彩不止一面</p>
+					</div>
+					<div class="swiper-img">
+						<img src="image/shou.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="3s" swiper-animate-delay="0s"/>
+					</div>
+					<div class="swiper-foot_fly">
+						<p class="ani" swiper-animate-effect="flipInY" swiper-animate-duration="10s" swiper-animate-delay="2s">T9E双曲面屏幕闪耀登场</p>
+					</div>
+				</div>
+				<div class="swiper-slide two">
+					<div class="swiper-title2">
+						<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="4.5s" swiper-animate-delay="0s">性能与外观，为你而生</p>
+					</div>
+					<div class="swiper-two-img">
+						<img src="image/two.png" class="ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="3s" swiper-animate-delay="2s"/>
+					</div>
+					<div class="swiper-two-foot_fly">
+						<p class="ani" swiper-animate-effect="flipInY" swiper-animate-duration="6s" swiper-animate-delay="0s">&nbsp;&nbsp;T9E突破创新的优美设计风格，兼顾性能与美观，在万众瞩目中闪耀登场。玻璃与金属材质的结合缔造美妙外观。四色机身华彩飞扬。</p>
+					</div>
+					
+				</div>
+				<div class="swiper-slide three">
+					<div class="swiper-three-title">
+						<p class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="2s" swiper-animate-delay="4s"> 双2.5D弧面玻璃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="2s" swiper-animate-delay="4s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真正打动人的美</p>
+					</div>
+					<div class="swiper-three-img">
+						<img src="image/three.png" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="4.5s" swiper-animate-delay="0s"/>
+					</div>
+					<div class="swiper-three-foot_fly">
+						<p class="ani" swiper-animate-effect="flipInY" swiper-animate-duration="10s" swiper-animate-delay="4s">&nbsp;&nbsp;T9E用双面流畅的弧线玻璃来阐述极简的自然美学，宛如清晨的露珠骤然滴落，汇聚成莹润的机身，亦动亦静。</p>
+					</div>
+				</div>
+				<div class="swiper-slide four">
+					<div class="swiper-four-title">
+						<p class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="2s" swiper-animate-delay="1s">精彩不止一面</p>						
+					</div>
+					<div class="swiper-four-img">
+						<img src="image/four.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="4.5s" swiper-animate-delay="0s"/>
+					</div>
+					<div class="swiper-four-foot_fly">
+						<p class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="5s" swiper-animate-delay="1s">T9E机身背部同样采用了玻璃材质，触感非常的顺滑，背部整体的设计非常简单。</p>
+					</div>
+				</div>
+				<div class="swiper-slide liu">					
+					<div class="swiper-liu-img">
+						<img src="image/liu.png" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="4.5s" swiper-animate-delay="0s"/>
+					</div>
+					<div class="swiper-liu-title">
+						<p class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="2s" swiper-animate-delay="2s"> 金属与玻璃的巧妙融合</p>						
+					</div>
+					<div class="swiper-four-foot_fly">
+						<p class="ani" swiper-animate-effect="rotateInUpLeft" swiper-animate-duration="3s" swiper-animate-delay="2.5s">金属中框使用高档的锌铝合金，结实稳固锻造坚毅品格。正背两面使用第三代康宁大猩猩玻璃，抗损性能值得信赖。 </p>
+					</div>
+				</div>
+				<div class="swiper-slide six">					
+					<div class="swiper-six-img">
+						<img src="image/six.png" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="4.5s" swiper-animate-delay="0s"/>
+					</div>
+					<div class="swiper-six-title">
+						<p class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="2s" swiper-animate-delay="2s">一体纤致高金属机身&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p class="ani"swiper-animate-effect="zoomIn"swiper-animate-duration="2s"swiper-animate-delay="2s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尽享感握之美</p>	
+						
+					</div>
+					<div class="swiper-six-foot_fly">
+						<p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="3s" swiper-animate-delay="2.5s">&nbsp;&nbsp;&nbsp;&nbsp;T9E拥有一体成型的高质金属机身，精湛工艺让钱包机身显现动人曲线，机身与屏幕达到无缝贴合。</p>
+					</div>
+				</div>
+				<div class="swiper-slide fine">
+					<div class="swiper-fine-title">
+						<p class="ani" swiper-animate-effect="flipInY" swiper-animate-duration="5s" swiper-animate-delay="2s">纤薄之行，流线之美</p>						
+					</div>
+					<div class="swiper-fine-title_fly" >
+						<p class="ani" swiper-animate-effect="flipInY" swiper-animate-duration="4.5s" swiper-animate-delay="2.5s">强劲四核&nbsp;畅想4G</p>
+					</div>
+					<div class="swiper-fine-title1_fly" >
+						<p class="ani" swiper-animate-effect="flipInY" swiper-animate-duration="4.5s" swiper-animate-delay="2.5s">双卡双待，平衡之道</p>
+					</div>
+					<div class="swiper-fine-img">
+						<img id="fine" src="image/fine.png" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="4.5s" swiper-animate-delay="0s"/>
+					</div>
+				</div>
+				<div class="swiper-slide qi">
+					<div class="swiper-qi-title">
+						<p class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0s">点击按钮联系我们</p>						
+					</div>
+					<div class="swiper-qi-title_fly" >
+						<a href="" class="ani" swiper-animate-effect="flipInY" swiper-animate-duration="4.5s" swiper-animate-delay="0s" style="display: inline-block;background: #FF0000;">联系我们</a>
+					</div>
+					<div class="swiper-qi-title1_fly" >
+						<p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="4.5s" swiper-animate-delay="0s"> 深圳市康美国际通讯有限公司</p>
+					</div>
+					<div class="swiper-qi-title1_fly" >
+						<p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="4.5s" swiper-animate-delay="0.5s">营销总部咨询电话：<a href="" style="font-size: 14px;text-decoration: none;color: #666666;">0755-29619999-1890</a></p>
+					</div>
+					<div class="swiper-qi-title1_fly" >
+						<p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="4.5s" swiper-animate-delay="1s"> 联系人：王小姐</p>
+					</div>
+					<div class="swiper-qi-title1_fly" >
+						<p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="4.5s" swiper-animate-delay="1.5s">morefine官网：<a href="" style="font-size: 14px;text-decoration: none;color: #666666;">www.morefine.com</a></p>
+					</div>
+					<div class="swiper-qi-title1_fly" >
+						<p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="4.5s" swiper-animate-delay="1.5s">morefine微信公众号：morefine手机</p> 
+					</div>
+					<div class="swiper-qi-img">
+						<img id="qi" src="image/7.jpg" class="ani" swiper-animate-effect="flipInY" swiper-animate-duration="4.5s" swiper-animate-delay="0s" />
+						
+					</div>
+					<div class="swiper-qi1-img">
+						<img id="logo" src="image/8.png" class="ani" swiper-animate-effect="flipInY" swiper-animate-duration="4.5s" swiper-animate-delay="0s"/>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<script src="swiper-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var mySwiper= new Swiper('.swiper-container',{
+				direction:'vertical',
+				loop:true,
+				onInit:function(swiper){
+					swiperAnimateCache(swiper);
+					swiperAnimate(swiper);
+					
+				},
+				onSlideChangeEnd:function(swiper){
+					swiperAnimate(swiper);
+				}
+			})
+			
+			var au=document.getElementById("au");
+			var music=document.getElementById("music");
+			var s=1;
+			music.onclick=function(){
+				if(s){
+					document.getElementById("au").pause();
+					this.style.animationPlayState='paused';
+					s=0;
+				}else{
+					document.getElementById("au").play();
+					this.style.animationPlayState='running';
+					s=1;
+				}
+			}
+			
+			var arrowEle = document.getElementById("fine");
+//			alert(arrowEle.width);
+		 	var  left= (window.innerWidth - arrowEle.width) / 2;
+//		 	alert(left);
+		 	arrowEle.style.left = left + 'px';
+		 
+		</script>
+	</body>
+</html>

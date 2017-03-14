@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	#id{
+	width: 400px;
+	height: 400px;
+	background: #adedea;
+	margin:0 auto;
+	position: relative;
+	}
+
+	</style>
+
+	<script type="text/javascript">
+	// window.onload=function(){
+	// 	var id=document.getElementById('id');
+	// 	id.onmousemove=function(e){
+	// 		//兼容性的事件对象
+	// 		var ev=e || window.event;
+	// 		//鼠标距离浏览器的位置
+	// 		document.title=ev.clientX+'|'+ev.clientY;
+	// 		//鼠标距离元素的变现位置
+	// 		var l=ev.offsetX || ev.layerX;
+	// 		var t=ev.offsetY || ev.layerY;
+	// 		document.title=l+'|'+t;
+	// 	}
+	// }
+
+
+
+
+
+	// window.onload=function()
+	// {
+	// 	//1.抓取元素
+	// 	var id=document.getElementById('id');
+	// 	//2绑定事件
+	// 	id.onmousemove=function(e)
+	// 	{
+	// 		//兼容性的事件对象
+	// 		var ev=e ||window.event;
+	// 		//鼠标距离浏览器的位置
+	// 		document.title=ev.clientX+'|'+ev.clientY;
+	// 		//鼠标距离元素的边线位置
+	// 		var l=ev.offsetX || ev.layerX;
+	// 		var t=ev.offsetY ||ev.layerY;
+	// 		document.title=l+'|'+t;
+
+	// 	}
+	// }
+
+
+
+
+	// window.onload=function(){
+	// 	//1.抓取元素
+	// 	var id=document.getElementById('id');
+	// 	//2.绑定事件
+	// 	id.onmousemove=function(e)
+	// 	{
+	// 		//兼容性事件对象
+	// 		var ev=e || window.event;
+	// 		//鼠标距离浏览器的位置
+	// 		document.title=ev.clientX+'|'+ev.clientY;
+	// 		//鼠标距离元素的变现位置
+	// 		var l=ev.offsetX || ev.layerX;
+	// 		var t=ev.offsetY || ev.layerY;
+	// 		document.title=l+'|'+t;
+			
+	// 	}
+	// }
+
+
+	window.onload=function()
+	{
+		//1.抓取元素
+		var id=document.getElementById('id');
+		//2.绑定事件
+		id.onmousemove=function(e)
+		{
+			//兼容性的事件对象
+			var ev=e || window.event;
+			//鼠标距离浏览器的边线位置
+			document.title=ev.clientX+'|'+ev.clientY;
+			//鼠标距离元素边线的位置
+			var l=ev.offsetX || ev.layerX;
+			var t=ev.offsetY||ev.layerY;
+			document.title=l+'|'+t;
+		}
+	}
+	</script>
+</head>
+<body>
+	
+
+	<div id="id"></div>
+</body>
+</html>

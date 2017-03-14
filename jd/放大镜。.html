@@ -1,0 +1,467 @@
+<!-- <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	.left{
+		width:400px;
+		height: 400px;
+		float: left;
+		margin:-right:10px;
+		background:url(images/lunbo0.jpg) no-repeat;
+		position: relative;
+		background-size: 100% 100%;
+	}
+	.left .box{
+		width:200px;
+		height: 200px;
+		background: #fff;
+		opacity: 0.5;
+		position: absolute;
+		left:0px;top:0px;
+	}
+	/*遮罩*/
+	.left .cover{
+		width:400px;
+		height: 400px;
+		position: absolute;
+		left: 0px;top:0px;
+	}
+	/*右侧区域*/
+	.right{
+		width:400px;
+		height: 400px;
+		float: left;
+		overflow: hidden;
+		display: none;
+		position:relative;
+	}
+	.right img{
+		position: absolute;
+		left:0px;top:0px;
+	}
+	</style>
+	<script type="text/javascript">
+	window.onload=function()
+	{
+		//1.抓取元素
+		var left=document.getElementsByClassName('left')[0];
+		var right=document.getElementsByClassName('right')[0];
+		var box=document.getElementsByClassName('box')[0];
+		var img=document.getElementsByClassName('img')[0];
+		var cover=document.getElementsByClassName('cover')[0];
+
+		//2.绑定事件
+		cover.onmousemove=function(e){
+			//小块显示，右侧图显示
+			box.style.display='block';
+			right.style.display='block';
+			//获得鼠标坐标位置
+			var ev=e ||window.event;
+			var l=ev.offsetX||ev.layerX;
+			var t=ev.offsetY||ev.layerY;
+			document.title=l+'|'+t;
+			//获得小色块的位置
+			var left=l-100;
+			var top=t-100;
+			//色块范围的判断
+			if(left>200)
+			{
+				left=200;
+			}
+			if(left<0)
+			{
+				left=0;
+			}
+			if(top>200)
+			{
+				top=200;
+			}
+			if(top<0)
+			{
+				top=0;
+			}
+			//把值赋给小色块
+			box.style.left=left+'px';
+			box.style.top=top+'px';
+			//设置大图片的值
+			img.style.left=left*-2+'px';
+			img.style.top=top*-2+'px';
+		}
+		cover.onmouseout=function()
+		{
+			//小块和右侧图消失
+			box.style.display='none';
+			right.style.display='none';
+		}
+
+
+	}
+
+
+	</script>
+</head>
+<body>
+	
+	<div class="left">
+		<div class="box"></div>
+		<div class="cover"></div>
+	</div>
+	<div class="right">
+		<img style="width:800px;height:800px;"src="images/lunbo0.jpg" alt="" class="img">
+	</div>
+</body>
+</html> -->
+
+
+
+<!-- <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	.left{
+		width:400px;
+		height: 400px;
+		float: left;
+		margin-left:10px;
+		background:url(images/lunbo2.jpg)no-repeat;
+		position:relative;
+		background-size:100% 100%;
+	}
+	.left .box{
+		width: 200px;
+		height: 200px;
+		background: #fff;
+		opacity:0.5;
+		position: absolute;
+		left:0;top:0;
+	}
+	/*遮罩*/
+	.left .cover{
+		width: 400px;
+		height: 400px;
+		position: absolute;
+		left: 0;top:0;
+	}
+	/*右侧区域*/
+	.right{
+		width:400px;
+		height: 400px;
+		float:left;
+		overflow: hidden;
+		display: none;
+		position: relative;
+	}
+	.right img{
+		position: absolute;
+		left:0;top:0;
+	}
+
+	</style>
+
+	<script type="text/javascript">
+	window.onload=function()
+	{
+		//1.抓取元素
+		var left=document.getElementsByClassName('left')[0];
+		var right=document.getElementsByClassName(
+			'right')[0];
+		var box=document.getElementsByClassName('box')[0];
+		var cover=document.getElementsByClassName('cover')[0];
+		var img=document.getElementsByClassName('img')[0];
+
+		//2.绑定事件
+		cover.onmousemove=function(e)
+		{
+		 //小块显示，右侧图显示
+		 box.style.display='block';
+		 right.style.display='block';
+		 //获得鼠标坐标位置
+		 var ev=e||window.event;
+		 var l=ev.offsetX||ev.layerX;
+		 var t=ev.offsetY||ev.layerY;
+		 document.title=l+'|'+t;
+		 //获得小色块的位置
+		 var left=l-100;
+		 var top=t-100;
+		 //色块范围的判断
+		 if(left>200)
+		 {
+		 	left=200;
+		 }
+		 if(left<0)
+		 {
+		 	left=0;
+		 }
+		 if(top>200)
+		 {
+		 	top=200;
+		 }
+		 if(top<0)
+		 {
+		 	top=0;
+		 }
+		 //把值赋给小色块
+		 box.style.left=left+'px';
+		 box.style.top=top+'px';
+		 //设置大图片的值
+		 img.style.left=left*-2+'px';
+		 img.style.top=top*-2+'px';
+
+		}
+		cover.onmouseout=function()
+		{
+			//小块和右侧图都消失
+			box.style.display='none';
+			right.style.display='none';
+		}
+
+
+	}
+
+	</script>
+</head>
+<body>
+	<div class="left">
+		<div class="box"></div>
+		<div class="cover"></div>
+	</div>
+	<div class="right">
+		<img src="images/lunbo2.jpg" alt="" class="img" style="width:1000px;height:1000px;">
+	</div>
+</body>
+</html> -->
+
+
+
+<!-- <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	.left{
+		width:400px;
+		height: 400px;
+		position: relative;
+		margin-left:10px;
+		background:url(images/lunbo3.jpg) no-repeat;
+		background-size:100% 100%;
+		float: left;
+	}
+	.left .box{
+		width: 200px;
+		height: 200px;
+		background: #fff;
+		opacity:0.5;
+		position: absolute;
+		display: none;
+		left:0;top:0;
+	}
+	/*遮罩*/
+	.left .cover{
+		width: 400px;
+		height: 400px;
+		position:absolute;
+		left:0;top:0;
+	}
+	.right{
+		width:400px;
+		height:400px;
+		float:left;
+		display:none;
+		position:relative;
+	}
+	.right img{
+		position:absolute;
+		left:0;top:0;
+	}
+
+	</style>
+	<script type="text/javascript">
+	window.onload=function()
+	{
+		//1.抓取元素
+		var left=document.getElementsByClassName('left')[0];
+		var right=document.getElementsByClassName('right')[0];
+		var box=document.getElementsByClassName('box')[0];
+		var img=document.getElementsByClassName('img')[0];
+		var cover=document.getElementsByClassName('cover')[0];
+		//2.绑定事件
+		cover.onmousemove=function(e)
+		{
+			//小块显示，右侧图显示
+			box.style.display='block';
+			right.style.display='block';
+			//获得鼠标坐标位置
+			var ev=e || window.event;
+			var l=ev.offsetX||ev.layerX;
+			var t=ev.offsetY||ev.layerY;
+			document.title=l+"|"+t;
+			//获得小色块的位置
+			var left=l-100;
+			var top=t-100;
+			//色块的范围判断
+			if(left>200)
+			{
+				left=200;
+			}
+			if(left<0)
+			{
+				left=0;
+			}
+			if(top>200)
+			{
+				top=200;
+			}
+			if(top<0)
+			{
+				top=0;
+			}
+			//把值赋给小色块
+			box.style.left=left+'px';
+			box.style.top=top+'px';
+		}
+		//设置大图片的值
+		img.style.left=left*-2+'px';
+		img.style.top=top*-2+'px';
+	}
+
+	</script>
+</head>
+<body>
+
+	<div class="left">
+		<div class="box"></div>
+		<div class="cover"></div>
+	</div>
+	<div class="right">
+		<img style="width:800px;height:800px;"src="images/lunbo3.jpg" alt="" class="img">
+	</div>
+
+	
+</body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	.left{
+		width:400px;
+		height: 400px;
+		float: left;
+		margin-right:10px;
+		background: url(images/lunbo3.jpg)no-repeat;
+		background-size:100% 100%;
+		position:relative;
+	}
+	.left .box{
+		width:200px;
+		height:200px;
+		background:#fff;
+		opacity:0.5;
+		display:none;
+		position:absolute;
+		left:0px; top:0px;
+	}
+	/*遮罩*/
+	.left .cover{
+		width:400px;
+		height:400px;
+		position:absolute;
+		left:0px;top:0px;
+	}
+	/*右侧区域*/
+	.right{
+		width:400px;
+		height:400px;
+		float:left;
+		overflow:hidden;
+		display:none;
+		position:relative;
+	}
+	.right img{
+		position: absolute;
+		left:0px;top:0px;
+	}
+
+	</style>
+
+	<script type="text/javascript">
+	window.onload=function()
+	{
+		var left=document.getElementsByClassName('left')[0];
+		var right=document.getElementsByClassName('right')[0];
+		var img=document.getElementsByClassName('img')[0];
+		var box=document.getElementsByClassName('box')[0];
+		var cover=document.getElementsByClassName('cover')[0];
+		//2.绑定事件
+		cover.onmousemove=function(e)
+		{
+			box.style.display='block';
+			right.style.display='block';
+			//获得鼠标坐标位置
+			var ev=e||window.event;
+			var l=ev.offsetX||ev.layerX;
+			var t=ev.offsetY||ev.layerY;
+			document.title=l+"|"+t;
+			//获得小色块的位置
+			var left=l-100;
+			var top=t-100;
+			//色块的判断
+			if(left>200)
+			{
+				left=200;
+			}
+			if(left<0)
+			{
+				left=0;
+			}
+			if(top<0)
+			{
+				top=0;
+			}
+			if(top>200)
+			{
+				top=200;
+			}
+			//把值赋给小色块
+			box.style.left=left+'px';
+			box.style.top=top+'px';
+			//设置大图片的值
+			img.style.left=left*-2+'px';
+			img.style.top=top*-2+'px';
+		}
+		cover.onmouseout=function()
+		{
+			//小块和右侧图消失
+			box.style.display='none';
+			right.style.display='none';
+		}
+
+
+	}
+
+	</script>
+</head>
+<body>
+	
+	<div class="left">
+		<div class="box"></div>
+		<div class="cover"></div>
+	</div>
+	<div class="right">
+		<img src="images/lunbo3.jpg" alt="" class="img" style="width:800px;height:800px;">
+	</div>
+</body>
+</html>

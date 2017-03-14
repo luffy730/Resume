@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+.box1{
+	width: 439px;
+	height: 236px;
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.all1{
+	width: 2195px;
+	height: 236px;
+	/*border: 1px solid red;*/
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.all1 img{
+	float: left;
+}
+.ul1{
+	width: 80px;
+	height: 10px;
+	position: absolute;
+	left: 180px;
+	bottom: 10px;
+}
+.ul1 div{
+    width: 9px;
+    height: 9px;
+    background: #3E3E3E;
+    border-radius:50%;
+    float: left;
+    margin-right: 11px;
+    list-style: none;
+}
+.ul div:nth-child(1){
+	background: #B61B1F;
+}
+.bt{
+	width: 30px;
+	height: 60px;
+	opacity: 0.4;
+	position: absolute;
+	top:95px;
+	background: #2b2b2b;
+	z-index: 10;
+	display: none;
+}
+#bt1{
+	left: 0;
+}
+#bt2{
+	right:0;
+}
+
+</style>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+$(function(){
+	// 1.自动切换
+    var shu = 0;
+	// 函数体
+    function rn(){
+       shu++;
+       // 回流判断
+       if(shu==5){
+       	   $(".all1").css({left:"0px"});
+       	   shu = 1;
+       }
+       // 获得left值
+       var le = shu * -439;
+       // 设置动画
+       $(".all1").stop().animate({left:le+"px"},500);
+       // 小li的判断
+       if(shu == 5){
+       	  $(".ul1 div").eq(0).css({background:"#B61B1F"}).siblings().css({background:"#3E3E3E"});
+       }else{
+       	  $(".ul1 div").eq(shu).css({background:"#B61B1F"}).siblings().css({background:"#3E3E3E"});
+       }
+
+    }
+	// 定时器
+	ti = setInterval(rn,1000);
+
+    //2. 鼠标移入停止定时器
+    $(".box1").hover(function(){
+        clearInterval(ti);
+        $('.bt').fadeIn();
+    },function(){
+	    ti = setInterval(rn,1000);
+	      $('.bt').fadeOut();
+    });
+
+    //3. 手动切换
+     $(".ul1 div").mouseover(function(){
+     	// 或得序号
+     	  shu = $(this).index();
+     	  // 获得left值
+     	  var le = shu * -439; 
+     	  // 设置动画
+     	  $(".all1").stop().animate({left:le+"px"},500);
+     	  $(".ul1 div").eq(shu).css({background:"#B61B1F"}).siblings().css({background:"#3E3E3E"});
+     });
+
+     $('#bt2').click(function(){
+     	rn();
+     })
+     $('#bt1').click(function(){
+     	shu--;
+     	if(shu<0)
+     	{
+     		$(".all1").css({left:"-1740px"});
+     		shu=3;
+     	}
+     	var le =(-shu)*439;
+       // 设置动画
+       $(".all1").stop().animate({left:le+"px"},500);
+       // 小li的判断
+       if(shu == 5){
+       	  $(".ul1 div").eq(0).css({background:"#B61B1F"}).siblings().css({background:"#3E3E3E"});
+       }else{
+       	  $(".ul1 div").eq(shu).css({background:"#B61B1F"}).siblings().css({background:"#3E3E3E"});
+       }
+     })
+
+})
+
+
+
+</script>
+</head>
+
+<body>
+	<li class="box1">
+		<input type="button" vlaue="<" class="bt" id="bt1" />
+		<input type="button" vlaue=">" class="bt" id="bt2" />
+		<div class="all1">
+			<img src="images/fourlunbo1.jpg" alt="" />
+			<img src="images/fourlunbo2.jpg" alt="" />
+			<img src="images/fourlunbo3.jpg" alt="" />
+			<img src="images/fourlunbo4.jpg" alt="" />
+			<img src="images/fourlunbo1.jpg" alt="" />
+		</div>
+		<div class="ul1">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</li>
+</body>
+</html>

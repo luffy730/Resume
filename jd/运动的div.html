@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.top{
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		left: 0px;
+		background: #ccc;
+		position: relative;
+		z-index: 7;
+	}
+	.f{
+		width: 30px;
+		height: 30px;
+		background: red;
+		position: absolute;
+		left: 0;
+		display:none;
+	}
+	.t{
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		left: 0;	
+		display:none;
+		background: red;
+		border-radius: 3px 0 0 3px;
+	}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript">
+
+	$(function(){
+		$('.top').mouseover(function(){
+			$('.t').fadeIn();
+			$('.t').animate({width:'300px'},2000);
+			$('.t').css({background:'#c81623'});
+		});
+		$('.top').mouseout(function(){
+			$('.t').animate({width:'30px'},1000);
+			$('.t').css({background:'#ccc'});
+		})
+		
+	})
+	</script>
+</head>
+<body>
+	
+
+	<div class="top">
+		<div class="f"></div>
+		<div class="t"></div>
+	</div>
+</body>
+</html>

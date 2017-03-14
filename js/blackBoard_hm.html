@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin:0;padding:0;}
+			#box{
+				margin:80px 180px;
+				overflow: hidden;
+				width: 1000px;
+				border:10px dotted #ADEEDA;
+			}
+			#pic{
+				width: 1000px;
+			}
+			body{background: url(../images/2.jpg);background-size: cover;}
+		</style>
+		<script src="jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="box">
+			<canvas id="canvas" width="1000" height="500"></canvas>
+			<input type="text" id="mark" />
+			<button class="colorBtn brush bg_color" switch="on">选颜色</button>
+			<input type="color" name=""  id="color" />
+			<button class="penBtn brush bg_color" switch="on">画笔</button>
+			<input type="range" class="penBtn" id="pen" min='1' max="20" step="1" value="3"/>
+			<button class="eraserBtn switch"  switch="off">橡皮</button>
+			<input type="range" class="eraserBtn" id="eraser" min="0" max="40" step="2" value="6"/>
+			<button class="clear">一键擦黑板</button>
+			<button class="mark">签名</button>
+			<button class="save">保存</button>
+		</div>
+		<div id="pic">
+			
+		</div>
+		<script>
+			//点击调用颜色选择器
+			$('.colorBtn').click(function(){
+				$('#color').click();
+			})
+			//显示签名输入框
+			$('.mark').click(function(){
+				$('#mark').css({display:'block'}).focus();
+			})
+			var blackBoard = function(){
+				//把原生对象赋给变量
+				var hdThis=this;
+				//获得原生画布对象
+				hdThis.ctx=document.getElementById('canvas').getContext('2d');
+				//设置线条的默认宽度和颜色，凡在函数外面方便外部调用时修改
+				hdThis.lineWidth= 3;
+				hdThis.lineColor='black';
+				//设置橡皮擦的大小
+				hdThis.wSize=25;
+				hdThis.hSize=25;
+				
+				//执行画画的方法
+				hdThis.run=function(){
+					//当鼠标按下的时候触发开始路径，设置线条宽度，线条颜色，设置起点
+					//鼠标在按下时确定了起点位置
+					$('#canvas').mousedown(function(e){
+						hdThis.ctx.lineWidth=hdThis.lineWidth;
+						//设置线条的默认颜色 引用当前对象的颜色属性
+						hdThis.ctx.strokeStyle=hdThis.lineColor;
+						//开始路径
+						hdThis.ctx.beginPath();
+						//设置线条的端点样式
+						//butt 默认。 平直的边缘 /round向线条的每个末端添加圆形线帽/square向线条的每个末端添加正方形线帽
+						hdThis.ctx.lineCap='round';
+						//设置线条的起点位置，
+						hdThis.ctx.moveTo(e.clientX - $(this).position().left,e.clientY -$(this).position().top);
+						//判断画笔状态是否为绘画中
+						if($('.penBtn').attr('switch')=='on'){
+							//鼠标在按下状态中移动的时候即为画线，鼠标抬起时即确定了终点并已经绘制出了线条
+							//设置线条的结束位置
+							$(this).mousemove(function(e){
+								hdThis.ctx.lineTo(e.clientX -$(this).position().left,e.clientY -$(this).position().top);
+								hdThis.ctx.stroke();
+							})
+						}
+						//判断画笔状态是否为擦除
+						if($('.eraserBtn').attr('switch')=='on'){
+							$(this).mousemove(function(e){
+								var x=e.clientX -$(this).position().left;
+								var y=e.clientY -$(this).position().top;
+								hdThis.ctx.clearRect(x,y,hdThis.wSize,hdThis.hSize);
+							})
+						}
+					})
+					//鼠标抬起的时候解除画布的鼠标移动事件
+					$(document).mouseup(function(){
+						$('#canvas').unbind('mousemove');
+					})
+				}
+				//清除所有
+				hdThis.clear=function(){
+					hdThis.ctx.clearRect(0,0,1000,500);
+				}
+				//签名
+				hdThis.mark=function(){
+					hdThis.ctx.font='30px Arial';
+					hdThis.ctx.textAlign='right';
+					hdThis.ctx.fillStyle='#A0AABA';
+					hdThis.ctx.textBaseline='top';
+					hdThis.ctx.fillText(hdThis.font,800,20);
+				}
+				//保存图片
+				hdThis.save= function(){
+					immData=document.getElementById('canvas').toDataURL('image/png');
+					document.getElementById('img').src=imgData;
+				}
+			}
+			//实例化对象
+			var obj = new blackBoard();
+			//获得画笔颜色
+			$('#color').change(function(){
+				obj.lineColor=$('#color').val();
+			})
+			//点击画笔按钮
+			$('.penBtn').click(function(){
+				//获得画笔的大小
+				obj.lineWidth= $('#pen').val();
+				//改变按钮背景颜色
+				$('.brush').addClass('bg_color');
+				$('.eraserBtn').removeClass('bg_color');
+				//噶变画笔状态
+				$('.brush').attr('switch','on');
+				$('.switch').attr('switch','off');
+			})
+			//点击橡皮
+			$('.eraserBtn').click(function(){
+				//获得橡皮尺寸
+				obj.wSize=$('#eraser').val();
+				obj.hSize=$('#eraser').val();
+				//改变按钮背景颜色
+				$('.switch').addClass('bg_color');
+				$('.penBtn').removeClass('bg_color');
+				//改变画笔状态
+				$('.switch').attr('switch','on');
+				$('.penBtn').attr('switch','off');
+			})
+			//点击清除
+			$('.clear').click(function(){
+				obj.clear();
+				//改变按钮背景颜色
+				$('.brush').addClass('bg_color');
+				$('.eraserBtn').removeClass('bg_color');
+				//改变画笔状态
+				$('.brush').attr('switch','on');
+				$('.switch').attr('switch','off');
+			})
+			//输入框失去焦点事件
+			$('#mark').blur(function(){
+				//获得输入的内容
+				obj.font=$(this).val();
+				//清除内容
+				$(this).val('');
+				//隐藏输入框
+				$(this).css({display:'none'});
+				//执行写字方法
+				obj.mark();
+			})
+			//执行画画方法
+			obj.run();
+			//保存图像
+			//存入sessionStorage;
+			var imgArr =window.sessionStorage.getItem('imgData');
+			if(!imgArr){
+				imgArr=[];
+			}else{
+				imgArr=JSON.parse(imgArr);
+			}
+			//保存作品
+			$('.save').click(function(){
+				var imgData=document.getElementById('canvas').toDataURL('image/png');
+				$('#pic').append('<img src="'+imgData+'"/>');
+				imgArr.push(imgData);
+				var data=JSON.stringify(imgArr);
+				window.sessionStorage.setItem('imgData',data);
+			})
+			function showImg(){
+				var data=window.sessionStorage.getItem('imgData');
+				data=JSON.parse(data);
+				var str='';
+				$.each(data,function(k,v){
+					str +='<img src="'+v+'"/>';
+				})
+				$('#pic').html(str);
+			}
+			showImg();
+		</script>
+	</body>
+</html>

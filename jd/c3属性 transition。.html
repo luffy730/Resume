@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	.dv{
+		width:200px;
+		height: 200px;
+		background:blue;
+		margin:0 auto;
+		/*变化的属性 变化时间 速度曲线 延迟*/
+		/*transition:2s;*/
+	/*	transition:width 2s ease 1s ,height 2s ease 1s;*/
+		/*两个属性一起变化*/
+		transition:width 2s ease 1s;
+		/*transition:width 2s ease 1s,height 2s ease 1s;
+*/
+	}
+	.dv:hover{
+		width:400px;
+		height:400px;
+		background: #adeeea;
+	}
+	</style>
+</head>
+<body>
+	
+	<div class="dv"></div>
+</body>
+</html>

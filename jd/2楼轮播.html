@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.slider{
+		width: 334px;
+		height: 473px;
+		border-right: 1px solid #ededed;
+		float: left;
+	}
+	.slider img{
+		width: 334px;
+		cursor: pointer;
+		display: none;
+	}
+	.sliderTop{
+		width: 334px;
+		height:295px;
+		border-bottom: 1px solid #ededed;
+		position: relative;
+	}
+	.sliderTop img{
+		height: 295px;
+	}
+	.sliderFoot{
+		width: 334px;
+		height: 176px;
+		border-bottom: 1px solid #ededed;
+		position: relative;
+	}
+	.sliderFoot img{
+		height: 176px;
+	}
+	#lie{
+		position: absolute;
+		bottom: 10px; left: 50px;
+	}
+	#lie li{
+		width: 9px;
+		height: 9px;
+		background: #B6183d;
+		list-style: none;
+		float: left;
+		margin-left: 15px;
+		border-radius: 50%;
+	}
+	.Bniu{
+		width: 30px;
+		height: 60px;
+		opacity: 0.3;
+		position: absolute;
+		background: #2b2b2b;
+	}
+	#niu1{
+		left: 0;top: 90px;
+	}
+	#niu2{
+		right: 0;top: 90px;
+	}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('.slider').hover(function(){
+		clearInterval(timer);
+		$('.Bniu').fadeIn();
+	},function(){
+		timer=setInterval(run,1000);
+		$('.Bniu').fadeOut();
+	});
+	var i=0;
+	function run()
+	{
+		i++;
+		if(i>=4)
+		{
+			i=0;
+		}
+		$('.sliderTop img').eq(i).css({display:'block'}).siblings('img').css({display:'none'});
+		$('.sliderFoot img').eq(i).css({display:'block'}).siblings('img').css({display:'none'});
+		$('#lie li').eq(i).css({background:'red'}).siblings().css({background:'#ccc'});
+	}
+	timer=setInterval(run,1000);
+
+		$('#lie li').mouseover(function(){
+			i=$(this).index();
+			$('.sliderTop img').eq(i).css({display:'block'}).siblings('img').css({display:'none'});
+			$('.sliderFoot img').eq(i).css({display:'block'}).siblings('img').css({display:'none'});
+			$('#lie li').eq(i).css({background:'red'}).siblings().css({background:"#ccc"});
+		});
+		var i=0;
+		$('#niu1').click(function(){
+			i--;
+			if(i<0)
+			{
+				i=4;
+			}
+			$('.sliderTop img').eq(i).css({display:'block'}).siblings('img').css({display:"none"});
+			$('.sliderFoot img').eq(i).css({display:'block'}).siblings('img').css({display:"none"});
+			$('#lie li').eq(i).css({background:'red'}).siblings('').css({background:'#ccc'});
+		});
+		$('#niu2').click(function(){
+			i++;
+			if(i==4){
+				i=0;
+			}
+			$('.sliderTop img').eq(i).css({display:'block'}).siblings('img').css({display:"none"});
+			$('.sliderFoot img').eq(i).css({display:'block'}).siblings('img').css({display:"none"});
+			$('#lie li').eq(i).css({background:'red'}).siblings('').css({background:'#ccc'});
+		})
+	});
+	</script>
+</head>
+<body>
+	
+	<div class="slider">
+		
+		<div class="sliderTop">
+		<input type="button" class="Bniu"id="niu1" value="<" />
+		<input type="button" class="Bniu"id="niu2" value=">" />
+			<img src="images/twolunbo1.jpg" alt="" style="display:block" />
+			<img src="images/twolunbo2.jpg" alt="" />
+			<img src="images/twolunbo3.jpg" alt="" />
+			<img src="images/twolunbo4.jpg" alt="" />
+		</div>
+		<div class="sliderFoot">
+			<img src="images/twolunbox1.jpg" alt="" style="display:block"/>
+			<img src="images/twolunbox2.jpg" alt="" />
+			<img src="images/twolunbox3.jpg" alt="" />
+			<img src="images/twolunbox4.jpg" alt="" />
+			<ul id="lie">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		</div>
+	</div>
+
+</body>
+</html>

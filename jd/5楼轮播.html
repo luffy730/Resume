@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitoonal//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitoonal.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+.box2{
+	width: 439px;
+	height: 236px;
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.all2{
+	width: 2195px;
+	height: 236px;
+	/*border: 1px solid red;*/
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.all2 img{
+	float: left;
+}
+.ul2{
+	width: 80px;
+	height: 10px;
+	position: absolute;
+	left: 180px;
+	bottom: 10px;
+}
+.ul2 div{
+    width: 9px;
+    height: 9px;
+    background: #3E3E3E;
+    border-radius:50%;
+    float: left;
+    margin-right: 11px;
+    list-style: none;
+}
+.ul2 div:nth-child(1){
+	background: #B61B1F;
+}
+.bit{
+	width: 30px;
+	height: 60px;
+	opacity: 0.4;
+	position: absolute;
+	top:95px;
+	background: #2b2b2b;
+	z-index: 10;
+	display: none;
+}
+#bit1{
+	left: 0;
+}
+#bit2{
+	right:0;
+}
+
+</style>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+$(function(){
+	// 1.自动切换
+    var lia = 0;
+	// 函数体
+    function run1(){
+       lia++;
+       // 回流判断
+       if(lia==5){
+       	   $(".all2").css({left:"0px"});
+       	   lia = 1;
+       }
+       // 获得left值
+       var lle = lia * -439;
+       // 设置动画
+       $(".all2").stop().animate({left:lle+"px"},500);
+       // 小li的判断
+       if(lia == 5){
+       	  $(".ul2 div").eq(0).css({background:"#B61B1F"}).siblings().css({background:"#3E3E3E"});
+       }else{
+       	  $(".ul2 div").eq(lia).css({background:"#B61B1F"}).siblings().css({background:"#3E3E3E"});
+       }
+
+    }
+	// 定时器
+	to = setInterval(run1,1000);
+
+    //2. 鼠标移入停止定时器
+    $(".box2").hover(function(){
+        clearInterval(to);
+        $('.bit').fadeIn();
+    },function(){
+	    to = setInterval(run1,1000);
+	      $('.bit').fadeOut();
+    });
+
+    //3. 手动切换
+     $(".ul2 div").mouseover(function(){
+     	// 或得序号
+     	  lia = $(this).index();
+     	  // 获得left值
+     	  var lle = lia * -439; 
+     	  // 设置动画
+     	  $(".all2").stop().animate({left:lle+"px"},500);
+     	  $(".ul2 div").eq(lia).css({background:"#B61B1F"}).siblings().css({background:"#3E3E3E"});
+     });
+
+     $('#bit2').click(function(){
+     	run1();
+     })
+     $('#bit1').click(function(){
+     	lia--;
+     	if(lia<0)
+     	{
+     		$(".all2").css({left:"-1740px"});
+     		lia=3;
+     	}
+     	var lle =(-lia)*439;
+       // 设置动画
+       $(".all2").stop().animate({left:lle+"px"},500);
+       // 小li的判断
+       if(lia == 5){
+       	  $(".ul2 div").eq(0).css({background:"#B61B1F"}).siblings().css({background:"#3E3E3E"});
+       }else{
+       	  $(".ul2 div").eq(lia).css({background:"#B61B1F"}).siblings().css({background:"#3E3E3E"});
+       }
+     })
+
+})
+
+
+
+</script>
+</head>
+
+<body>
+	<li class="box2">
+		<input type="button" vlaue="<" class="bit" id="bit1" />
+		<input type="button" vlaue=">" class="bit" id="bit2" />
+		<div class="all2">
+			<img src="images/fivelunbo1.jpg" alt="" />
+			<img src="images/fivelunbo2.jpg" alt="" />
+			<img src="images/fivelunbo3.jpg" alt="" />
+			<img src="images/fivelunbo4.jpg" alt="" />
+			<img src="images/fivelunbo1.jpg" alt="" />
+		</div>
+		<div class="ul2">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</li>
+</body>
+</html>

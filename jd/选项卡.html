@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	#box{
+		width: 1000px;
+		height: 164px;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+	}
+	.all{
+		width: 5000px;
+		height: 164px;
+		position: absolute;
+		left:0px;right: 0;
+	}
+	.dv{
+		width: 1000px;
+		float: left;
+	}
+	.dv img{
+		width: 246px;
+		height: 164px;
+		float: left;
+		margin-left: 1px;
+	}
+	#btn1{
+		width: 30px;
+		height: 60px;
+		opacity: 0.3px;
+		background: #666;
+		position: absolute;
+		top :50px;left: 0;
+		opacity: 0.3;
+		z-index: 5;
+	}
+	#btn2{
+		width: 30px;
+		height: 60px;
+		opacity: 0.3px;
+		background: #666;
+		position: absolute;
+		top :50px;right: 0;
+		opacity: 0.3;
+		z-index: 5;
+	}
+	</style>
+	<script type="text/javascript" src=js/jquery-1.9.1.js></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#box').hover(function(){
+			$('.click').fadeIn();
+		},function(){
+			$('.click').fadeOut();
+		})
+		var num=0;
+
+		$('#btn2').click(function(){
+			num++;
+			if(num==5)
+			{
+				$('.all').css({left:'0px'});
+				num=1;
+			}
+			var l=num*-1000;
+			$('.all').stop().animate({left:l+'px'});
+		});
+		$('#btn1').click(function(){
+			 // var num=0;
+			num--;
+			if(num<0){
+				$('.all').css({left:-4000+'px'});
+				num=3;
+			}
+			document.title=num;
+			var r=-num*1000;
+			$('.all').stop().animate({left:r+'px'});
+		});
+
+
+	})
+		
+	</script>
+</head>
+<body>
+	
+	<div id="box">
+	<input id="btn1"class="click"type="button" value="<"  />
+	<input id="btn2"class="click"type="button" value=">" />
+		<div class="all">
+			<div class="dv dv1">
+				<img src="images/xiaolunbo1.jpg" alt="" />
+				<img src="images/xiaolunbo2.jpg" alt="" />
+				<img src="images/xiaolunbo3.jpg" alt="" />
+				<img src="images/xiaolunbo4.jpg" alt="" />
+			</div>
+			<div class="dv dv2">
+				<img src="images/iaolunbo1.jpg" alt="" />
+				<img src="images/iaolunbo2.jpg" alt="" />
+				<img src="images/iaolunbo3.jpg" alt="" />
+				<img src="images/iaolunbo4.jpg" alt="" />
+			</div>
+			<div class="dv dv3">
+				<img src="images/aolunbo1.jpg" alt="" />
+				<img src="images/aolunbo2.jpg" alt="" />
+				<img src="images/aolunbo3.jpg" alt="" />
+				<img src="images/aolunbo4.jpg" alt="" />
+			</div>
+			<div class="dv dv4">
+				<img src="images/olunbo1.jpg" alt="" />
+				<img src="images/olunbo2.jpg" alt="" />
+				<img src="images/olunbo3.jpg" alt="" />
+				<img src="images/olunbo4.jpg" alt="" />
+			</div>
+			<div class="dv dv5">
+				<img src="images/xiaolunbo1.jpg" alt="" />
+				<img src="images/xiaolunbo2.jpg" alt="" />
+				<img src="images/xiaolunbo3.jpg" alt="" />
+				<img src="images/xiaolunbo4.jpg" alt="" />
+			</div>
+		</div>
+	</div>
+</body>
+</html>

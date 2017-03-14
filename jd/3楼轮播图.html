@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	ul{
+		width: 500px;
+		height: 400px;
+		border: 10px solid black;
+	}
+	#haoteshu{
+		width: 435px;
+		height: 231px;
+		float: left;
+		list-style: none;
+		position: relative;
+	}
+	#haoteshu img{
+		cursor: pointer;
+		width: 434px;
+		height: 230px;
+		display: none;
+		float: left;
+		position: absolute;
+		left: 0;top:0;
+	}
+	.dian{
+		float: left;
+		width: 9px;
+		height: 9px;
+		background: #3e3e3e;
+		border-radius: 50%;
+		margin-left: 15px;
+
+	}
+	.all{
+		position: absolute;
+		bottom: 10px;left: 150px;
+	}
+	.aan{
+		width: 30px;
+		height: 60px;
+		opacity: 0.3;
+		position: absolute;
+		display: none;
+		z-index: 10;
+	}
+	#aan1{
+		left: 0;top: 80px;
+	}
+	#aan2{
+		right: 0;top:80px;
+	}
+	</style>
+	<script type="text/javascript" src=js/jquery-1.9.1.js></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#haoteshu').hover(function(){
+		$('.aan').fadeIn('slow');
+		clearInterval(jian);
+	},function(){
+		$('.aan').fadeOut('slow');
+		jian=setInterval(zou,1000);
+	})
+	var h=0;
+	function zou(){
+		h++;
+		if(h==4)
+		{
+			h=0;
+		}
+		$('#haoteshu img').eq(h).stop().fadeIn('fast').siblings('img').stop().fadeOut('fast');
+		$('.all div').eq(h).css({background:'#3e3e3e'}).siblings().css({background:'#ccc'});
+	}
+	jian=setInterval(zou,1000);
+
+	$('.all div').mouseover(function(){
+		var h=$(this).index();
+		$('#haoteshu img').eq(h).fadeIn().siblings('img').fadeOut();
+		$('.all div').eq(h).css({background:'#3e3e3e'}).siblings('').css({background:'#ccc'});
+	});
+		var h=0;
+		$('#aan1').click(function(){
+			h--;
+			if(h<0)
+			{
+				h=3;
+			}
+			$('#haoteshu img').eq(h).fadeIn().siblings('img').fadeOut();
+			$('.all div').eq(h).css({background:'#3e3e3e'}).siblings().css({background:'#ccc'});
+		})
+		$('#aan2').click(function(){
+			h++;
+			if(h==4)
+			{
+				h=0;
+			}
+			$('#haoteshu img').eq(h).fadeIn().siblings('img').fadeOut();
+			$('.all div').eq(h).css({background:'#3e3e3e'}).siblings().css({background:'#ccc'});
+		})
+	})
+	</script>
+</head>
+<body>
+	<ul>
+		<li id="haoteshu">
+			<input type="button" id="aan1" class="aan"value="<" />
+			<input type="button" id="aan2" class="aan"value=">" />
+			<img src="images/threelunbo1.jpg" alt="" style="display:block" />
+			<img src="images/threelunbo2.jpg" alt="" />
+			<img src="images/threelunbo3.jpg" alt="" />
+			<img src="images/threelunbo4.jpg" alt="" />
+		<div class="all">
+			<div class="dian"></div>
+			<div class="dian"></div>
+			<div class="dian"></div>
+			<div class="dian"></div>
+		</div>
+		</li>
+	</ul>
+</body>
+</html>
