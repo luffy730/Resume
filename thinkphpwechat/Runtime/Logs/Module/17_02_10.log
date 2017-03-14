@@ -1,0 +1,14 @@
+[ 2017-02-10T11:41:16+08:00 ] 106.114.183.160 /thinkphpwechat/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hd_config` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `hd_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Common\Behaviors\AppBeginBehavior [ RunTime:1.404002s ]
+INFO: [ app_begin ] --END-- [ RunTime:1.404002s ]
+NOTIC: [8] Undefined index: mo C:\home\ftp\c\c65_guyongqing\wwwroot\thinkphpwechat\Application\Module\Controller\EntryController.class.php 第 20 行.
+NOTIC: [8] Undefined index: t C:\home\ftp\c\c65_guyongqing\wwwroot\thinkphpwechat\Application\Module\Controller\EntryController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: class C:\home\ftp\c\c65_guyongqing\wwwroot\thinkphpwechat\Application\Module\Controller\EntryController.class.php 第 34 行.
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="../angular.min.js"></script>
+		<script src="../jquery.js"></script>
+		<script src="util.js"></script>
+	</head>
+		<body ng-app='hd' ng-controller='ctrl' >
+			<div data="news" hd-tab></div>
+		</body>
+		<script>
+			var m =angular.module('hd',['util'])
+			m.controller('ctrl',['$scope',function($scope){
+				$scope.news=[
+					{'title':'新闻','content':'新闻频道...sdfsdsf'},
+					{'title':'游戏','content':'游戏娱乐..sdfsdf.'},
+					{'title':'新闻','content':'新闻频道...sdfsdsf'},
+					{'title':'游戏','content':'游戏娱乐..sdfsdf.'},
+				];
+			}]);
+		</script>
+</html>
+
+
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="../angular.min.js"></script>
+		<script src="../jquery.js"></script>
+		<script src="util.js"></script>
+	</head>
+		<body ng-app='hd' ng-controller='ctrl' >
+			<h1 hd-footer data="getName()"></h1>
+			<h1 hd-footer data="getName()"></h1>
+		</body>
+		<script>
+			var m =angular.module('hd',['util'])
+			m.controller('ctrl',['$scope',function($scope){
+				$scope.name='yahoo'
+				$scope.age='33';
+				$scope.getName=function(){
+					return 'names....';
+				}
+			}]);
+		</script>
+</html>
+
+
+
+

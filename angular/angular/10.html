@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+	<body>
+		<form action="" ng-controller='ctrl' id="form" onsubmit="return false;">
+			<input type="text" ng-model='article.title'/>
+			<input type="text" ng-model='article.click'/>
+			<textarea hidden="" name="" rows="11" cols="6"></textarea>
+			<button>发送</button>
+		</form>
+			
+	</body>
+</html>
+<script type="text/javascript">
+	//实例出模块
+	var m = angular.module('hd',[]); 
+	//定义控制器
+	m.controller('ctrl',['$scope',function($scope){
+		$scope.article={title:'',click:''};
+		$('#form').submit(function(){
+			$("textarea").val(angular.toJson($scope.article));
+		});
+	}]);
+	
+	angular.bootstrap(document.getElementById('form'), ['hd']);
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+	<body>
+		<form action="" ng-controller='ctrl' id="form">
+			<input type="text" ng-model='title'/>
+		</form>
+			
+	</body>
+</html>
+<script type="text/javascript">
+	//实例出模块
+	var m = angular.module('hd',[]); 
+	//定义控制器
+	m.controller('ctrl',['$scope',function($scope){
+		var data ='{"name":"  "}'
+		alert(angular.fromJson(data))
+		$scope.user=[
+			{username:'李四'},{username:'小明'},{username:'赵三'}
+		];
+		console.log($scope.user);
+		$xiaoming =$scope.user[1];
+		//从数据中移除指定的元素
+		$scope.user = _.without($scope.user, $xiaoming);
+		console.log($scope.user);
+	}]);
+	angular.bootstrap(document.getElementById('form'), ['hd']);
+</script>

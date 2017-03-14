@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+	<body ng-app='hd' ng-controller='ctrl'>
+	<input type="checkbox" ng-model="status" > 接受协议<br/>
+		<button ng-disabled="!status" disabled> 注册 </button>
+	</body>
+</html>
+<script type="text/javascript">
+	var m = angular.module('hd',[]).controller('ctrl',['$scope','$filter',function($scope,$filter){
+		
+	}]);
+
+</script>
+
+
+
+
+

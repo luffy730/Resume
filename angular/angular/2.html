@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="angular.min.js"></script>
+	</head>
+	<body ng-app='hd'>
+		<div ng-controller='ctrl'>{{name}} {{1+99}} {{url}}</div>
+		<div ng-controller='ctrl2'>{{name}}{{url}}
+		
+		</div>
+	</body>
+</html> 
+<script type="text/javascript">
+	//实例出模块
+	var m = angular.module('hd',[]);
+	//定义控制器
+	m.controller('ctrl',['$scope','$rootScope',function($scope,$rootScope){
+		$rootScope.url='baidu.com';
+		//声明作用域中的变量
+		$scope.name='中国人';
+	}]);
+	m.controller('ctrl2',['$scope',function($scope){
+	}]);
+</script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app='hd' ng-controller='ctrl'>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+	</head>
+	<body>
+		<form action="">
+			标题：<input type="text" ng-model="field.title"/>
+			<span ng-bind="title_valid"></span><br >
+			点击数：<input type="text" ng-model="field.click"/><br >
+			<button ng-click="getTitle()"></button>
+		</form>
+	</body>
+</html>
+<script type="text/javascript">
+	//实例出模块
+	var m = angular.module('hd',[]);
+	//定义控制器
+	m.controller('ctrl',['$scope',function($scope){
+		$scope.field={
+			'title':'',
+			'click':0
+		};
+		$scope.$watch('field.title',function(newVal,oldVal){
+			if(newVal.length>3){
+				$scope.title_valid='标题不能大于3位';
+			}else{
+				$scope.title_valid='';
+			}
+		});
+		$scope.$watch('field.click',function(newVal,oldVal){
+			if(newVal>255){
+				$scope.field.click=255;
+			}
+		});
+	}]);
+	
+</script>

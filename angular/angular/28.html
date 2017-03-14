@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="angular-route.min.js"></script>
+	</head>
+	<body ng-app='hd'>
+		<div ng-controller='ctrl'>
+			<a href="#a">1.1.html</a> 
+			<a href="#b">1.2.html</a> 
+			<div ng-view></div> 
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	var m = angular.module('hd',['ngRoute']);
+	m.config(['$routeProvider', function ($routeProvider) { 
+	$routeProvider.when('/a', {
+			templateUrl: '28.1.html',
+			controller: 'ctrl'
+		}).when('/b', { 
+			templateUrl: '28.2.html'  
+		}); 
+	}]); 
+	m.controller('ctrl',['$scope',function($scope){
+		$scope.news = [
+			{title:'百度'},{title:'新浪'}
+		]
+	}]);
+	
+</script>
+
+
+
+
+
+
+
+

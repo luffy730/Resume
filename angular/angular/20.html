@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+	<style>
+		.ng-cloak{display:none;}
+	</style>
+	
+		<body ng-app='hd' ng-controller='ctrl' >
+			<div  ng-cloak class="ng-cloak">
+				<span><h1>title</h1>{{name}}</span>
+			</div>
+		</body>
+	</div>
+</html>
+<script type="text/javascript">
+	var m = angular.module('hd',[]).controller('ctrl',['$scope','$filter',function($scope,$filter){
+		$scope.name='abc';
+	}]);
+
+</script>
+
+
+
+
+

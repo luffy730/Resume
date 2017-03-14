@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app='hd' ng-controller='ctrl'>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+	</head>
+	<body>
+			<input type="text" ng-model='title'/>
+	</body>
+</html>
+<script type="text/javascript">
+	//实例出模块
+	var m = angular.module('hd',[]);
+	//定义控制器
+	m.controller('ctrl',['$scope',function($scope){
+		setTimeout(function(){
+			$scope.title='yahoo';
+			$scope.$apply();
+		},200);
+	}]);
+	
+</script>

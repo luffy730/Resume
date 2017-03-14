@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+	<body ng-app='hd' ng-controller='ctrl'>
+	<select name="cname" ng-options="s.id as s.name for s in data" ng-model="selected">
+		<option value="">请选择</option>
+	</select>
+	</body>
+</html>
+<script type="text/javascript">
+	var m = angular.module('hd',[]).controller('ctrl',['$scope','$filter',function($scope,$filter){
+		$scope.data=[
+			{id:1,name:'lisi'},
+			{id:2,name:'xiaoming'},
+			{id:3,name:'sina'},
+		];
+	}]);
+
+</script>
+
+
+
+
+

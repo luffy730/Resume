@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+		<body ng-app='hd' ng-controller='ctrl' >
+			   <input type="checkbox" ng-model="des"> 填写个人简介<br/>
+			   <div ng-hide="!des">
+			   	简介内容:<textarea name="" id="" cols="30" rows="10"></textarea>
+			   </div>
+		</body>
+	</div>
+</html> 
+<script type="text/javascript">
+	var m = angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+		
+	}]);
+
+</script>
+
+
+
+
+

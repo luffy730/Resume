@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+	<body ng-app='hd' ng-controller='ctrl'>
+	<table border="1">
+		<tr>
+			<th ng-click="orderByField('id')">编号</th>
+			<th ng-click="orderByField('name')">姓名</th>
+		</tr>
+		<tr  ng-repeat="v in data">
+			<td>{{v.id}}</td><td>{{v.name}}</td>
+		</tr>
+	</table>
+	</body>
+</html>
+<script type="text/javascript">
+	status = true;
+	//实例出模块
+	var m = angular.module('hd',[]).controller('ctrl',['$scope','$filter',function($scope,$filter){
+		// $scope.status = status;
+		$scope.data=[
+			{id:1,name:'lisi'},
+			{id:2,name:'xiaoming'},
+			{id:3,name:'sina'},
+		];
+		//重新排序，按field字段来排序
+		$scope.orderByField=function(field){
+			// $scope.status = !$scope.status;
+			arguments.callee[field]=!arguments.callee[field];
+			$scope.data = $filter('orderBy')($scope.data,field,arguments.callee[field]);
+		}
+
+	}]);
+
+</script>
+
+
+
+
+

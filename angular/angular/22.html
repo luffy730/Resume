@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+	<style>
+.style1{color:green;} .style2{font-size:55px;} 
+</style>
+		<body ng-app='hd' ng-controller='ctrl' >
+			   style1  : <input type="checkbox" ng-model="deleted" >
+   style2  : <input type="checkbox" ng-model="important" >
+<div ng-class="{style1:deleted,style2:important}">      baidu.com   </div>
+		</body>
+	</div>
+</html> 
+<script type="text/javascript">
+	var m = angular.module('hd',[]).controller('ctrl',['$scope','$sce',function($scope,$sce){
+		$scope.html=$sce.trustAsHtml('<h1 style="color:red">标题</h1>');
+	}]);
+
+</script>
+
+
+
+
+

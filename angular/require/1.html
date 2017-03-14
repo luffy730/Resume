@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="require.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<button class="btn btn-primary btn-lg">button</button>
+	<textarea id="editor_id" name="content" style="width:700px;height:300px;"></textarea>
+	<script>
+		require(['bootstrap','util','jquery'],function($,util,$){
+			util.keditor('editor_id');
+		});
+	</script>
+</body>
+</html>
+
+
+
+

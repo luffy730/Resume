@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+		<body ng-app='hd' ng-controller='ctrl' >
+			<li ng-repeat="v in data">{{v.name}}</li>
+		</body>
+	</div>
+</html> 
+<script type="text/javascript">
+	var m = angular.module('hd',[]).controller('ctrl',['$scope','$http',function($scope,$http){
+		$http.get('26.php').success(function(res){
+			$scope.data = res;
+		});
+	}]);
+
+</script>
+
+
+
+
+

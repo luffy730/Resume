@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+		<body ng-app='hd' ng-controller='ctrl' >
+			 <input type="radio" ng-model="userType" name="user" value="1">    个人
+<input type="radio" ng-model="userType" name="user" value="2" ng-checked="true">   企业
+			<div ng-if="userType==2  || !userType">
+				<h1>企业用户</h1>
+			</div>
+			<div ng-if="userType==1">
+				<h1>个人用户</h1>
+			</div>
+		</body>
+	</div>
+</html> 
+<script type="text/javascript">
+	var m = angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+		
+	}]);
+
+</script>
+
+
+
+
+

@@ -1,0 +1,12 @@
+<style>
+	div{
+		/* border:solid 1px #999;pa */dding:20px;
+	}
+	div a{background:red;color:#fff;padding:10px;margin-right:10px;}
+	div p{border:solid 1px #999;padding:10px;display:none;}
+	div p:nth-of-type(1){display:block;}
+</style>
+	<div>
+		<a href="javascript:;" ng-repeat="v in data">{{v.title}}</a>
+		<p ng-repeat="v in data">{{v.content}}</p>
+	</div>

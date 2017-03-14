@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+		<body ng-app='hd' ng-controller='ctrl' >
+			<span ng-bind-html="html"></span>
+		</body>
+	</div>
+</html> 
+<script type="text/javascript">
+	var m = angular.module('hd',[]).controller('ctrl',['$scope','$sce',function($scope,$sce){
+		$scope.html=$sce.trustAsHtml('<h1 style="color:red">标题</h1>');
+	}]);
+
+</script>
+
+
+
+
+

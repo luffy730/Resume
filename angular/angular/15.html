@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+	<body ng-app='hd' ng-controller='ctrl'>
+	<li ng-repeat="v in data | orderBy:id:true">
+		{{v.name}}<br/>
+	</li>
+	</body>
+</html>
+<script type="text/javascript">
+	//实例出模块
+	var m = angular.module('hd',[]); 
+	//定义控制器
+	m.controller('ctrl',['$scope',function($scope){
+		$scope.data=[
+			{id:1,name:'lisi'},
+			{id:2,name:'xiaoming'},
+			{id:3,name:'sina'},
+		];
+	}]);
+
+</script>
+
+
+
+
+

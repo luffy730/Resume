@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+	</head>
+	<body ng-app='hd'>
+		<div ng-controller='ctrl'></div>
+		<div ng-controller='news'></div>
+	</body>
+</html>
+<script type="text/javascript">
+	var m = angular.module('hd',[]); 
+	m.factory('news', [ function(){
+		return {
+			one:function(){
+				alert('获取一条');
+			},
+			getAll:function(){
+				alert('获取多条');
+			}
+		}
+	}]);
+	m.controller('ctrl',['$scope','news',function($scope,news){
+		news.one();
+	}]);
+	m.controller('news',['$scope','news',function($scope,news){
+		news.getAll();
+	}]);
+</script>
+
+
+
+
+
+
+
+

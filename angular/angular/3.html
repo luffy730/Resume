@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app='hd' ng-controller='ctrl'>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+	</head>
+	<body ng-cloak="">
+		<input type="text" ng-model="name"/>
+		<h1>sdklsdlksdlk{{name}}</h1>
+		<h2 ng-init="a=12">{{a}}</h2>
+		姓名: {{field.name}} 年龄: {{field.age}}
+		{{handler.getName()}}
+	</body>
+</html>
+<script type="text/javascript">
+	//实例出模块
+	var m = angular.module('hd',[]);
+	//定义控制器
+	m.controller('ctrl',['$scope',function($scope){
+		$scope.name='小明';
+		$scope.field={'name':'12','age':99};
+		$scope.handler={
+			getName:function(){
+				return '后盾';
+			}
+		}
+	}]);
+	
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+	<body ng-app='hd' ng-controller='ctrl'>
+		{{name | uppercase|lowercase}}
+		<h1>{{data.title|limitTo:5:0}}</h1>
+		<span>点击数:{{data.click}}</span>
+	</body>
+</html>
+<script type="text/javascript">
+	//实例出模块
+	var m = angular.module('hd',[]); 
+	//定义控制器
+	m.controller('ctrl',['$scope',function($scope){
+		$scope.name='houdunwang.com';
+		$scope.data={
+			'title':'PHP是一个伟大的语言',
+			'click':300,
+		}
+	}]);
+
+</script>

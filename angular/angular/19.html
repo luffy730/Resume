@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+	<body ng-app='hd' ng-controller='ctrl'>
+	<input type="text" ng-model='word' ng-model-options="{debounce:3000}">
+	<li ng-repeat="v in result">{{v.title}}</li>
+	</body>
+</html>
+<script type="text/javascript">
+	var m = angular.module('hd',[]).controller('ctrl',['$scope','$filter',function($scope,$filter){
+		$scope.$watch('word',function(newVal,oldVal){
+			if(newVal){
+			$.get('19.1.php',{word:$scope.word},function(res){
+				$scope.result = res;
+				$scope.$apply();
+			},'json');
+			}
+		});
+	}]);
+
+</script>
+
+
+
+
+

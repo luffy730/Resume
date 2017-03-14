@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore-min.js"></script>
+	</head>
+	<body ng-app='hd' ng-controller='ctrl'>
+		{{user | encpass}}
+	</body>
+</html>
+<script>
+var m = angular.module('hd', []);
+m.filter('encpass',function(){
+	return function(userData){
+		angular.forEach(userData,function(value,key){
+			userData[key]['tel']=value.tel.substr(0,8)+'***';
+		});
+		return userData; 
+	}
+});
+m.controller('ctrl',['$scope',function($scope){
+	$scope.user=[
+		{user:'  ',tel:'18600276067'},
+		{user:'   ',tel:'13910959565'}
+	]; 
+}]);
+
+</script>
