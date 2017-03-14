@@ -1,0 +1,8 @@
+[ 2016-08-26T00:03:13+08:00 ]EXCEPTION: SELECT  *  FROM blog_article INNER JOIN blog_category ON cid = category_cid ORDER BY  sendtime DESC  LIMIT 5 ;BindParams:array (
+)42S22;1054;Unknown column 'cid' in 'on clause'
+[ 2016-08-26T00:03:38+08:00 ]EXCEPTION: SELECT  *  FROM blog_article INNER JOIN blog_category ON cid = category_cid ORDER BY  sendtime DESC  LIMIT 5 ;BindParams:array (
+)42S22;1054;Unknown column 'cid' in 'on clause'
+[ 2016-08-26T00:08:24+08:00 ]EXCEPTION: SELECT  *  FROM blog_article INNER JOIN blog_category ON c_id = category_cid ORDER BY  sendtime DESC  LIMIT 5 ;BindParams:array (
+)42S22;1054;Unknown column 'category_cid' in 'on clause'
+[ 2016-08-26T00:11:09+08:00 ]EXCEPTION: SELECT  *  FROM blog_article INNER JOIN blog_category ON cid = category_cid ORDER BY  sendtime DESC  LIMIT 5 ;BindParams:array (
+)42S22;1054;Unknown column 'cid' in 'on clause'

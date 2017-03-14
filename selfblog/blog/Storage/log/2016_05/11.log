@@ -1,0 +1,20 @@
+[ 2016-05-11T14:40:15+08:00 ]EXCEPTION: Admin\Controller\IndexController 不存在
+[ 2016-05-11T15:54:53+08:00 ]EXCEPTION: Admin\Controller\LoginController 不存在
+[ 2016-05-11T15:55:29+08:00 ]EXCEPTION: Admin\Controller\LoginController 不存在
+[ 2016-05-11T15:55:35+08:00 ]EXCEPTION: Admin\Controller\LoginController 不存在
+[ 2016-05-11T15:56:05+08:00 ]EXCEPTION: Admin\Controller\LoginController 不存在
+[ 2016-05-11T15:56:08+08:00 ]EXCEPTION: Admin\Controller\LoginController 不存在
+[ 2016-05-11T16:12:21+08:00 ]EXCEPTION: SQLSTATE[42000] [1049] Unknown database 'blog'
+[ 2016-05-11T16:40:50+08:00 ]EXCEPTION: Method Admin\Controller\IndexController::welcom() does not exist
+[ 2016-05-11T16:43:23+08:00 ]NOTICE: Undefined index: usernameE:\wamp\www\GYQ homework\5-10\blog\blog\Storage\view\compile\e25935d41d119f684e703fb7d47c9548.php (66).
+[ 2016-05-11T16:43:54+08:00 ]NOTICE: Undefined offset: 0E:\wamp\www\GYQ homework\5-10\blog\blog\Storage\view\compile\e25935d41d119f684e703fb7d47c9548.php (66).
+[ 2016-05-11T16:45:32+08:00 ]NOTICE: Undefined index: usernameE:\wamp\www\GYQ homework\5-10\blog\blog\Storage\view\compile\e25935d41d119f684e703fb7d47c9548.php (66).
+[ 2016-05-11T16:46:05+08:00 ]NOTICE: Undefined index: usernameE:\wamp\www\GYQ homework\5-10\blog\blog\Storage\view\compile\e25935d41d119f684e703fb7d47c9548.php (66).
+[ 2016-05-11T16:47:06+08:00 ]NOTICE: Undefined index: usernameE:\wamp\www\GYQ homework\5-10\blog\blog\Storage\view\compile\e25935d41d119f684e703fb7d47c9548.php (66).
+[ 2016-05-11T16:54:46+08:00 ]NOTICE: Undefined index: usernameE:\wamp\www\GYQ homework\5-10\blog\blog\Storage\view\compile\e25935d41d119f684e703fb7d47c9548.php (66).
+[ 2016-05-11T16:57:31+08:00 ]NOTICE: Undefined index: usernameE:\wamp\www\GYQ homework\5-10\blog\blog\Storage\view\compile\e25935d41d119f684e703fb7d47c9548.php (66).
+[ 2016-05-11T16:58:30+08:00 ]NOTICE: Undefined index: usernameE:\wamp\www\GYQ homework\5-10\blog\blog\Storage\view\compile\e25935d41d119f684e703fb7d47c9548.php (66).
+[ 2016-05-11T17:05:33+08:00 ]NOTICE: Undefined index: usernameE:\wamp\www\GYQ homework\5-10\blog\blog\Storage\view\compile\e25935d41d119f684e703fb7d47c9548.php (66).
+[ 2016-05-11T17:05:37+08:00 ]NOTICE: Undefined index: usernameE:\wamp\www\GYQ homework\5-10\blog\blog\Storage\view\compile\e25935d41d119f684e703fb7d47c9548.php (66).
+[ 2016-05-11T21:41:43+08:00 ]NOTICE: array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an arrayE:\wamp\www\GYQ homework\5-10\blog\blog\Hdphp\Kernel\Functions.php (36).
+[ 2016-05-11T21:41:43+08:00 ]NOTICE: http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value givenE:\wamp\www\GYQ homework\5-10\blog\blog\Hdphp\Kernel\Functions.php (36).
