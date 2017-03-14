@@ -1,0 +1,179 @@
+[ 2016-06-15T00:11:50+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:11:50+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:12:53+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:12:53+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:30:26+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:30:26+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:39:36+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:39:36+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:41:45+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:41:45+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:44:46+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:44:46+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:49:47+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:49:47+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:53:18+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T00:53:18+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T01:02:18+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T01:02:18+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T06:34:21+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T06:34:21+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T07:26:12+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T07:26:12+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T07:37:15+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T07:37:15+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T07:42:06+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T07:42:06+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-15T08:19:21+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\27dfbd60d443b92731eb83c8a7886759.php (288).
+[ 2016-06-15T09:41:53+08:00 ]EXCEPTION: SELECT  *  FROM orders INNER JOIN orderlist ON order_orid = orid WHERE client_clid=5 GROUP BY orid ;BindParams:array (
+)23000;1052;Column 'client_clid' in where clause is ambiguous
+[ 2016-06-15T09:42:15+08:00 ]EXCEPTION: SELECT  *  FROM orders INNER JOIN orderlist ON order_orid = orid WHERE clid=5 GROUP BY orid ;BindParams:array (
+)42S22;1054;Unknown column 'clid' in 'where clause'
+[ 2016-06-15T14:22:54+08:00 ]NOTICE: Undefined index: nicknameE:\wamp\www\Mall\Storage\view\compile\52448bb8646e4362e75378161f50bbe9.php (18).
+[ 2016-06-15T14:23:43+08:00 ]NOTICE: Undefined index: nicknameE:\wamp\www\Mall\Storage\view\compile\52448bb8646e4362e75378161f50bbe9.php (18).
+[ 2016-06-15T14:28:32+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\27dfbd60d443b92731eb83c8a7886759.php (288).
+[ 2016-06-15T14:35:24+08:00 ]NOTICE: Undefined index: gooods_optionsE:\wamp\www\Mall\Storage\view\compile\27dfbd60d443b92731eb83c8a7886759.php (287).
+[ 2016-06-15T14:35:46+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\27dfbd60d443b92731eb83c8a7886759.php (288).
+[ 2016-06-15T14:37:09+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\27dfbd60d443b92731eb83c8a7886759.php (289).
+[ 2016-06-15T14:37:46+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\27dfbd60d443b92731eb83c8a7886759.php (289).
+[ 2016-06-15T14:43:29+08:00 ]EXCEPTION: SELECT  *  FROM orders INNER JOIN orderlist ON order_orid = orid WHERE client_clid=1 GROUP BY orid ;BindParams:array (
+)23000;1052;Column 'client_clid' in where clause is ambiguous
+[ 2016-06-15T14:44:21+08:00 ]EXCEPTION: SELECT  *  FROM order as o INNER JOIN orderlist ON order_orid = orid WHERE o.client_clid=1 GROUP BY orid ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order as o INNER JOIN orderlist ON order_orid = orid WHERE o.client_clid=1 GROUP' at line 1
+[ 2016-06-15T14:44:38+08:00 ]EXCEPTION: SELECT  *  FROM order as o INNER JOIN orderlist ON order_orid = orid WHERE o.client_clid=1 GROUP BY o.orid ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order as o INNER JOIN orderlist ON order_orid = orid WHERE o.client_clid=1 GROUP' at line 1
+[ 2016-06-15T14:48:58+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Hdphp\Cart\Cart.php (147).
+[ 2016-06-15T15:04:33+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Home\Controller\ListController.php (41).
+[ 2016-06-15T15:04:33+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE goods_gid in() GROUP BY gpvalue ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') GROUP BY gpvalue' at line 1
+[ 2016-06-15T15:11:19+08:00 ]EXCEPTION: Method Admin\Controller\OrderController::show() does not exist
+[ 2016-06-15T15:11:28+08:00 ]EXCEPTION: Method Admin\Controller\OrderController::show() does not exist
+[ 2016-06-15T15:11:32+08:00 ]NOTICE: Missing argument 1 for Hdphp\Db\Mysql::update()E:\wamp\www\Mall\Hdphp\Db\Mysql.php (379).
+[ 2016-06-15T15:11:32+08:00 ]NOTICE: Undefined variable: sqlE:\wamp\www\Mall\Hdphp\Db\Mysql.php (381).
+[ 2016-06-15T15:11:32+08:00 ]NOTICE: Undefined variable: sqlE:\wamp\www\Mall\Hdphp\Db\Mysql.php (396).
+[ 2016-06-15T15:11:32+08:00 ]EXCEPTION:  ;BindParams:array (
+)42000;1065;Query was empty
+[ 2016-06-15T15:13:32+08:00 ]EXCEPTION: Method Admin\Controller\OrderController::send() does not exist
+[ 2016-06-15T16:14:05+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Home\Controller\ListController.php (41).
+[ 2016-06-15T16:14:06+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE goods_gid in() GROUP BY gpvalue ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') GROUP BY gpvalue' at line 1
+[ 2016-06-15T17:01:15+08:00 ]NOTICE: Undefined variable: gpvalueE:\wamp\www\Mall\App\Home\Controller\ListController.php (87).
+[ 2016-06-15T17:54:36+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Hdphp\Cart\Cart.php (147).
+[ 2016-06-15T17:54:48+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-15T17:54:49+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-15T17:55:09+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-15T19:01:15+08:00 ]NOTICE: Undefined index: clidE:\wamp\www\Mall\App\Home\Controller\OrderController.php (163).
+[ 2016-06-15T19:01:15+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-15T19:21:02+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=578_0_0_0_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '578_0_0_0_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T19:21:12+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=573_0_0_0_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '573_0_0_0_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T19:21:17+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=0_0_0_535_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '0_0_0_535_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T19:21:29+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Home\Controller\ListController.php (41).
+[ 2016-06-15T19:21:29+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE goods_gid in() GROUP BY gpvalue ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') GROUP BY gpvalue' at line 1
+[ 2016-06-15T19:21:41+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=0_0_0_0_0_0_537_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '0_0_0_0_0_0_537_0_0' in 'where clause'
+[ 2016-06-15T19:23:46+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=573_0_0_0_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '573_0_0_0_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T19:27:05+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Home\Controller\ListController.php (41).
+[ 2016-06-15T19:27:05+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE goods_gid in() GROUP BY gpvalue ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') GROUP BY gpvalue' at line 1
+[ 2016-06-15T19:27:10+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=378_0_0_0_0_0_0_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '378_0_0_0_0_0_0_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T19:29:23+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=378_0_0_0_0_0_0_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '378_0_0_0_0_0_0_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T19:29:29+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=378_0_0_0_0_0_0_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '378_0_0_0_0_0_0_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T19:30:48+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Home\Controller\ListController.php (41).
+[ 2016-06-15T19:30:48+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE goods_gid in() GROUP BY gpvalue ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') GROUP BY gpvalue' at line 1
+[ 2016-06-15T19:30:54+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=578_0_0_0_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '578_0_0_0_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T19:31:43+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=573_0_0_0_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '573_0_0_0_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T19:42:52+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=573_0_0_0_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '573_0_0_0_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T19:43:23+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=573_0_0_0_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '573_0_0_0_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T19:48:28+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=578_0_0_0_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '578_0_0_0_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T19:49:18+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=573_0_0_0_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '573_0_0_0_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T19:51:18+08:00 ]EXCEPTION: SELECT  *  FROM goods_property WHERE gpid=578_0_0_0_0_0_0_0_0 LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column '578_0_0_0_0_0_0_0_0' in 'where clause'
+[ 2016-06-15T20:30:01+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (383).
+[ 2016-06-15T20:30:01+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (383).
+[ 2016-06-15T20:30:06+08:00 ]NOTICE: Undefined offset: 0E:\wamp\www\Mall\App\Home\Controller\ContentController.php (49).
+[ 2016-06-15T20:30:06+08:00 ]NOTICE: Undefined index: listpicE:\wamp\www\Mall\App\Home\Controller\ContentController.php (51).
+[ 2016-06-15T20:30:06+08:00 ]NOTICE: Undefined index: gnameE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (241).
+[ 2016-06-15T20:30:06+08:00 ]NOTICE: Undefined index: gidE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (241).
+[ 2016-06-15T20:30:06+08:00 ]NOTICE: Undefined index: gnameE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (242).
+[ 2016-06-15T20:30:06+08:00 ]NOTICE: Undefined index: mpriceE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (251).
+[ 2016-06-15T20:30:06+08:00 ]NOTICE: Undefined index: mpriceE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (251).
+[ 2016-06-15T20:33:31+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T20:33:31+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T20:45:22+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T20:45:22+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T20:45:35+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T20:45:35+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:06:30+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:06:30+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:08:16+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:08:16+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:08:29+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:08:29+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:10:40+08:00 ]NOTICE: Undefined index: valueE:\wamp\www\Mall\Hdphp\View\HdphpTag.php (154).
+[ 2016-06-15T21:18:35+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:18:35+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:23:36+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:23:36+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:23:42+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:23:42+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:24:14+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:24:14+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:24:19+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:24:19+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:24:36+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:24:36+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:24:41+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:24:41+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:30:16+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (386).
+[ 2016-06-15T21:30:16+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (386).
+[ 2016-06-15T21:31:00+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (386).
+[ 2016-06-15T21:31:00+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (386).
+[ 2016-06-15T21:32:04+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (387).
+[ 2016-06-15T21:32:04+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (387).
+[ 2016-06-15T21:34:56+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (386).
+[ 2016-06-15T21:34:56+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (386).
+[ 2016-06-15T21:36:44+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:36:44+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:36:49+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T21:36:49+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T22:30:52+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T22:30:52+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (382).
+[ 2016-06-15T22:45:40+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (384).
+[ 2016-06-15T22:45:40+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (384).
+[ 2016-06-15T22:48:01+08:00 ]NOTICE: Undefined offset: 0E:\wamp\www\Mall\App\Home\Controller\ContentController.php (57).
+[ 2016-06-15T22:48:01+08:00 ]NOTICE: Undefined index: listpicE:\wamp\www\Mall\App\Home\Controller\ContentController.php (59).
+[ 2016-06-15T22:48:01+08:00 ]NOTICE: Undefined index: gnameE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (241).
+[ 2016-06-15T22:48:01+08:00 ]NOTICE: Undefined index: gidE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (241).
+[ 2016-06-15T22:48:01+08:00 ]NOTICE: Undefined index: gnameE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (242).
+[ 2016-06-15T22:48:01+08:00 ]NOTICE: Undefined index: mpriceE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (251).
+[ 2016-06-15T22:48:01+08:00 ]NOTICE: Undefined index: mpriceE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (251).
+[ 2016-06-15T22:48:01+08:00 ]NOTICE: Undefined index: detailE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (725).
+[ 2016-06-15T22:48:20+08:00 ]NOTICE: Undefined offset: 0E:\wamp\www\Mall\App\Home\Controller\ContentController.php (57).
+[ 2016-06-15T22:48:20+08:00 ]NOTICE: Undefined index: listpicE:\wamp\www\Mall\App\Home\Controller\ContentController.php (59).
+[ 2016-06-15T22:48:20+08:00 ]NOTICE: Undefined index: gnameE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (241).
+[ 2016-06-15T22:48:20+08:00 ]NOTICE: Undefined index: gidE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (241).
+[ 2016-06-15T22:48:20+08:00 ]NOTICE: Undefined index: gnameE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (242).
+[ 2016-06-15T22:48:20+08:00 ]NOTICE: Undefined index: mpriceE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (251).
+[ 2016-06-15T22:48:20+08:00 ]NOTICE: Undefined index: mpriceE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (251).
+[ 2016-06-15T22:48:20+08:00 ]NOTICE: Undefined index: detailE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (725).
+[ 2016-06-15T22:49:15+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (384).
+[ 2016-06-15T22:49:15+08:00 ]NOTICE: Undefined index: cartE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (384).

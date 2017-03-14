@@ -1,0 +1,131 @@
+[ 2016-06-26T10:25:39+08:00 ]NOTICE: Undefined variable: bidE:\wamp\www\Mall\App\Home\Controller\ListController.php (38).
+[ 2016-06-26T14:09:54+08:00 ]NOTICE: Undefined offset: 0E:\wamp\www\Mall\Storage\view\compile\27dfbd60d443b92731eb83c8a7886759.php (159).
+[ 2016-06-26T14:09:54+08:00 ]NOTICE: Undefined variable: vE:\wamp\www\Mall\Storage\view\compile\27dfbd60d443b92731eb83c8a7886759.php (454).
+[ 2016-06-26T14:09:54+08:00 ]NOTICE: Undefined variable: vE:\wamp\www\Mall\Storage\view\compile\27dfbd60d443b92731eb83c8a7886759.php (456).
+[ 2016-06-26T14:09:54+08:00 ]NOTICE: Undefined offset: 0E:\wamp\www\Mall\Storage\view\compile\27dfbd60d443b92731eb83c8a7886759.php (470).
+[ 2016-06-26T14:09:54+08:00 ]NOTICE: Undefined offset: 0E:\wamp\www\Mall\Storage\view\compile\27dfbd60d443b92731eb83c8a7886759.php (471).
+[ 2016-06-26T14:39:17+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-26T14:41:05+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-26T14:42:43+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-26T14:45:21+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-26T14:54:51+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-26T14:56:29+08:00 ]EXCEPTION: INSERT INTO receiptaddress (`rid`,`consignee`,`order_orid`,`province`,`city`,`area`,`FullAddress`,`rphone`,`rfixphone`,`client_clid`)VALUES(?,?,?,?,?,?,?,?,?,?) ;BindParams:array (
+  0 => '183',
+  1 => 'ujyuiy',
+  2 => '56',
+  3 => '河北',
+  4 => '石家庄',
+  5 => '新华区',
+  6 => '天之涯小区90-09-1902',
+  7 => '15832033212',
+  8 => '87724753',
+  9 => '5',
+)23000;1062;Duplicate entry '183' for key 'PRIMARY'
+[ 2016-06-26T14:59:38+08:00 ]EXCEPTION: INSERT INTO receiptaddress (`rid`,`consignee`,`order_orid`,`province`,`city`,`area`,`FullAddress`,`rphone`,`rfixphone`,`client_clid`)VALUES(?,?,?,?,?,?,?,?,?,?) ;BindParams:array (
+  0 => '183',
+  1 => '谷永庆',
+  2 => '56',
+  3 => '河北',
+  4 => '石家庄',
+  5 => '新华区',
+  6 => '肖家营新区 6-1-1003',
+  7 => '15832033212',
+  8 => '87724753',
+  9 => '5',
+)23000;1062;Duplicate entry '183' for key 'PRIMARY'
+[ 2016-06-26T15:02:47+08:00 ]EXCEPTION: INSERT INTO receiptaddress (`rid`,`consignee`,`order_orid`,`province`,`city`,`area`,`FullAddress`,`rphone`,`rfixphone`,`client_clid`)VALUES(?,?,?,?,?,?,?,?,?,?) ;BindParams:array (
+  0 => '183',
+  1 => '',
+  2 => '56',
+  3 => '河北',
+  4 => '石家庄',
+  5 => '新华区',
+  6 => '',
+  7 => '',
+  8 => '',
+  9 => '5',
+)23000;1062;Duplicate entry '183' for key 'PRIMARY'
+[ 2016-06-26T15:19:25+08:00 ]EXCEPTION: INSERT INTO receiptaddress (`rid`,`consignee`,`order_orid`,`province`,`city`,`area`,`FullAddress`,`rphone`,`rfixphone`,`client_clid`)VALUES(?,?,?,?,?,?,?,?,?,?) ;BindParams:array (
+  0 => '183',
+  1 => '',
+  2 => '56',
+  3 => '河北',
+  4 => '石家庄',
+  5 => '新华区',
+  6 => '',
+  7 => '',
+  8 => '',
+  9 => '5',
+)23000;1062;Duplicate entry '183' for key 'PRIMARY'
+[ 2016-06-26T15:31:07+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-26T15:31:13+08:00 ]EXCEPTION: INSERT INTO receiptaddress (`rid`,`consignee`,`order_orid`,`province`,`city`,`area`,`FullAddress`,`rphone`,`rfixphone`,`client_clid`)VALUES(?,?,?,?,?,?,?,?,?,?) ;BindParams:array (
+  0 => '183',
+  1 => '',
+  2 => '56',
+  3 => '河北',
+  4 => '石家庄',
+  5 => '新华区',
+  6 => '',
+  7 => '',
+  8 => '',
+  9 => '5',
+)23000;1062;Duplicate entry '183' for key 'PRIMARY'
+[ 2016-06-26T17:08:00+08:00 ]EXCEPTION: INSERT INTO receiptaddress (`rid`,`consignee`,`order_orid`,`province`,`city`,`area`,`FullAddress`,`rphone`,`rfixphone`,`client_clid`)VALUES(?,?,?,?,?,?,?,?,?,?) ;BindParams:array (
+  0 => '183',
+  1 => '',
+  2 => '56',
+  3 => '河北',
+  4 => '石家庄',
+  5 => '新华区',
+  6 => '',
+  7 => '',
+  8 => '',
+  9 => '5',
+)23000;1062;Duplicate entry '183' for key 'PRIMARY'
+[ 2016-06-26T17:11:29+08:00 ]EXCEPTION: INSERT INTO receiptaddress (`rid`,`consignee`,`order_orid`,`province`,`city`,`area`,`FullAddress`,`rphone`,`rfixphone`,`client_clid`)VALUES(?,?,?,?,?,?,?,?,?,?) ;BindParams:array (
+  0 => '185',
+  1 => '',
+  2 => '56',
+  3 => '河北',
+  4 => '石家庄',
+  5 => '新华区',
+  6 => '',
+  7 => '',
+  8 => '',
+  9 => '5',
+)23000;1062;Duplicate entry '185' for key 'PRIMARY'
+[ 2016-06-26T17:13:00+08:00 ]NOTICE: Use of undefined constant post - assumed 'post'E:\wamp\www\Mall\App\Home\Controller\OrderController.php (110).
+[ 2016-06-26T17:13:00+08:00 ]NOTICE: Use of undefined constant rid - assumed 'rid'E:\wamp\www\Mall\App\Home\Controller\OrderController.php (110).
+[ 2016-06-26T17:15:37+08:00 ]EXCEPTION: INSERT INTO receiptaddress (`rid`,`consignee`,`order_orid`,`province`,`city`,`area`,`FullAddress`,`rphone`,`rfixphone`,`client_clid`)VALUES(?,?,?,?,?,?,?,?,?,?) ;BindParams:array (
+  0 => '185',
+  1 => '',
+  2 => '56',
+  3 => '河北',
+  4 => '石家庄',
+  5 => '新华区',
+  6 => '',
+  7 => '',
+  8 => '',
+  9 => '5',
+)23000;1062;Duplicate entry '185' for key 'PRIMARY'
+[ 2016-06-26T19:36:18+08:00 ]NOTICE: Undefined index: clidE:\wamp\www\Mall\App\Home\Controller\OrderController.php (166).
+[ 2016-06-26T19:36:19+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= ORDER BY  order_orid DESC  ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY  order_orid DESC' at line 1
+[ 2016-06-26T19:36:37+08:00 ]NOTICE: Undefined index: clidE:\wamp\www\Mall\App\Home\Controller\OrderController.php (166).
+[ 2016-06-26T19:36:37+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= ORDER BY  order_orid DESC  ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY  order_orid DESC' at line 1
+[ 2016-06-26T20:07:06+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-26T22:46:06+08:00 ]NOTICE: Undefined index: clidE:\wamp\www\Mall\App\Home\Controller\OrderController.php (166).
+[ 2016-06-26T22:46:06+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= ORDER BY  order_orid DESC  ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY  order_orid DESC' at line 1
+[ 2016-06-26T22:59:40+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-26T23:00:44+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1

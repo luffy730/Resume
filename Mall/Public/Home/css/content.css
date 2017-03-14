@@ -1,0 +1,1301 @@
+body {
+  font: 12px/1.5 Arial;
+  color: #333;
+}
+em {
+  font-style: normal;
+}
+a {
+  color: #134ba0;
+  text-decoration: none;
+}
+.zs-wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
+.zs-wrapper .zs-bread-crumbs {
+  margin: 0 0 0 -8px;
+  font: 12px/32px SimSun;
+  color: #999;
+}
+.zs-wrapper .zs-bread-crumbs a {
+  color: #333;
+  margin: 0 8px;
+}
+.zs-wrapper .zs-inner {
+  border: 1px solid #ededed;
+  overflow: hidden;
+}
+.zs-wrapper .zs-inner .zs-deal-detail {
+  float: left;
+  width: 1000px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus {
+  float: left;
+  padding: 10px 0 0 20px;
+  width: 400px;
+  position: relative;
+  z-index: 8;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-big-pic img {
+  display: block;
+  margin: 0 0 10px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb {
+  position: relative;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list {
+  position: relative;
+  height: 70px;
+  overflow: hidden;
+  width: 400px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list ul {
+  width: 415px;
+  padding: 0 0 0 1px;
+  overflow: hidden;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list li {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin: 0 12px 0 0;
+  position: relative;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list li img {
+  display: block;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list .hover .border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 66px;
+  height: 66px;
+  border: 2px solid #c00;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-action {
+  padding: 25px 0;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-action .zs-collect {
+  float: left;
+  position: relative;
+  margin: 0 15px 0 0;
+  padding: 0 0 0 20px;
+  line-height: 22px;
+  color: #666;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-action .zs-collect i {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 22px;
+  opacity: 0.25;
+  background: url(../images/17.png) no-repeat -46px -290px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-action .zs-share-box {
+  float: left;
+  position: relative;
+  line-height: 22px;
+  color: #666;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-action .zs-share-box .zs-complain {
+  float: left;
+  position: relative;
+  margin: 0 15px 0 0;
+  padding: 0 0 0 20px;
+  line-height: 22px;
+  color: #666;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-focus .zs-action .zs-share-box .zs-complain i {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 22px;
+  opacity: 0.25;
+  background: url(../images/17.png) no-repeat -46px -314px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap {
+  float: right;
+  padding: 10px 20px 0 0;
+  width: 530px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-commodity-title {
+  padding: 7px 0 0;
+  font: 16px/22px "Microsoft YaHei";
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel {
+  margin: 18px 0 0;
+  padding: 4px 10px;
+  background: url(../images/18.png) no-repeat;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel dl {
+  padding: 0 0 0 70px;
+  position: relative;
+  zoom: 1;
+  line-height: 32px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel dt {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 65px;
+  color: #999;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel dd {
+  overflow: hidden;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel .zs-price {
+  float: left;
+  margin: -2px 0 0;
+  height: 32px;
+  overflow: hidden;
+  font-size: 16px;
+  vertical-align: middle;
+  color: #c00;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-price-panel .zs-price em {
+  padding: 0 0 0 5px;
+  font-family: tahoma;
+  font-size: 30px;
+  font-weight: bold;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor {
+  padding: 10px 0 20px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor dl {
+  position: relative;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight-a {
+  height: 24.6px;
+  margin: 0 10px;
+  padding: 5px 0 0;
+  z-index: 2;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight-a dt {
+  top: 0;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor dt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  line-height: 32px;
+  color: #666;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor dd {
+  padding: 0 0 0 65px;
+  line-height: 32px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight-area {
+  float: left;
+  position: relative;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight-area .area-selected-wrap {
+  line-height: 23px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight-area .area-selected-wrap .area-selected {
+  position: relative;
+  float: left;
+  z-index: 5;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight-area .area-selected-wrap .area-selected .area-name {
+  position: relative;
+  display: inline-block;
+  height: 23px;
+  border: 1px solid #e6e6e6;
+  padding: 0 20px 0 6px;
+  line-height: 23px;
+  cursor: pointer;
+  z-index: 6;
+  background-color: #fff;
+  background: url(../images/19.png) no-repeat 100% 0;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight-area .area-selected-wrap .area-selected-infor {
+  margin-left: 10px;
+  float: left;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight-area .area-selected-wrap .area-selected-infor .bold {
+  font-weight: bold;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-evaluate {
+  margin: 5px 10px 0;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-evaluate dd em {
+  color: #f33;
+  font-weight: bold;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-evaluate dd a {
+  color: #333;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-evaluate .line {
+  padding: 0 10px;
+  color: #e6e6e6;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-service-bar {
+  height: 61px;
+  margin: 0 10px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-service-bar .link {
+  color: #36c;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-service-bar li {
+  float: left;
+  position: relative;
+  margin: 0 0 5px;
+  padding: 0 0 0 28px;
+  width: 82px;
+  height: 24px;
+  font: 12px/22px "Microsoft YaHei";
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-service-bar li a {
+  text-decoration: none;
+  color: #333;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-service-bar .iconfont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 22px;
+  line-height: 20px;
+  color: #00ae75;
+  font-style: normal;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner {
+  margin: 10px 10px 15px;
+  border-top: 1px solid #f2f2f2;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-colour-type {
+  height: 37px;
+  padding: 15px 0 0;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-colour-type dt {
+  top: 20px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-colour-type .zs-options li {
+  float: left;
+  margin: 5px 6px 0 0;
+  position: relative;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-colour-type .zs-options li span {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 0 10px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #e6e6e6;
+  color: #333;
+}
+
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-colour-type .zs-options .cur:first-child span i {
+  display: block;
+  position: absolute;
+  right: 1px;
+  bottom: 2px;
+  width: 10px;
+  height: 10px;
+  background: url(../images/bg.png) no-repeat 0 -346px;
+  font: 0/0 arial;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit {
+  padding: 15px 0 0;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit dt {
+  top: 20px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit dt {
+  position: absolute;
+  left: 0;
+  height: 32px;
+  line-height: 32px;
+  color: #666;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit dd {
+  padding: 0 0 0 65px;
+  line-height: 32px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit dd .zs-options {
+  height: 37px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit dd .zs-options li {
+  float: left;
+
+  margin: 5px 6px 0 0;
+  position: relative;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit dd .zs-options li span {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 0 10px;
+  height: 28px;
+  line-height: 28px;
+
+  border: 2px solid #e6e6e6;
+  
+  color: #333;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit dd .zs-options li i {
+  display: none;
+
+  position: absolute;
+  right: 1px;
+  bottom: 2px;
+  width: 10px;
+  height: 10px;
+  background: url(../images/bg.png) no-repeat 0 -346px;
+  font: 0/0 arial;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit dd .zs-options .cur:first-child .can-buy {
+  padding: 0 9px;
+  height: 26px;
+  line-height: 26px;
+  border: 2px solid #c00;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-suit dd .zs-suit-infor {
+  margin: 5px 0 0;
+  padding: 8px 10px;
+  border: 1px solid #e6e6e6;
+  background: #fafafa;
+  line-height: 20px;
+}
+#list{
+	  margin: 5px 0 0;
+  padding: 8px 10px;
+  border: 1px solid #e6e6e6;
+  background: #fafafa;
+  line-height: 20px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-quantity {
+  height: 32px;
+  padding: 20px 0 0;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-quantity dt {
+  top: 20px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-quantity dd {
+  color: #999;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-quantity dd .amount-widget {
+  float: left;
+  margin: 0 10px 0 0;
+  width: 102px;
+  height: 28px;
+  border: 1px solid #e6e6e6;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-quantity dd .amount-widget .zs-decrease,
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-quantity dd .amount-widget .zs-no-decrease {
+  float: left;
+  width: 28px;
+  height: 28px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  background: url(../images/bg.png) no-repeat;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-quantity dd .amount-widget .zs-decrease {
+  background-position: 0 -197px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-quantity dd .amount-widget .zs-goods-number {
+  float: left;
+  width: 44px;
+  height: 28px;
+  text-align: center;
+  font: 12px/28px "Microsoft YaHei";
+  border: 0 none;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  color: #333;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-quantity dd .amount-widget .zs-increase,
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-quantity dd .amount-widget .zs-no-increase {
+  float: left;
+  width: 28px;
+  height: 28px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  background: url(../images/bg.png) no-repeat;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-quantity dd .amount-widget .zs-no-increase {
+  background-position: -32px -197px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-quantity .zs-part {
+  float: left;
+  padding: 0 10px 0 0;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-deal-btn {
+  padding: 30px 0 0 65px;
+  height: 50px;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-deal-btn .zs-buy-now {
+  width: 140px;
+  height: 50px;
+  color: #fff;
+  background: #c00;
+  float: left;
+  margin: 0 10px 0 0;
+  border-radius: 2px;
+  font: 18px/50px "Microsoft YaHei";
+  text-align: center;
+}
+.zs-wrapper .zs-inner .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-deal-btn .zs-store-buy {
+  width: 138px;
+  height: 48px;
+  border: 1px solid #ffd9d9;
+  background-color: #ffeded;
+  color: #c00;
+  line-height: 48px;
+  float: left;
+  margin: 0 10px 0 0;
+  border-radius: 2px;
+  font: 18px/50px "Microsoft YaHei";
+  text-align: center;
+}
+.zs-wrapper .zs-inner .zs-store-infor {
+  float: right;
+  margin: 0 0 -500px;
+  padding: 0 0 500px;
+  width: 197px;
+  border-left: 1px solid #ededed;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-store-name {
+  padding: 26px 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-store-name h3 {
+  font: 14px/22px "Microsoft YaHei";
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-modbox {
+  margin: 0;
+  padding: 0 15px;
+  border: 0 none;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-modbox-hd {
+  padding: 0;
+  border: 0 none;
+  background: none;
+  font-size: 12px;
+  color: #999;
+  height: 32px;
+  font: 13px/32px "Microsoft YaHei";
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-custom-service li {
+  height: 25px;
+  padding: 3px 0;
+  color: #666;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-custom-service a {
+  float: left;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-custom-service img {
+  margin: 0 6px 0 0;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-custom-service span {
+  float: left;
+  line-height: 24px;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-contact-way {
+  padding: 5px 0 0;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-contact-way li {
+  position: relative;
+  padding: 5px 0 5px 60px;
+  color: #666;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-contact-way .zs-label {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  display: block;
+  color: #999;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-store-score li {
+  font: 12px/24px "Microsoft YaHei";
+  color: #999;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-store-score .below {
+  color: #0b880f;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-store-score em {
+  padding: 0 15px 0 0;
+  font-weight: bold;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-store-score .flat {
+  color: #c00;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-collect-box {
+  margin: 22px 0 0;
+  text-align: center;
+}
+.zs-wrapper .zs-inner .zs-store-infor .zs-collect-box .zs-btn {
+  display: inline-block;
+  margin: 0 4px;
+  width: 77px;
+  height: 28px;
+  font: 14px/28px "Microsoft YaHei";
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  background: #fafafa;
+  color: #666;
+}
+.zs-wrapper .zs-box {
+  margin: 10px 0 0;
+  height: 303.4px;
+  border: 1px solid #ededed;
+}
+.zs-wrapper .zs-box .zs-modbox-hd {
+  padding: 0 10px;
+  height: 32px;
+  font: 14px/32px "Microsoft YaHei";
+  border-bottom: 1px solid #ededed;
+  background: #fafafa;
+}
+.zs-wrapper .zs-box .zs-product-list {
+  padding: 0 0 0 17px;
+}
+.zs-wrapper .zs-box .zs-product-list li {
+  float: left;
+  padding: 20px 22px 22px;
+  width: 150px;
+}
+.zs-wrapper .zs-box .zs-product-list li a {
+  display: block;
+  color: #333;
+}
+.zs-wrapper .zs-box .zs-product-list .zs-pic {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.zs-wrapper .zs-box .zs-product-list .zs-pic img {
+  vertical-align: middle;
+}
+.zs-wrapper .zs-box .zs-product-list .zs-title {
+  display: block;
+  padding: 13px 0 0;
+  height: 32px;
+  overflow: hidden;
+  font: 12px/16px "Microsoft YaHei";
+  cursor: pointer;
+}
+.zs-wrapper .zs-box .zs-product-list .zs-price {
+  padding: 4px 0 0;
+  height: 30px;
+  overflow: hidden;
+  font: 12px/30px Verdana;
+  color: #f33;
+}
+.zs-wrapper .zs-box .zs-product-list .zs-price span {
+  font-size: 18px;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.wrapper .zs-side {
+  float: left;
+  width: 200px;
+}
+.wrapper .zs-side .zs-modbox {
+  margin: 10px 0 0;
+  border: 1px solid #ededed;
+}
+.wrapper .zs-side .zs-modbox .zs-modbox-hd {
+  padding: 0 10px;
+  height: 32px;
+  font: 14px/32px "Microsoft YaHei";
+  border-bottom: 1px solid #ededed;
+  background: #fafafa;
+}
+.wrapper .zs-side .zs-modbox .searchgoods {
+  padding: 10px 15px;
+}
+.wrapper .zs-side .zs-modbox .searchgoods dl {
+  position: relative;
+  margin: 0 0 6px;
+  padding: 0 0 0 48px;
+}
+.wrapper .zs-side .zs-modbox .searchgoods dt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26px;
+  line-height: 26px;
+  color: #666;
+}
+.wrapper .zs-side .zs-modbox .searchgoods dd {
+  overflow: hidden;
+}
+.wrapper .zs-side .zs-modbox .searchgoods .text {
+  float: left;
+  padding: 3px 5px;
+  width: 104px;
+  height: 18px;
+  line-height: 18px;
+  border: 1px solid #e6e6e6;
+}
+.wrapper .zs-side .zs-modbox .searchgoods .searchprice .text {
+  width: 36px;
+  padding: 3px 5px;
+  height: 18px;
+  line-height: 18px;
+  float: left;
+  border: 1px solid #e6e6e6;
+}
+.wrapper .zs-side .zs-modbox .searchgoods .searchprice span {
+  float: left;
+  padding: 0 4px;
+  line-height: 26px;
+  color: #666;
+}
+.wrapper .zs-side .zs-modbox .searchgoods .goodsbtn {
+  display: block;
+  margin: 0 0 0 48px;
+  width: 60px;
+  height: 26px;
+  border: 1px solid #d9d9d9;
+  background: #f7f7f7;
+  font: bold 12px/26px arial;
+  cursor: pointer;
+}
+.wrapper .zs-side .zs-modbox {
+  margin: 10px 0 0;
+  border: 1px solid #ededed;
+}
+.wrapper .zs-side .zs-modbox .zs-modbox-hd {
+  padding: 0 10px;
+  height: 32px;
+  font: 14px/32px "Microsoft YaHei";
+  border-bottom: 1px solid #ededed;
+  background: #fafafa;
+}
+.wrapper .zs-side .zs-modbox .goods-category .all-goods {
+  margin: 0;
+}
+.wrapper .zs-side .zs-modbox .goods-category .all-goods .dt {
+  background: #fff;
+  border: 0 none;
+  font-weight: bold;
+}
+.wrapper .zs-side .zs-modbox .goods-category .all-goods a {
+  color: #333;
+}
+.wrapper .zs-side .zs-modbox .goods-category .all-goods dd {
+  display: block;
+  padding: 0 0 7px 37px;
+  line-height: 18px;
+}
+.wrapper .zs-side .zs-modbox .goods-category .all-goods dd a {
+  margin: 0 14px 0 0;
+}
+.wrapper .zs-side .zs-modbox .goods-category dt {
+  padding: 0 0 0 37px;
+  height: 34px;
+  font: 14px/34px "Microsoft YaHei";
+  background-position: -23px -570px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  cursor: pointer;
+  background: url(../images/17.png) no-repeat;
+}
+.wrapper .zs-side .zs-modbox .goods-category dd {
+  display: none;
+  padding: 5px 0;
+  line-height: 22px;
+}
+.wrapper .zs-side .zs-modbox .goods-category dl {
+  margin: -1px 0;
+}
+.wrapper .zs-side .zs-modbox .goods-category .unfold dt {
+  background-position: -23px -602px;
+}
+.wrapper .zs-side .zs-modbox .goods-category .unfold dt h3 {
+  font: 14px/34px "Microsoft YaHei";
+}
+.wrapper .zs-side .zs-modbox .goods-category .unfold dd {
+  display: block;
+}
+.wrapper .zs-side .zs-modbox .goods-category ul {
+  padding: 0 0 0 43px;
+}
+.wrapper .zs-side .zs-modbox .goods-category li {
+  padding: 0 0 0 10px;
+  line-height: 22px;
+  background-position: -56px -468px;
+}
+.wrapper .zs-side .zs-modbox .goods-category a {
+  color: #666;
+}
+.wrapper .zs-side .zs-modbox .zs-sales-news {
+  padding: 0 10px 6px;
+  overflow: hidden;
+  position: relative;
+}
+.wrapper .zs-side .zs-modbox .zs-sales-news li {
+  margin: -1px 0 0;
+  padding: 10px 0;
+  border-top: 1px solid #f2f2f2;
+}
+.wrapper .zs-side .zs-modbox .zs-sales-news li a {
+  color: #333;
+}
+.wrapper .zs-side .zs-modbox .zs-sales-news li .title {
+  display: block;
+  height: 36px;
+  line-height: 18px;
+  overflow: hidden;
+}
+.wrapper .zs-side .zs-modbox .zs-sales-news .zs-price {
+  height: 22px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #999;
+}
+.wrapper .zs-side .zs-modbox .zs-sales-news .zs-sale-price {
+  color: #c00;
+  font-weight: bold;
+}
+.wrapper .zs-side .zs-modbox .zs-sales-news .zs-sale-price em {
+  padding: 0 0 0 5px;
+  font-family: tahoma;
+}
+.wrapper .zs-side .zs-modbox .side-tab {
+  padding: 0 15px;
+}
+.wrapper .zs-side .zs-modbox .side-tab .current {
+  border-bottom: 1px solid #f60;
+}
+.wrapper .zs-side .zs-modbox .side-tab li {
+  float: left;
+  width: 84px;
+  height: 33px;
+  border-bottom: 1px solid #e6e6e6;
+  font: 14px/33px "Microsoft YaHei";
+  text-align: center;
+  cursor: pointer;
+}
+.wrapper .zs-side .zs-modbox .ranking-list {
+  position: relative;
+  overflow: hidden;
+  padding: 0 15px;
+}
+.wrapper .zs-side .zs-modbox .ranking-list li {
+  position: relative;
+  margin: -1px 0 0;
+  padding: 8px 0 8px 77px;
+  height: 60px;
+  overflow: hidden;
+  border-top: 1px dotted #e6e6e6;
+}
+.wrapper .zs-side .zs-modbox .ranking-list .pic {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.wrapper .zs-side .zs-modbox .ranking-list .pic img {
+  display: block;
+  border: 1px solid #e6e6e6;
+}
+.wrapper .zs-side .zs-modbox .ranking-list .title {
+  height: 18px;
+  overflow: hidden;
+  font: 12px/18px arial;
+}
+.wrapper .zs-side .zs-modbox .ranking-list .price {
+  display: block;
+  padding: 1px 0;
+  font: bold 14px/22px "Verdana";
+  color: #f4214c;
+}
+.wrapper .zs-side .zs-modbox .ranking-list .sale-number {
+  font: 12px/18px arial;
+  color: #666;
+}
+.wrapper .zs-side .zs-modbox .ranking-list .sale-number em {
+  color: #c97;
+  font-weight: bold;
+}
+.wrapper .zs-main {
+  float: right;
+  width: 990px;
+  position: relative;
+}
+.wrapper .zs-main .zs-tabbar {
+  width: 990px;
+}
+.wrapper .zs-main .zs-tabbar ul {
+  margin: 10px 0 0;
+  height: 36px;
+  border: 1px solid #ededed;
+  background: #fafafa;
+}
+.wrapper .zs-main .zs-tabbar li {
+  float: left;
+  border-right: 1px solid #ededed;
+}
+.wrapper .zs-main .zs-tabbar li a {
+  padding: 0 15px;
+  display: block;
+  color: #333;
+  font: 14px/36px "Microsoft YaHei";
+  white-space: nowrap;
+}
+.wrapper .zs-main .zs-tabbar li em {
+  padding: 0 0 0 5px;
+  font-weight: bold;
+  color: #c00;
+}
+.wrapper .zs-main .zs-tabbar li .phone-purchase {
+  position: relative;
+}
+.wrapper .zs-main .zs-tabbar li .phone-purchase .ico {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  width: 5px;
+  height: 3px;
+  background: url(../images/17.png) no-repeat 0 -1241px;
+}
+.wrapper .zs-main .zs-tabbar li .phone-purchase a {
+  position: relative;
+  zoom: 1;
+  padding: 0 25px 0 38px;
+  background: url(../images/17.png) no-repeat -24px -1230px;
+  color: #c00;
+}
+.wrapper .zs-main .zs-tabbar li .phone-purchase .code {
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: -1px;
+  padding: 10px 14px;
+  width: 91px;
+  border: 1px solid #ededed;
+  border-top-color: #fff;
+  background: #fff;
+  z-index: 1;
+}
+.wrapper .zs-main .zs-tabbar li .phone-purchase .code img {
+  display: block;
+}
+.wrapper .zs-main .zs-tabbar .cur {
+  margin: -1px 0 -1px -1px;
+  padding: 0 0 2px;
+  position: relative;
+  height: 34px;
+  background: #fff;
+  border: 1px solid #ededed;
+  border-top: 2px solid #c00;
+  border-bottom: 0 none;
+}
+.wrapper .zs-main .zs-tabbar .cur a {
+  display: block;
+  font: 14px/34px "Microsoft YaHei";
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .zs-main .zs-container {
+  float: left;
+  width: 790px;
+}
+.wrapper .zs-main .zs-container .zs-goods-detail .zs-attributes-list {
+  margin: 10px 0 0;
+}
+.wrapper .zs-main .zs-container .zs-goods-detail .zs-attributes-list li {
+  margin: 0 0 8px;
+  padding: 4px 0;
+  font: 12px/22px "Microsoft YaHei";
+}
+.wrapper .zs-main .zs-container .zs-goods-detail .zs-attributes-list span {
+  font-weight: bold;
+}
+.wrapper .zs-main .zs-container .zs-goods-detail .sevice-banner {
+  width: 790px;
+  background: url(../images/21.png) no-repeat;
+}
+.wrapper .zs-main .zs-container .zs-goods-detail .sevice-title {
+  width: 790px;
+  height: 33px;
+  background: url(../images/22.png);
+  font: 20px/33px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+}
+.wrapper .zs-main .zs-container .zs-goods-detail .sevice-title .title {
+  display: inline-block;
+  padding: 0 0 0 10px;
+  width: 160px;
+  text-align: center;
+  color: #c00;
+}
+.wrapper .zs-main .zs-container .zs-goods-detail .sevice-title .english-title {
+  display: inline-block;
+  padding: 0 0 0 50px;
+  color: #fff;
+}
+.wrapper .zs-main .zs-container .zs-goods-detail .service-content {
+  padding: 10px 0px;
+  font: 14px/24px "Microsoft YaHei";
+  color: #646464;
+}
+.wrapper .zs-main .zs-container .zs-goods-detail .service-content .zs-goods-content {
+  width: 790px;
+  overflow: hidden;
+}
+.wrapper .zs-main .zs-container .zs-goods-detail .service-content .zs-goods-content p {
+  padding: 0;
+}
+.wrapper .zs-main .zs-container .zs-comment-mod {
+  margin: 10px 0 0;
+}
+.wrapper .zs-main .zs-container .zs-comment-mod .detail-head .title {
+  position: relative;
+  height: 30px;
+  padding-left: 14px;
+  line-height: 30px;
+  background-color: #c00;
+}
+.wrapper .zs-main .zs-container .zs-comment-mod .detail-head .title h4 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 100;
+}
+.wrapper .zs-main .zs-container .zs-comment-mod .detail-head .detail-head-filter {
+  padding: 10px 15px 0 15px;
+  height: 34px;
+  background-color: #fff;
+  border: 1px solid #ededed;
+}
+.wrapper .zs-main .zs-container .zs-comment-mod .detail-head .detail-head-filter .checks {
+  float: left;
+  line-height: 26px;
+  padding-left: 20px;
+}
+.wrapper .zs-main .zs-container .zs-comment-mod .detail-head .detail-head-filter .checks .cur {
+  color: #f30;
+}
+.wrapper .zs-main .zs-container .zs-comment-mod .detail-head .detail-head-filter .checks label {
+  margin-right: 20px;
+}
+.wrapper .zs-main .zs-container .zs-comment-mod .detail-head .detail-head-filter .checks input {
+  margin: 0 5px 0 0;
+  position: relative;
+  top: 2px;
+}
+.wrapper .zs-main .zs-container .zs-comment-mod .zs-no-comment-prompt {
+  margin: 20px 0 0 16px;
+  padding: 0 0 10px 33px;
+  font: 12px/24px "Microsoft YaHei";
+  background: url(../images/17.png) no-repeat -35px -224px;
+}
+.wrapper .zs-main .zs-container .zs-comment-mod .zs-no-comment-prompt a {
+  margin: 0 5px;
+  color: #36c;
+}
+.wrapper .zs-main .zs-container .zs-purchase-record {
+  margin: 10px 0 0;
+}
+.wrapper .zs-main .zs-container .zs-purchase-record table {
+  margin-top: 10px;
+  border: 0 none;
+  border-collapse: collapse;
+}
+.wrapper .zs-main .zs-container .zs-purchase-record th {
+  padding: 0 16px;
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: left;
+  color: #333;
+  background-color: #f8f8f8;
+  font-weight: 100;
+}
+.wrapper .zs-main .zs-container .zs-purchase-record td {
+  padding: 16px 16px;
+  border-bottom: 1px solid #f2f2f2;
+  line-height: 18px;
+  vertical-align: top;
+}
+.wrapper .zs-main .zs-container .detail-head .title {
+  position: relative;
+  height: 30px;
+  padding-left: 14px;
+  line-height: 30px;
+  background-color: #c00;
+}
+.wrapper .zs-main .zs-container .detail-head .title h4 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 100;
+}
+.wrapper .zs-main .zs-container .detail-head .detail-head-filter {
+  padding: 10px 15px 0 15px;
+  height: 34px;
+  background-color: #fff;
+  border: 1px solid #ededed;
+}
+.wrapper .zs-main .zs-container .detail-head .detail-head-filter .checks {
+  float: left;
+  line-height: 26px;
+  padding-left: 20px;
+}
+.wrapper .zs-main .zs-container .detail-head .detail-head-filter .checks label {
+  margin-right: 20px;
+}
+.wrapper .zs-main .zs-container .detail-head .detail-head-filter .checks input {
+  margin: 0 5px 0 0;
+  position: relative;
+  top: 2px;
+}
+.wrapper .zs-main .zs-container .detail-head .detail-head-filter .checks .cur {
+  color: #f30;
+}
+.wrapper .zs-main .zs-container .detail-head .detail-head-filter .checks label {
+  margin-right: 20px;
+}
+.wrapper .zs-main .zs-container .detail-head .close {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  width: 11px;
+  height: 11px;
+  cursor: pointer;
+  background: url(../images/19.png) no-repeat -12px -160px;
+}
+.wrapper .zs-main .zs-container .checks {
+  padding: 0;
+}
+.wrapper .zs-main .zs-container .zs-cell-buyer {
+  width: 96px;
+}
+.wrapper .zs-main .zs-container .zs-cell-sku {
+  width: 174px;
+}
+.wrapper .zs-main .zs-container .zs-cell-amount {
+  width: 42px;
+}
+.wrapper .zs-main .zs-container .zs-cell-time {
+  width: 128px;
+  color: #999;
+}
+.wrapper .zs-main .zs-container .zs-no-comment-prompt {
+  margin: 20px 0 0 16px;
+  padding: 0 0 10px 33px;
+  font: 12px/24px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+  background: url(../images/17.png) no-repeat -35px -224px;
+}
+.wrapper .zs-main .zs-container .zs-enter-message {
+  position: relative;
+  margin: 25px 0 0;
+}
+.wrapper .zs-main .zs-container .zs-enter-message .zs-messagebox {
+  border: 1px solid #e6e6e6;
+  border-top: 0 none;
+}
+.wrapper .zs-main .zs-container .zs-enter-message .zs-messagebox textarea {
+  display: block;
+  padding: 5px 15px;
+  width: 718px;
+  height: 153px;
+  border: 0 none;
+  resize: none;
+  font: 12px/22px "Microsoft YaHei";
+  color: #666;
+}
+.wrapper .zs-main .zs-container .zs-enter-message .zs-messagebox .zs-question-foot {
+  position: relative;
+  padding: 0 117px 0 10px;
+  height: 35px;
+  line-height: 35px;
+  border-top: 1px solid #e6e6e6;
+}
+.wrapper .zs-main .zs-container .zs-enter-message .zs-messagebox .zs-question-foot label {
+  float: left;
+  color: #666;
+}
+.wrapper .zs-main .zs-container .zs-enter-message .zs-messagebox .zs-question-foot label input {
+  margin: 0 5px 0 0;
+  position: relative;
+  top: 2px;
+}
+.wrapper .zs-main .zs-container .zs-enter-message .zs-messagebox .zs-question-foot span {
+  float: left;
+  color: #999;
+}
+.wrapper .zs-main .zs-container .zs-enter-message .zs-messagebox .zs-question-foot .zs-publish-btn {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  height: 37px;
+  width: 104px;
+  line-height: 37px;
+  text-align: center;
+}
+.wrapper .zs-main .zs-container .zs-enter-message .zs-messagebox .zs-question-foot .zs-number {
+  float: right;
+  padding: 0 20px 0 0;
+}
+.wrapper .zs-main .zs-container .zs-enter-message .zs-messagebox .zs-question-foot .zs-number em {
+  color: #c00;
+}
+.wrapper .zs-main .zs-container .zs-enter-message .zs-publish-btn {
+  background: #cd0100;
+  color: #fff;
+}
+.wrapper .zs-main .zs-sidebar {
+  float: right;
+  width: 198px;
+  border: 1px solid #ededed;
+  border-top: 0 none;
+  background: #fafafa;
+}
+.wrapper .zs-main .zs-sidebar .zs-quick-menu {
+  margin: 20px 0;
+  padding: 0 30px;
+  overflow: hidden;
+}
+.wrapper .zs-main .zs-sidebar .zs-quick-menu ul {
+  margin: -14px 0;
+}
+.wrapper .zs-main .zs-sidebar .zs-quick-menu li {
+  height: 45px;
+  font: 14px/45px "Microsoft YaHei";
+  vertical-align: middle;
+}
+.wrapper .zs-main .zs-sidebar .zs-quick-menu a {
+  display: block;
+  padding: 0 0 0 22px;
+  background: url(../images/23.png) no-repeat;
+  color: #333;
+  vertical-align: baseline;
+}
+.wrapper .zs-main .zs-sidebar .zs-quick-menu .cur a {
+  background-position: 0 -45px;
+  color: #c00;
+  text-decoration: none;
+}
+.footer {
+  height: 0;
+}
+.footer .wrapper {
+  height: 208px;
+}
+.footer .footer-nav-bar {
+  padding: 25px 0 0;
+}
+/*****************************************************
+ 
+ */
+ 
+ .left{
+	width: 400px;
+	height: 400px;
+	float: left;
+	margin-right: 10px;
+	background: url(400.jpg) no-repeat;
+	position: relative;
+}
+.left .box{
+	width: 200px;
+	height: 200px;
+	background: white;
+	opacity: 0.5;
+	display: none;
+	position: absolute;
+	left: 0px;top: 0px;
+}
+/*遮罩*/
+.left .cover{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	left: 0px;top: 0px;
+}
+/*右侧区域*/
+.right{
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	display: none;
+	position:absolute;
+	left:400px;
+}
+.right img{
+	position: absolute;
+	left: 0px;top: 0px;
+}
+
+.zs-layer-box {
+    filter: none;
+}
+
+.zs-layer-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: 0 0 0 -208px;
+    padding: 4px;
+    width: 416px;
+    background: rgba(0,0,0,0.15);
+    z-index: 200;
+}
+.zs-layer-body {
+    padding: 40px 20px 40px 48px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.zs-layer-box .zs-layer-hd {
+    position: relative;
+}
+.zs-layer-box .zs-layer-content {
+    padding: 0;
+}
+.zs-success {
+    padding: 10px 0 8px 60px;
+    background:url(../images/bg.png)no-repeat -14px -893px;
+}
+.zs-layer-body h3 {
+    padding: 0 0 5px;
+    font: 18px/24px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+}
+.zs-layer-body p {
+    line-height: 26px;
+    color: #666;
+}
+.zs-success p em {
+    padding: 0 5px;
+}
+.zs-layer-body .zs-total-price {
+    font-family: tahoma;
+}
+.zs-layer-body .zs-layer-foot {
+    padding: 15px 0 0 60px;
+}
+.zs-settlement-btn {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    width: 110px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #fff;
+    border: 0 none;
+    background: #c00;
+    cursor: pointer;
+}
+.zs-layer-body a {
+    color: #36c;
+}
+
+/*# sourceMappingURL=content.css.map */

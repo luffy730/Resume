@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单确认页 － ZOL商城｜中关村在线旗下网上商城</title>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+	</head>
+	<body>
+		<!--topbar头部-->
+		<div class="zc-topbar" id="headEr">    
+			<div class="wrapper clearfix">        
+				<div class="zc-login-info">           
+					<span class="zc-back-home">
+						<a href="">商城首页</a>
+					</span>                                         
+					<span class="zc-login" title="qq_482s79c1638u">
+						您好，
+						<a href="" target="_blank">qq_482s79c...</a>
+					</span>                
+					<a href="" class="login_act">退出</a>                    
+				</div>        
+				<ul class="zc-quick-menu">            
+					<li>
+						<a href="{{U('MyOrder/index')}}">我的订单</a>
+					</li>            
+					<li class="zc-my-center" onmouseover="showUI(this)" onmouseout="hideUI(this)">                
+						<a href="" class="zc-hd">买家中心
+							<i class="ico"></i>
+						</a>                
+						<div class="zc-my-center-bd" id="zc-my-center-bd" style="display: none;">                    
+							<a href="#" style="display:none;">
+								我的优惠券&nbsp;&nbsp;
+								<em>8</em>
+							</a>                    
+							<a href="">关注的店铺&nbsp;&nbsp;
+								<em id="focusShopNum">0</em>
+							</a>                    
+							<a href="">
+								关注的商品&nbsp;&nbsp;
+								<em id="focusGoodsNum">0</em>
+							</a>                
+						</div>            
+					</li>            
+					<li>
+						<a href="" id="shop-cart-num">购物车0件</a>
+					</li>            
+					<li>
+						<a href="">帮助中心</a></li>            
+						<li class="zc-separator">|</li>            
+						<li class="zc-mobile" onmouseover="showUI(this)" onmouseout="hideUI(this)">                
+							<a href="javascript:;" class="zc-hd zc-mobile-hd">
+								手机商城
+								<i class="ico"></i>
+							</a>                
+							<div class="zc-mobile-bd" id="zc-mobile-bd" style="display: none;">
+								<img src="" height="130" width="130">
+							</div>            
+						</li>            
+						<li>
+							<a href="">中关村在线</a>
+						</li>            
+						<li>
+							<a href="">商家入驻</a>
+						</li>            
+						<li class="lianxikefu">                
+							<a href="javascript:;" onmouseover="showUI(this)" onmouseout="hideUI(this)" class="zc-hd">
+								联系客服
+								<i class="ico"></i>
+							</a>                
+							<div class="zc-service-tel">400-678-0068</div>            
+						</li>        
+				</ul>    
+			</div>
+		</div>
+		<!--topbar头部-->
+		<!-- header Logo -->
+		<div class="header clearfix" id="Logo">
+		    <!--logo样式 -->
+		    <div class="logo">
+		        <a href="" title="中关村商城">
+		        	<img src="../images/shop.jpg" width="212" height="40">
+		        	<img src="../images/logo-text.png" width="165" height="40">
+		        </a>
+		    </div>
+		    <div class="flow-step">
+		            <ul class="flow-step-1">
+		            	<li class="s1">加入购物车</li>
+		                <li class="s2">下订单</li>
+		                <li class="s3"><a href="./pay.html">去付款</a></li>
+		                <li class="s4">确认收货</li>
+		                <li class="s5">评价</li>
+		            </ul>
+		    </div>
+		</div>
+		<!-- //header Logo-->
+		<div id="orderIn">
+			<form action="" name="confirmOrder" id="confirmOrder" method="post">
+				<input name="cartFrom" value="" type="hidden">
+	<!-- 收货人信息 -->
+   				 <div class="container consignee">
+            <table>
+                <tbody><tr>
+                    <td class="cell-1">收货人信息</td>
+                    <td class="cell-2">
+                        <ul class="address-list">
+                                                        
+                            <li class="add-edits ">
+                                <label>
+                                	<input name="addNewAddress" value="" checked="" type="radio">添加新地址</label>                        <div class="infor-editor editBox " id="infor-editor">
+                                    <dl>
+                                        <dt>
+                                        	<em class="xh">*</em>收货人：
+                                        </dt>
+                                        <dd>
+                                        <input name="truename" id="deliverName" value="" class="text recinput" maxlength="10" type="text">
+                                        <span class="wrong-tips none" id="deliverNameTips">
+                                        	请填写收货人
+                                        </span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="area">
+                                        <dt>
+                                        <em class="xh">*</em>
+                                        	所在地区：
+                                        </dt>
+                                        <dd class="clearfix">
+                                            <select onchange="$.getCityInfo()" name="provinceId" id="deliverProvinceId">
+                                                <option value="">省/市</option>
+                                                <option value="1">北京</option>
+                                                <option value="2">上海</option>
+                                                <option value="3">天津</option>
+                                                <option value="4">重庆</option>
+                                                <option value="5">黑龙江</option>
+                                                <option value="6">辽宁</option>
+                                                <option value="7">吉林</option>
+                                                <option value="8">河北</option>
+                                                <option value="9">内蒙</option>
+                                                <option value="10">陕西</option>
+                                                <option value="11">山西</option>
+                                                <option value="12">甘肃</option>
+                                                <option value="13">宁夏</option>
+                                                <option value="14">新疆</option>
+                                                <option value="15">西藏</option>
+                                                <option value="16">青海</option>
+                                                <option value="17">四川</option>
+                                                <option value="18">云南</option>
+                                                <option value="19">贵州</option>
+                                            	<option value="20">湖南</option>
+                                                <option value="21">湖北</option>
+                                                <option value="22">河南</option>
+                                                <option value="23">山东</option>
+                                            	<option value="24">安徽</option>
+                                                <option value="25">江苏</option>
+                                                <option value="26">浙江</option>
+                                          		<option value="30">广东</option>
+                                                <option value="31">广西</option>
+                                                <option value="32">江西</option>
+                                                <option value="33">福建</option>
+                                                <option value="34">海南</option>
+                                                <option value="150">其它</option>
+                                            </select>
+                                            <select name="cityId" id="deliverCityId">
+                                                <option value="0">市/县</option>
+                                            </select>                  										  
+                                            <span class="wrong-tips none" id="deliverAreaTips">
+                                            	请选择地区
+                                            </span>
+                                        </dd>
+                                    </dl>                                        
+                                    <dl class="detailed-address">
+                                        <dt><em class="xh">*</em>详细地址：</dt>
+                                        <dd>
+                                            <input name="address" id="deliverAddress" value="" class="text addinput" maxlength="30" type="text">
+                                            <span class="wrong-tips none" id="deliverAddressTips">
+                                            	请填写详细地址，5~30字
+                                            </span>
+                                        </dd>
+                                    </dl>
+                                    <div class="number clearfix">
+                                        <dl>
+                                            <dt>
+                                            	<em class="xh">*</em>
+                                            	手机号码：
+                                            </dt>
+                                            <dd>
+                                                <input name="moblie" id="deliverMobile" value="" class="text" maxlength="11" type="text">
+                                                <em class="tips">或</em>
+                                            </dd>
+                                        </dl>
+                                        <dl class="fixed-line">
+                                            <dt>固定电话：</dt>
+                                            <dd>
+                                                <input name="tel" id="deliverPhone" value="" class="text" maxlength="17" type="text">
+                                                <em class="tips" id="deliverMobilePhoneTips" style="line-height:25px">手机号码和固定电话请至少输入一个</em>
+                                            </dd>
+
+                                        </dl>
+                                    </div>
+                                    <label class="setup-default">
+                                    	<input name="deliverDefault" id="deliverDefault" class="checkbox" value="0" type="checkbox">
+                                    	设置为默认地址
+                                    </label>
+                                    <input addressid="0" id="deliverBotton" class="savebtn w120-btn" value="确认收货地址" onclick="$.saveAddress()" type="button">
+                                </div>
+
+                        </li></ul>                  
+
+                            <div class="more-address none" id="addressShow">
+                            	<a href="#" class="unfolds">
+                            		更多常用地址
+                            	</a>
+                            </div>
+                            <div class="more-address none" id="addressHide">
+                            	<a href="#" class="fold">
+                            		收起常用地址
+                            	</a>
+                            </div>
+                            <div class="add-address none">
+                            	<label>
+                            		<input name="addAddress" value="1" onclick="$.showAddressBox()" type="radio">
+                            		添加新地址（最多可添加10个地址,您还可以添加10个地址）
+                            	</label>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    <!-- //收货人信息 -->
+            <!-- 购物车商品信息 -->
+        		<input name="buyType" value="2" type="hidden">
+        		<input name="allCartIdStr" value="2434082,2434080" type="hidden">
+                <div class="order-list order-current">
+                    <input name="cart-js-191063" value="2434082,2434080" type="hidden">
+                    <input name="fullMer_191063" value="" fn="" type="hidden">
+                    <table>
+                        <tbody>
+                        	<tr>
+                            <td class="cell-1">
+                            	<label>
+                            		<input name="merchantId" invoice="0" value="191063" checked="" type="radio">商品订单1
+                            	</label>
+                            </td>
+                            <td class="cell-2">
+                    <table class="goods">
+                                    <tbody>
+                                    <tr>
+                                        <th class="infor">商品信息</th>
+                                        <th class="color-suits">颜色套装</th>
+                                        <th class="saletype">销售类型</th>
+                                        <th class="price">单价</th>
+                                        <th class="agio">优惠</th>
+                                        <th class="amount">数量</th>
+                                        <th class="total">总价</th>
+                                    </tr>
+                                    
+                                                                                                                    <tr>
+                                            <td class="infor">
+                                                <a href="" target="_blank" class="pic">
+                                                	<img src="../images/o1.jpg" alt="" height="60" width="60"></a>
+                                                <h3 class="title">
+                                                	<a href="" target="_blank">
+                                                		 声波式电动牙刷！自动牙刷，送刷头，美白防水，电池款！有效解决各种口腔问题，杀菌消毒，去除口腔异味，享受美白牙齿体验！
+                                                	</a>
+                                                </h3>
+                                            </td>
+                                            
+                                            <td class="color-suits">
+                                                <div class="color">粉色</div>
+                                                <div class="suits" id="suit-details-5047484" fn="5047484">
+                                                    <span>官方标配</span>
+                                                    <div class="suit-details">
+                                                        <i class="ico"></i>
+                                                        <p>套装详情：</p>
+                                                                                                                														<p>手柄*1+刷头*2+底座*1+5号电池*1</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                                                                        
+                                            <td class="saletype">-</td>
+                                                                                        
+                                            <td class="price">¥29</td>
+                                            <td>--</td>
+                                            <td class="amount">1</td>
+                                            <td class="total">¥29</td>
+                                        </tr>
+                                     </tbody>
+                                </table>
+                                <div class="order-foot clearfix">
+                                <div class="store-infor">
+                                    <span class="name">
+                                    	店铺：
+                                    	<a href="">
+                                    		壹帮商城
+                                    	</a>
+                                    </span>
+                                        
+                                	<a class="tag-security">z保障+</a>
+                                </div>
+                                <div class="delivery">
+                                    <div class="payment">
+                                        <select name="payType-191063" onchange="$.changeShipping()" id="payType-191063">                                                                                                            										<option value="2" selected="">网上支付</option>
+                                        </select>
+                                            <span>支付方式：</span>
+                                    </div>
+                                    <div class="express">
+                                    <select name="shipping-191063" onchange="$.changeShipping()" id="shipping-191063">
+                                    	<option value="0" selected="">无法配送到该地区：-元</option>
+                                    </select>
+                                    <span>到 <em id="sendArea-191063">
+                                    	 &nbsp;&nbsp;</em>配送方式：
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+         <!-- //购物车商品信息 -->
+        
+    <!-- 订单发票 -->
+    	<div class="container consignee" id="order_invoice_div" style="display:none;">
+        <table>
+            <tbody><tr>
+                <td class="cell-1">发票</td>
+                <td class="cell-2">
+                    <div class="invoice clearfix" id="invoice-show-div">
+                        <input name="isInvoice" id="is_invoice" value="0" type="hidden">
+                        <span id="invoice_type_name"></span>
+                        <span id="invoice_name_tips" class="invoice-tips">不需要发票</span>
+                        <a href="javascript:void(0)" id="invoice-editor">修改</a>
+                    </div>
+                    <div class="infor-editor invoice-editor" id="invoice-editor-div">
+                        <dl>
+                            <dt><em class="xh">*</em>发票类型：</dt>
+                            <dd>
+                                <label><input name="invoiceType" value="1" checked="" type="radio">普通发票</label>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><em class="xh">*</em>发票抬头：</dt>
+                            <dd>
+                                <input name="invoiceName" value="姓名/公司名称" class="text text-color" maxlength="30" type="text">
+                                <span class="wrong-tips" id="invoice_error" style="display:none;">发票信息错误</span>
+                            </dd>
+                        </dl>
+                        <div class="btn clearfix">
+                            <input id="save_invoice_info" class="savebtn w120-btn" value="保存发票信息" type="button">
+                            <a href="javascript:void(0)" id="invoice_cancel" class="cancel">取消</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+    <!-- //订单发票 -->
+    
+	<!-- 订单备注 -->
+		<div class="order-note">
+			<table>
+				<tbody>
+					<tr>
+					<td class="cell-1">订单备注</td>
+					<td class="cell-2">
+						<textarea name="buyer-note-191063" id="orderNote" fn="limit" limit="200" tipsid="haveFonts"  ></textarea>
+					<span>
+						<em id="haveFonts">0</em>
+						/200
+					</span>
+					</td>
+					<td class="cell-3">
+						<ul class="total-price">
+							<li><span>商品总价：</span><em id="goods-total-price">¥77</em></li>
+							<li><span>运费：</span><em id="goods-freight-price">¥-</em></li>
+							<li><span>订单总计：</span><em class="total" id="total-price">¥77</em></li>
+						</ul>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+	</form>
+			
+			<!--提交订单-->
+		</div>
+		<!--footer底部-->
+		<div class="footer" id="footEr">
+		    <p class="links">
+		    	<a target="_blank" href="">关于商城</a>|
+		    	<a target="_blank" href="">营销中心</a>|
+		    	<a target="_blank" href="">服务中心</a>|
+		    	<a target="_blank" href="">联系我们</a>|
+		    	<a target="_blank" href="">发展历程</a>|
+		    	<a target="_blank" href="">媒体报道</a>
+		    </p>
+		    <p>
+			    <span class="copyrigh" id="cR">
+			    	中关村在线 版权所有. 京ICP备09041801号-182
+			    	<a target="_blank" href="">
+			    		京ICP证010391号
+			    	</a>
+			    </span>
+		    </p>
+		    <div class="authentication">
+		    	<a target="_blank" href="">
+		    		<img width="108" height="40" alt="经营性网站备案信息" src="../images/beian.png">
+		    	</a>
+		    	<a target="_blank" href="">
+		    		<img width="108" height="40" alt="海淀网络警察提醒您" src="../images/beian.png">
+		    	</a>
+		    	<a target="_blank" href="" id="___szfw_logo___">
+		    		<img src="../images/beian.png" width="108" height="40">
+		    	</a>
+		</div>
+		<!--footer底部-->
+	</body>
+</html>

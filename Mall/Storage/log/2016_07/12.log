@@ -1,0 +1,110 @@
+[ 2016-07-12T16:34:44+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (175).
+[ 2016-07-12T16:34:44+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= AND order_orid=44 ORDER BY  order_orid DESC  ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND order_orid=44 ORDER BY  order_orid DESC' at line 1
+[ 2016-07-12T16:34:44+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (175).
+[ 2016-07-12T16:34:44+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= AND order_orid=44 ORDER BY  order_orid DESC  ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND order_orid=44 ORDER BY  order_orid DESC' at line 1
+[ 2016-07-12T16:35:55+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-07-12T16:36:27+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-07-12T16:41:31+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-07-12T19:33:12+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\ContentController.php (17).
+[ 2016-07-12T19:33:52+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (175).
+[ 2016-07-12T19:33:52+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= AND order_orid=45 ORDER BY  order_orid DESC  ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND order_orid=45 ORDER BY  order_orid DESC' at line 1
+[ 2016-07-12T19:33:52+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (175).
+[ 2016-07-12T19:33:52+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= AND order_orid=45 ORDER BY  order_orid DESC  ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND order_orid=45 ORDER BY  order_orid DESC' at line 1
+[ 2016-07-12T19:34:32+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-07-12T19:35:06+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (94).
+[ 2016-07-12T19:35:06+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (94).
+[ 2016-07-12T19:35:06+08:00 ]EXCEPTION: SELECT  *  FROM orders as o INNER JOIN orderlist ON order_orid = orid WHERE o.client_clid= GROUP BY o.orid ORDER BY  o.riseTime DESC  LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY o.orid ORDER BY  o.riseTime DESC  LIMIT 1' at line 1
+[ 2016-07-12T19:35:06+08:00 ]EXCEPTION: SELECT  *  FROM orders as o INNER JOIN orderlist ON order_orid = orid WHERE o.client_clid= GROUP BY o.orid ORDER BY  o.riseTime DESC  LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY o.orid ORDER BY  o.riseTime DESC  LIMIT 1' at line 1
+[ 2016-07-12T19:37:09+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (175).
+[ 2016-07-12T19:37:09+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= AND order_orid=46 ORDER BY  order_orid DESC  ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND order_orid=46 ORDER BY  order_orid DESC' at line 1
+[ 2016-07-12T19:37:15+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (175).
+[ 2016-07-12T19:37:15+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= AND order_orid=46 ORDER BY  order_orid DESC  ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND order_orid=46 ORDER BY  order_orid DESC' at line 1
+[ 2016-07-12T19:37:24+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (94).
+[ 2016-07-12T19:37:24+08:00 ]EXCEPTION: SELECT  *  FROM orders as o INNER JOIN orderlist ON order_orid = orid WHERE o.client_clid= GROUP BY o.orid ORDER BY  o.riseTime DESC  LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY o.orid ORDER BY  o.riseTime DESC  LIMIT 1' at line 1
+[ 2016-07-12T19:37:24+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (94).
+[ 2016-07-12T19:37:24+08:00 ]EXCEPTION: SELECT  *  FROM orders as o INNER JOIN orderlist ON order_orid = orid WHERE o.client_clid= GROUP BY o.orid ORDER BY  o.riseTime DESC  LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY o.orid ORDER BY  o.riseTime DESC  LIMIT 1' at line 1
+[ 2016-07-12T19:37:43+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (175).
+[ 2016-07-12T19:37:43+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= AND order_orid=46 ORDER BY  order_orid DESC  ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND order_orid=46 ORDER BY  order_orid DESC' at line 1
+[ 2016-07-12T19:39:42+08:00 ]NOTICE: Undefined variable: dataC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (304).
+[ 2016-07-12T19:39:42+08:00 ]NOTICE: Invalid argument supplied for foreach()C:\home\ftp\c\c65_guyongqing\wwwroot\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (304).
+[ 2016-07-12T19:42:00+08:00 ]EXCEPTION: INSERT INTO goods_property (`goods_gid`,`gpvalue`,`property_pid`,`appendprice`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => '89',
+  1 => '【白色EP-21HD】',
+  2 => 2,
+  3 => '',
+)HY000;1366;Incorrect decimal value: '' for column 'appendprice' at row 1
+[ 2016-07-12T19:42:26+08:00 ]NOTICE: Undefined variable: dataC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (304).
+[ 2016-07-12T19:42:26+08:00 ]NOTICE: Invalid argument supplied for foreach()C:\home\ftp\c\c65_guyongqing\wwwroot\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (304).
+[ 2016-07-12T19:53:23+08:00 ]NOTICE: Undefined variable: dataC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (304).
+[ 2016-07-12T19:53:23+08:00 ]NOTICE: Invalid argument supplied for foreach()C:\home\ftp\c\c65_guyongqing\wwwroot\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (304).
+[ 2016-07-12T19:53:32+08:00 ]EXCEPTION: INSERT INTO category (`cname`,`pid`,`sort`)VALUES(?,?,?) ;BindParams:array (
+  0 => '6767',
+  1 => '0',
+  2 => '100',
+)HY000;1364;Field 'type_tid' doesn't have a default value
+[ 2016-07-12T20:11:52+08:00 ]EXCEPTION: INSERT INTO category (`cname`,`pid`,`sort`)VALUES(?,?,?) ;BindParams:array (
+  0 => '67',
+  1 => '0',
+  2 => '100',
+)HY000;1364;Field 'type_tid' doesn't have a default value
+[ 2016-07-12T22:16:28+08:00 ]EXCEPTION: INSERT INTO category (`cname`,`pid`,`sort`)VALUES(?,?,?) ;BindParams:array (
+  0 => '898',
+  1 => '0',
+  2 => '100',
+)HY000;1364;Field 'type_tid' doesn't have a default value
+[ 2016-07-12T22:22:30+08:00 ]EXCEPTION: INSERT INTO category (`cname`,`pid`,`sort`)VALUES(?,?,?) ;BindParams:array (
+  0 => '898',
+  1 => '0',
+  2 => '100',
+)HY000;1364;Field 'type_tid' doesn't have a default value
+[ 2016-07-12T22:23:21+08:00 ]EXCEPTION: INSERT INTO category (`cname`,`pid`,`sort`)VALUES(?,?,?) ;BindParams:array (
+  0 => '90',
+  1 => '0',
+  2 => '100',
+)HY000;1364;Field 'type_tid' doesn't have a default value
+[ 2016-07-12T22:24:43+08:00 ]EXCEPTION: INSERT INTO category (`cname`,`pid`,`sort`)VALUES(?,?,?) ;BindParams:array (
+  0 => 'qwe',
+  1 => '0',
+  2 => '100',
+)HY000;1364;Field 'type_tid' doesn't have a default value
+[ 2016-07-12T22:28:49+08:00 ]EXCEPTION: INSERT INTO category (`cname`,`pid`,`sort`)VALUES(?,?,?) ;BindParams:array (
+  0 => '上装',
+  1 => '0',
+  2 => '100',
+)HY000;1364;Field 'type_tid' doesn't have a default value
+[ 2016-07-12T22:29:28+08:00 ]EXCEPTION: INSERT INTO category (`cname`,`pid`,`sort`)VALUES(?,?,?) ;BindParams:array (
+  0 => '韩束',
+  1 => '0',
+  2 => '100',
+)HY000;1364;Field 'type_tid' doesn't have a default value
+[ 2016-07-12T23:37:35+08:00 ]NOTICE: Undefined variable: dataC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (304).
+[ 2016-07-12T23:37:35+08:00 ]NOTICE: Invalid argument supplied for foreach()C:\home\ftp\c\c65_guyongqing\wwwroot\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (304).
+[ 2016-07-12T23:38:04+08:00 ]NOTICE: Undefined variable: dataC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (304).
+[ 2016-07-12T23:38:04+08:00 ]NOTICE: Invalid argument supplied for foreach()C:\home\ftp\c\c65_guyongqing\wwwroot\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (304).
+[ 2016-07-12T23:39:36+08:00 ]EXCEPTION: INSERT INTO goods_property (`goods_gid`,`gpvalue`,`property_pid`,`appendprice`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => '90',
+  1 => '翡翠绿',
+  2 => 2,
+  3 => '',
+)HY000;1366;Incorrect decimal value: '' for column 'appendprice' at row 1
+[ 2016-07-12T23:55:12+08:00 ]EXCEPTION: INSERT INTO goods_property (`goods_gid`,`gpvalue`,`property_pid`,`appendprice`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => '91',
+  1 => '翡翠绿',
+  2 => 2,
+  3 => '',
+)HY000;1366;Incorrect decimal value: '' for column 'appendprice' at row 1

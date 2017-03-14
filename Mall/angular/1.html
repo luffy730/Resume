@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="angular.min.js"></script>
+	</head>
+	<body ng-app='hd'>
+		<div ng-controller='ctrl1'>
+			{{name}}
+		</div>
+		<div ng-controller="ctrl2">
+			{{name}}
+		</div>
+	</body>
+</html> 
+<script type="text/javascript">
+	var m = angular.module('hd',[]);
+	m.controller('ctrl1',['$scope',function($scope){
+		$scope.name='abc';
+	}]);
+	m.controller('ctrl2',['$scope',function($scope){
+		$scope.name=333;
+	}]);
+</script>

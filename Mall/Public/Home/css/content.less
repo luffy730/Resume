@@ -1,0 +1,750 @@
+*{margin: 0;padding: 0;}
+boy{font: 12px/1.5 Arial;
+    color: #333;
+    }
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
+    margin: 0;
+    padding: 0;
+}
+ul,ol{list-style: none;}
+a{text-decoration: none;}
+li{list-style: none;}
+colorA{
+    color: #134BA0;
+    text-decoration: none;
+}
+//topbar开始**********
+.zc-topbar{
+    position: relative;
+    z-index: 997;
+    height: 29px;
+    font: 12px/29px arial;
+    background: #f5f5f5;
+    border-bottom: 1px solid #e6e6e6;
+        //topbar 右侧开始
+        .zc-quick-menu{
+            float: right;
+            margin: 0 -10px 0 0;
+            .zc-service-tel {
+                display: none;
+                position: absolute;
+                top: 29px;
+                right: 0;
+                padding: 3px 9px;
+                width: 80px;
+                border: 1px solid #ededed;
+                font: 12px/28px arial;
+                text-align: right;
+                background: #fff;
+            }
+            .zc-hd{
+                position: relative;
+            }
+            .zc-mobile{
+                margin: 0;
+                .zc-hd{
+                    padding: 0 23px 0 25px;
+                    background-position: 0 0;
+                    background: url(../images/topbar_ico.png)no-repeat;
+                }
+                
+            }
+            .zc-separator{
+                color: #ccc;
+            }
+            .zc-hd{
+                position: relative;
+                padding: 0 23px 0 10px;
+            }
+            .zc-my-center{
+                margin:0;
+            }
+            li{
+                float: left;
+                margin: 0 10px ;
+                height: 20px;
+                font:12px/29px arial;
+                a{
+                    display: inline-block;
+                    color: #666;
+                    text-decoration: none;
+                }
+            }
+        }
+        //topbar右侧结束
+    //topbar左侧
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+        .zc-login-info{
+            float: left;
+            .zc-back-home{
+                a{
+                    color:#666;
+                    text-decoration: none;
+                }
+            }
+            .zc-login{
+                padding: 0 20px 0 0;
+                color: #666;
+                a{
+                    color:#36c;
+                    text-decoration:none;
+                }
+            }
+            .zc-register{
+                a{
+                    color: #36c;
+                    text-decoration: none;
+                }
+            }
+        }
+     }
+      //topbar 左侧结束      
+}
+//topbar结束**********
+//logo区域开始;
+.header{
+    margin: 0 auto;
+    padding: 25px 0 0;
+    width: 1200px;
+    height: 92px;
+     .ad-div {
+    float: right;
+    width: 180px;
+    height: 60px;
+    img{
+        display: block;
+        border: 0;
+    }
+    a {
+    color: #134ba0;
+    text-decoration: none;
+        }
+    }
+   .logo{
+        float: left;
+        padding: 5px 0 0;
+         h1{
+        float: left;
+        margin: 0;
+        padding: 0;
+         }
+    .mall-logo{
+        display: block;
+        width: 180px;
+        height: 50px;
+        background-image: url(../images/logo_180x50.png);
+        background-repeat: no-repeat;
+    }
+        p {
+        float: left;
+        margin: 3px 0 0 10px;
+        padding: 0 0 0 10px;
+        border-left: 1px solid;
+        font: 14px/44px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+        color: #666;
+        }
+     }
+     .search-box{
+         float: left;
+         padding: 12px 0 0 56px;
+         .hot-search {
+            padding: 7px 0 0;
+            font: 12px/18px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+            a{
+                display: inline-block;
+                margin: 0 15px 0 0;
+                color: #666;
+            }
+            a:hover{
+                color: #f33;
+                text-decoration: underline;
+            }
+        }
+         select, input, button {
+            vertical-align: middle;
+            font-size: 100%;
+        }
+        .search{
+            position: relative;
+            width: 536px;
+            height: 32px;
+            border: 2px solid #c40000;
+            z-index: 3;
+            .search-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 89px;
+            height: 32px;
+            font: 16px/32px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+            color: #fff;
+            border: 0 none;
+            background: #c40000;
+            cursor: pointer;
+        }
+            select, input, button {
+                vertical-align: middle;
+            }
+            .search-text {
+            padding: 6px 10px;
+            width: 427px;
+            height: 20px;
+            font: 14px/20px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+            color: #666;
+            border: 0 none;
+            outline: 0 none;
+        }
+        }
+     }
+}
+
+//logo区域结束
+//nav-box区域开始
+.nav-box{
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 0 0 2px 200px;
+    width: 1000px;
+    height:30px;
+    border-bottom: 2px solid #c40000;
+    .nav{
+        li{
+            float: left;
+            padding: 0 20px;
+            height: 30px;
+            font: 16px/30px "Microsoft YaHei";
+        }
+        .current{
+            a{
+                color: #f33;
+            }
+        }
+        a{
+            display: inline-block;
+            color: #333;
+        }
+    }
+}
+ul{
+    list-style: none;
+}
+.category-nav-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    .ad-div{
+        width: 200px;
+        height: 70px;
+        background: #222;
+        img{
+            display: block;
+            border:0;
+        }
+    }
+}
+.category-nav-title{
+    height: 34px;
+    background: #c40000;
+    font: 14px/34px "Microsoft YaHei";
+    color: #fff;
+    text-align: center;
+}
+.category-menu-nav{
+        position: relative;
+        height: 341px;
+        background: #2d2d2d;
+}
+.menu-nav-container{
+    position: relative;
+    li{
+        position: relative;
+        margin: -1px 0 0 1px;
+        padding: 0 0 1px 31px;
+        height: 38px;
+        border-top: 1px solid #3d3d3d;
+        font: 12px/38px "Microsoft YaHei";
+        color: #fff;
+    }
+    .item{
+        i{
+            position: absolute;
+            top: 12px;
+            left: 10px;
+            color: #ababab;
+            font-size: 17px;
+            line-height: 17px;
+        }
+        a{
+            margin: 0 3px;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
+.iconfont{
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+.nav-tips{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font: 16px/30px "Microsoft YaHei";
+    color: #f33;
+    a{
+        color:#f33;
+    }
+}
+.side {
+    float: right;
+    width: 240px;
+    background: #fff;
+}
+.module {
+    margin: 10px 0 0;
+    padding: 15px 20px;
+    border: 1px solid #ededed;
+}
+.module-title {
+    font: 14px/22px "Microsoft YaHei";
+}
+.mall-notice{
+    ul{
+        padding: 8px 0 0;
+    }
+    li{
+        height: 24px;
+        font: 12px/24px "Microsoft YaHei";
+        a{
+            color:#666;
+        }
+    }
+}
+// nav-box区域结束
+//公共导航
+.zs-wrapper{
+    margin: 0 auto;
+    width: 1200px;
+    //zs-bread-brunbs
+    .zs-bread-crumbs{
+        margin: 0 0 0 -8px;
+        font: 12px/32px SimSun;
+        color: #999;
+        a{
+            color: #333;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+        span{
+            margin: 0 8px;
+        }
+    }
+    //zs-bread-brunbs
+    //.zs-inner
+    .zs-inner{
+        border: 1px solid #ededed;
+        overflow: hidden;
+        .zs-deal-detail{
+            float: left;
+            width: 1000px;
+            //.zs-focus
+            .zs-focus{
+                float: left;
+                padding: 10px 0 0 20px;
+                width: 400px;
+                position: relative;
+                z-index: 8;
+                .zs-action {
+                        padding: 25px 0;
+                        .zs-share-box {
+                            float: left;
+                            position: relative;
+                            line-height: 22px;
+                            .bdsharebuttonbox {
+                                position: absolute;
+                                top: 22px;
+                                left: 20px;
+                                width: 76px;
+                                padding: 0 3px 3px 0;
+                                border: 1px solid #ededed;
+                                background: #fff;
+                            }
+                            .zs-complain {
+                            float: left;
+                            position: relative;
+                            margin: 0 15px 0 0;
+                            padding: 0 0 0 20px;
+                            line-height: 22px;
+                            color: #666;
+                            i{
+                                 background:url(../images/bg.png)no-repeat -46px -314px;
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 46px;
+                                height: 22px;
+                                opacity: 0.25;
+                                }
+                            }
+                        }
+                        .zs-collect{
+                           float: left;
+                            position: relative;
+                            margin: 0 15px 0 0;
+                            padding: 0 0 0 20px;
+                            line-height: 22px;
+                            color: #666; 
+                            i{
+                                background:url(../images/bg.png)no-repeat -46px -290px;
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 46px;
+                                height: 22px;
+                                opacity: 0.25;
+                            }
+                        }
+                    }
+                .zs-focus-thumb{
+                        position: relative;
+                        .zs-focus-list {
+                            position: relative;
+                            height: 70px;
+                            overflow: hidden;
+                            width: 400px;
+                            .hover{
+                                .border{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                display: block;
+                                width: 66px;
+                                height: 66px;
+                                border: 2px solid #c00;
+                                }
+                            }
+                            ul{
+                                width: 415px;
+                                padding: 0 0 0 1px;
+                                overflow: hidden;
+                            }
+                            li{
+                               float: left;
+                                width: 70px;
+                                height: 70px;
+                                margin: 0 12px 0 0;
+                                position: relative;
+                                a{
+                                    color: #134BA0;
+                                    text-decoration: none;
+                                 } 
+                                 img{
+                                     padding: 0;
+                                     display: block;
+                                 }
+                            }
+                        }
+                    }
+                #zoom1-big{
+                    width: 400px;
+                    height: 400px;
+                    position: absolute;
+                    top: 10px;
+                    left: 415px;
+                    overflow: hidden;
+                    border: 1px solid #ddd;
+                    background-color: white;
+                }
+                .zs-big-pic{
+                    img{
+                        display: block;
+                        margin:0 0 10px;
+                        border: 0;
+                    }
+                }
+            }
+            //.zs-focus
+            //.zs-deal-wrap
+            .zs-deal-wrap{
+                float: right;
+                padding: 10px 20px 0 0;
+                width: 530px;
+                .zs-service-bar{
+                    margin: 0 10px;
+                    .iconfont {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 22px;
+                        line-height: 20px;
+                        color: #00ae75;
+                        font-family: "iconfont" !important;
+                         font-style: normal;                       
+                    }
+                    .link{
+                        color: #36c;
+                    }
+                    .li{
+                        float: left;
+                        position: relative;
+                        margin: 0 0 5px;
+                        padding: 0 0 0 28px;
+                        width: 82px;
+                        height: 24px;
+                        font: 12px/22px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+                        a{
+                            text-decoration: none;
+                            color: #333;
+                        }
+                    }
+                }
+                .zs-evaluate{
+                    margin: 5px 10px 0;
+                    .line{
+                        padding: 0 10px;
+                        color: #e6e6e6;
+                    }
+                    dd{
+                        a{
+                            color:#333;
+                        }
+                        em{
+                            color: #f33;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .zs-detail-infor {
+                        padding: 10px 0 20px;
+                        dd{
+                            padding: 0 0 0 65px;
+                            line-height: 32px;
+                            .zs-freight-area {
+                                float: left;
+                                position: relative;
+                                .area-selected-wrap {
+                                line-height: 23px;
+                                .area-selected-infor{
+                                    margin-left: 10px;
+                                    float: left;
+                                    .bold{
+                                        font-weight: bold;
+                                    }
+                                }
+                                .area-selected {
+                                    position: relative;
+                                    float: left;
+                                    z-index: 5;
+                                    .area-name{
+                                     position: relative;
+                                    display: inline-block;
+                                    height: 23px;
+                                    border: 1px solid #e6e6e6;
+                                    padding: 0 20px 0 6px;
+                                    line-height: 23px;
+                                    cursor: pointer;
+                                    background-position: 100% 0;
+                                    z-index: 6;
+                                    background-color: #fff;   
+                                }
+                                    .selecet-layer-wrap {
+                                        display: none;
+                                        position: absolute;
+                                        top: 24px;
+                                        left: 0;
+                                        padding: 17px 17px 12px 14px;
+                                        width: 400px;
+                                        background-color: #fff;
+                                        border: 1px solid #bfbfbf;
+                                        box-shadow: 0 0 1px 2px rgba(230,230,230,.5);
+                                        z-index: 5;
+                                        .close{
+                                            position: absolute;
+                                            top: 7px;
+                                            right: 7px;
+                                            width: 23px;
+                                            height: 23px;
+                                            cursor: pointer;
+                                            background: url(../images/2.png) no-repeat -89px;
+                                        }
+                                        .area-list-wrap{
+                                            padding: 6px 0 0;
+                                            .area-list{
+                                                a{
+                                                   float: left;
+                                                    width: 98px;
+                                                    height: 30px;
+                                                    line-height: 30px;
+                                                    overflow: hidden; 
+                                                }
+                                            }
+                                        }
+                                        
+                                        .selecet-tab {
+                                        border-bottom: 2px solid #c00;
+                                         .current {
+                                            position: relative;
+                                            margin: 0 4px -2px 0;
+                                            padding: 0 0 2px;
+                                            border-width: 2px;
+                                            border-color: #c00;
+                                            background: #fff;
+                                             span {
+                                                position: relative;
+                                                height: 22px;
+                                                line-height: 22px;
+                                                padding: 1px 23px 0 9px;
+                                            }
+                                        }
+                                         li {
+                                            float: left;
+                                            border: 1px solid #e6e6e6;
+                                            border-bottom: 0 none;
+                                                span{
+                                                display: inline-block;
+                                                font-size: 14px;
+                                                cursor: pointer;
+                                                background-position: 100% -58px;
+                                                background-color: #fff;
+                                                vertical-align: middle;
+                                            }
+                                    }
+                            }
+                        }
+                        dt{
+                            position: absolute;
+                            left: 0;
+                            height: 32px;
+                            line-height: 32px;
+                            color: #666;
+                        }
+                        dl{
+                            position: relative;
+                        }
+                        .zs-freight-a {
+                            margin: 0 10px;
+                            padding: 5px 0 0;
+                            z-index: 2;
+                            dt{
+                                top:0;
+                            }
+                        }
+                       }
+                       }
+                       }
+                       }
+                   }
+                .zs-price-panel {
+                    margin: 18px 0 0;
+                    padding: 4px 10px;
+                    background: url(../images/zs.png) no-repeat;
+                    .zs-discount{
+                        .zs-offer-details {
+                            position: absolute;
+                            top: -4px;
+                            left: -10px;
+                            padding: 3px 9px;
+                            width: 510px;
+                            background: #fff;
+                            border: 1px solid #ededed;
+                        }
+                        dd{
+                            color: #c00;
+                            .zs-sale-type {
+                                float: left;
+                                margin: 7px 10px 0 0;
+                                padding: 0 3px;
+                                background: #f66;
+                                color: #fff;
+                                line-height: 18px;
+                            }
+                        }
+                        .more{
+                            position: relative;
+                            float: right;
+                            padding: 0 0 0 15px;
+                            line-height: 32px;
+                            color: #c00;
+                            i{
+                                position: absolute;
+                                top: 14px;
+                                left: 0;
+                                width: 9px;
+                                height: 5px;
+                                background-position: -27px -352px;
+                                font: 0/0 arial;
+                            }
+                        }
+                    }
+                    dl{
+                        padding: 0 0 0 70px;
+                        position: relative;
+                        line-height: 32px;
+                        .zs-price{
+                            float: left;
+                            margin: -2px 0 0;
+                            height: 32px;
+                            overflow: hidden;
+                            font-size: 16px;
+                            vertical-align: middle;
+                            color: #c00;
+                            em{
+                                padding: 0 0 0 5px;
+                                font-family: tahoma;
+                                font-size: 30px;
+                                font-weight: bold;
+                                font-style: normal;
+                            }
+                        }
+                    }
+                    dt{
+                        position: absolute;
+                        top: 0;
+                        left: 5px;
+                        width: 65px;
+                        color: #999;
+                    }
+                    dd{
+                        overflow: hidden;
+                    }
+                }
+                .zs-commodity-title {
+                    padding: 7px 0 0;
+                    font: 16px/22px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+                }
+                .zs-subtitle {
+                    font: 12px/22px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+                    color: #f33;
+                }
+            }
+            //.zs-deal-wrap
+        }
+    }
+    
+    //.zs-inner
+    //.zs-modbox
+    .zs-modbox{
+        margin: 10px 0 0;
+        border: 1px solid #ededed
+    }
+    //.zs-modbox
+    
+}
+#list{
+    margin: 5px 0 0;
+padding: 8px 10px;
+border: 1px solid #e6e6e6;
+background: #fafafa;
+line-height: 20px;
+}
+//公共导航结束

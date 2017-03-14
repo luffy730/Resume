@@ -1,0 +1,39 @@
+[ 2016-07-09T14:45:43+08:00 ]EXCEPTION: Method Admin\Controller\OrderController::edit() does not exist
+[ 2016-07-09T14:46:22+08:00 ]EXCEPTION: Method Admin\Controller\OrderController::edit() does not exist
+[ 2016-07-09T20:49:11+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (175).
+[ 2016-07-09T20:49:11+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= AND order_orid=37 ORDER BY  order_orid DESC  ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND order_orid=37 ORDER BY  order_orid DESC' at line 1
+[ 2016-07-09T20:49:19+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (175).
+[ 2016-07-09T20:49:19+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= AND order_orid=37 ORDER BY  order_orid DESC  ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND order_orid=37 ORDER BY  order_orid DESC' at line 1
+[ 2016-07-09T20:49:49+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-07-09T20:50:13+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-07-09T20:50:19+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-07-09T20:50:19+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-07-09T20:50:21+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-07-09T20:50:43+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-07-09T20:52:10+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (94).
+[ 2016-07-09T20:52:10+08:00 ]EXCEPTION: SELECT  *  FROM orders as o INNER JOIN orderlist ON order_orid = orid WHERE o.client_clid= GROUP BY o.orid ORDER BY  o.riseTime DESC  LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY o.orid ORDER BY  o.riseTime DESC  LIMIT 1' at line 1
+[ 2016-07-09T20:52:17+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\OrderController.php (94).
+[ 2016-07-09T20:52:17+08:00 ]EXCEPTION: SELECT  *  FROM orders as o INNER JOIN orderlist ON order_orid = orid WHERE o.client_clid= GROUP BY o.orid ORDER BY  o.riseTime DESC  LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY o.orid ORDER BY  o.riseTime DESC  LIMIT 1' at line 1
+[ 2016-07-09T20:53:08+08:00 ]EXCEPTION: UPDATE orders SET `orid`=?,`orderStatus`=?,`orderNumber`=?,`consignee`=?,`recieveAddress`=?,`riseTime`=?,`client_clid`=?,`remark`=?,`priceAggregate`=?  WHERE  orid=?  ;BindParams:array (
+  'orid' => '1',
+  'orderStatus' => 4,
+  'orderNumber' => 'F0627862807566819',
+  'consignee' => '',
+  'recieveAddress' => '',
+  'riseTime' => '1466986280',
+  'client_clid' => NULL,
+  'remark' => '',
+  'priceAggregate' => '0.00',
+  0 => '1',
+)23000;1048;Column 'client_clid' cannot be null
+[ 2016-07-09T20:59:09+08:00 ]NOTICE: Undefined index: clidC:\home\ftp\c\c65_guyongqing\wwwroot\Mall\App\Home\Controller\ContentController.php (17).

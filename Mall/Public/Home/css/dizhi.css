@@ -1,0 +1,259 @@
+.right-content {
+  float: right;
+  width: 935px;
+  box-shadow: 1px 1px 5px #ddd;
+}
+.right-content .addr-section {
+  padding-top: 6px;
+  padding: 0 15px 30px 15px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+}
+.right-content .addr-section h4 {
+  border-bottom: 2px solid #ebebeb;
+  line-height: 44px;
+  font-weight: normal;
+  font-size: 16px;
+}
+.right-content .addr-section .addr-item {
+  height: 32px;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.right-content .addr-section .addr-item .block-title {
+  float: left;
+  width: 85px;
+  text-align: right;
+  line-height: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+.right-content .addr-section .addr-item .block-title em {
+  color: #ea462a;
+  font-family: simsun;
+}
+.right-content .addr-section .addr-item .form-part {
+  float: left;
+  font-size: 0;
+}
+.right-content .addr-section .addr-item .form-part .receiver {
+  width: 170px;
+}
+.right-content .addr-section .addr-item .form-part input {
+  float: left;
+  font-size: 12px;
+  width: 210px;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  outline: 0 none;
+}
+.right-content .addr-section .addr-item {
+  font-size: 12px;
+  margin-top: 15px;
+}
+.right-content .addr-section .addr-item .block-title {
+  float: left;
+  width: 85px;
+  text-align: right;
+  line-height: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+.right-content .addr-section .addr-item .block-title em {
+  color: #ea462a;
+  font-family: simsun;
+}
+.right-content .addr-section .addr-item .form-part {
+  float: left;
+  font-size: 0;
+}
+.right-content .addr-section .addr-item .form-part .select-block {
+  position: relative;
+  width: 110px;
+  border: 1px solid #ccc;
+  height: 30px;
+  float: left;
+  cursor: pointer;
+}
+.right-content .addr-section .addr-item .form-part .select-block input {
+  border: 0 none;
+  width: 70px;
+  float: left;
+  cursor: pointer;
+}
+.right-content .addr-section .addr-item .form-part .select-block .arrow-icon {
+  width: 30px;
+  height: 30px;
+  float: left;
+  background: url(../images/16.png) -88px -162px no-repeat;
+  cursor: pointer;
+}
+.right-content .addr-section .addr-item .form-part .city-select {
+  margin-left: 15px;
+}
+.right-content .addr-section .addr-item .form-part input {
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px;
+  outline: 0 none;
+}
+.right-content .addr-section .jiedao {
+  height: 62px;
+}
+.right-content .addr-section .jiedao textarea {
+  resize: none;
+  outline: 0 none;
+  width: 460px;
+  padding: 5px;
+  height: 50px;
+  border: 1px solid #ccc;
+}
+.right-content .addr-section .addr-item {
+  font-size: 12px;
+  margin-top: 15px;
+}
+.right-content .addr-section .addr-item .form-part input {
+  float: left;
+  font-size: 12px;
+  width: 210px;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  outline: 0 none;
+}
+.right-content .addr-section .addr-item .block-title {
+  float: left;
+  width: 85px;
+  text-align: right;
+  line-height: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+.right-content .addr-section .addr-item .form-part input {
+  float: left;
+  font-size: 12px;
+  width: 210px;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  outline: 0 none;
+}
+.right-content .addr-section .addr-item .form-part .tel-pre {
+  width: 40px;
+}
+.right-content .addr-section .addr-item .form-part .tel-after {
+  width: 140px;
+}
+.right-content .addr-section .addr-item .form-part .normal-tip {
+  color: #999;
+  line-height: 32px;
+  margin-left: 11px;
+  font-size: 12px;
+}
+.right-content .addr-section .addr-item .short-line {
+  float: left;
+  width: 7px;
+  height: 1px;
+  background: #ccc;
+  margin: 15px 5px 0 5px;
+}
+.right-content .addr-section .set-btn {
+  margin: 20px 0 0 93px;
+  display: block;
+}
+.right-content .addr-section .set-btn input {
+  margin: -2px 6px 0 0;
+  outline: 0 none;
+}
+.right-content .addr-section input {
+  border: 0 none;
+  cursor: pointer;
+  padding: 0;
+}
+.right-content .addr-section .save-btn {
+  margin: 15px 0 0 93px;
+}
+.right-content .addr-section .save-btn button {
+  cursor: pointer;
+  background: #ff3333;
+  color: #fff;
+  width: 64px;
+  text-align: center;
+  height: 28px;
+  border: 0 none;
+  border-radius: 2px;
+}
+.right-content .addr-section .save-btn .normal-tip {
+  height: 28px;
+  line-height: 28px;
+  margin-left: 9px;
+  color: #999;
+  font-size: 12px;
+}
+
+.addr-table {
+    margin-top: 50px;
+}
+.table-block {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+}
+.addr-table .cell1 {
+    width: 68px;
+}
+.table-block .cell1 {
+    text-align: left;
+    padding-left: 20px;
+}
+.table-block th {
+    background: #f7f7f7;
+    height: 39px;
+    line-height: 39px;
+    font-weight: normal;
+}
+.addr-table .cell2 {
+    width: 122px;
+}
+.addr-table .cell3 {
+    width: auto;
+}
+.addr-table .cell4 {
+    width: 99px;
+}
+.addr-table .cell5 {
+    width: 121px;
+}
+.addr-table .cell6 {
+    width: 142px;
+}
+.addr-table .name {
+    color: #666;
+    font-weight: bold;
+}
+.addr-table td {
+    line-height: 22px;
+    padding: 10px;
+    vertical-align: middle;
+}
+.table-block td {
+    padding: 20px 20px 16px 20px;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: #e6e6e6;
+}
+.addr-table .address-detail {
+    text-align: left;
+    padding: 20px;
+}
+
+/*# sourceMappingURL=dizhi.css.map */

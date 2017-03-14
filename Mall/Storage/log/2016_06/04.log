@@ -1,0 +1,76 @@
+[ 2016-06-04T11:00:47+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-04T11:00:47+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-04T11:05:27+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-04T11:05:27+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-04T11:06:20+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (63).
+[ 2016-06-04T15:50:06+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (193).
+[ 2016-06-04T15:50:06+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (193).
+[ 2016-06-04T15:50:06+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (193).
+[ 2016-06-04T15:50:06+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (193).
+[ 2016-06-04T15:50:06+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (193).
+[ 2016-06-04T15:50:48+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (194).
+[ 2016-06-04T15:50:48+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (194).
+[ 2016-06-04T15:50:48+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (194).
+[ 2016-06-04T15:50:48+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (194).
+[ 2016-06-04T15:50:48+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (194).
+[ 2016-06-04T15:51:00+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (194).
+[ 2016-06-04T15:51:00+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (194).
+[ 2016-06-04T15:51:00+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (194).
+[ 2016-06-04T15:51:00+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (194).
+[ 2016-06-04T15:51:00+08:00 ]NOTICE: pathinfo() expects parameter 1 to be string, array givenE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (194).
+[ 2016-06-04T18:15:41+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (,346,,,,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '346,,,,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:42+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (,346,,,344,,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '346,,,344,,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:43+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (,346,,,,343,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '346,,,,343,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:44+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (,346,,,344,,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '346,,,344,,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:44+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (,346,,,344,,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '346,,,344,,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:46+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (,346,,,344,,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '346,,,344,,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:46+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (,346,,,,343,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '346,,,,343,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:47+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (,346,,345,,,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '346,,345,,,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:47+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (,346,,345,,,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '346,,345,,,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:47+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (347,,,345,,,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',345,,,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:48+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (347,,,,,343,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,,343,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:48+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (347,,,,,343,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,,343,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:50+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (347,,,,,343,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,,343,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:51+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (347,,,,344,,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,344,,) LIMIT 1' at line 1
+[ 2016-06-04T18:15:51+08:00 ]EXCEPTION: SELECT  SUM(appendprice) as price  FROM goods_property WHERE gpid IN (,346,,,344,,) LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '346,,,344,,) LIMIT 1' at line 1
+[ 2016-06-04T20:15:27+08:00 ]NOTICE: Object of class Common\Model\Band could not be converted to stringE:\wamp\www\Mall\Hdphp\Db\Mysql.php (1266).
+[ 2016-06-04T20:15:27+08:00 ]EXCEPTION: SELECT  *  FROM goods INNER JOIN  ON goods_gid = gid WHERE goods_gid=Q('get.goods_gid') ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON goods_gid = gid WHERE goods_gid=Q('get.goods_gid')' at line 1
+[ 2016-06-04T20:20:15+08:00 ]EXCEPTION: SELECT  *  FROM band WHERE goods_gid=0 ;BindParams:array (
+)42S22;1054;Unknown column 'goods_gid' in 'where clause'
+[ 2016-06-04T20:21:25+08:00 ]EXCEPTION: SELECT  *  FROM band WHERE goods_gid=2 ;BindParams:array (
+)42S22;1054;Unknown column 'goods_gid' in 'where clause'
+[ 2016-06-04T20:24:15+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-04T20:24:15+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-04T20:27:03+08:00 ]NOTICE: Object of class Common\Model\Band could not be converted to stringE:\wamp\www\Mall\Hdphp\Db\Mysql.php (1266).
+[ 2016-06-04T20:27:03+08:00 ]EXCEPTION: SELECT  *  FROM goods INNER JOIN  ON goods_gid = gid WHERE goods_gid=2 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON goods_gid = gid WHERE goods_gid=2' at line 1
+[ 2016-06-04T20:27:48+08:00 ]NOTICE: Object of class Common\Model\Band could not be converted to stringE:\wamp\www\Mall\Hdphp\Db\Mysql.php (1266).
+[ 2016-06-04T20:27:48+08:00 ]EXCEPTION: SELECT  *  FROM goods INNER JOIN  ON band_bid = bid WHERE gid=2 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON band_bid = bid WHERE gid=2' at line 1
+[ 2016-06-04T20:33:53+08:00 ]NOTICE: Object of class Common\Model\Band could not be converted to stringE:\wamp\www\Mall\Hdphp\Db\Mysql.php (1266).
+[ 2016-06-04T20:33:53+08:00 ]EXCEPTION: SELECT  *  FROM goods INNER JOIN  ON band_bid = bid WHERE gid=2 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON band_bid = bid WHERE gid=2' at line 1
+[ 2016-06-04T20:36:17+08:00 ]EXCEPTION: SELECT  *  FROM goods INNER JOIN band ON band_bid = bid  INNER JOIN cate ON goods_gid = gid WHERE gid=2 ;BindParams:array (
+)42S02;1146;Table 'mall.cate' doesn't exist
+[ 2016-06-04T20:37:24+08:00 ]EXCEPTION: SELECT  *  FROM goods INNER JOIN band ON band_bid = bid  INNER JOIN cate ON category_cid = cid WHERE gid=2 ;BindParams:array (
+)42S02;1146;Table 'mall.cate' doesn't exist
+[ 2016-06-04T20:38:54+08:00 ]EXCEPTION: SELECT  *  FROM goods INNER JOIN band ON band_bid = bid  INNER JOIN cate ON goods.category_cid = category.cid WHERE gid=2 ;BindParams:array (
+)42S02;1146;Table 'mall.cate' doesn't exist
+[ 2016-06-04T23:31:47+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-04T23:31:47+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
