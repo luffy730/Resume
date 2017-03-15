@@ -1,9 +1,0 @@
-[ 2016-07-13T00:01:26+08:00 ]EXCEPTION: UPDATE goodsList SET `grouppid`=?,`dcode`=?,`dstock`=?,`goods_gid`=?,`glname`=?,`did`=?  WHERE  did=?  ;BindParams:array (
-  'grouppid' => '930',
-  'dcode' => '675',
-  'dstock' => '675',
-  'goods_gid' => 90,
-  'glname' => NULL,
-  'did' => '156',
-  0 => '156',
-)23000;1048;Column 'glname' cannot be null

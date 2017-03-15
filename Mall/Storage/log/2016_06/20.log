@@ -1,5 +1,0 @@
-[ 2016-06-20T07:45:43+08:00 ]NOTICE: Undefined variable: fifthE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (325).
-[ 2016-06-20T07:45:44+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (325).
-[ 2016-06-20T07:45:44+08:00 ]NOTICE: Undefined variable: fourthE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (337).
-[ 2016-06-20T07:45:44+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (337).
-[ 2016-06-20T20:05:20+08:00 ]NOTICE: Undefined index: clidE:\wamp\www\Mall\App\Home\Controller\ContentController.php (17).
