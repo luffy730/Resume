@@ -1,0 +1,57 @@
+[ 2016-06-19T19:16:43+08:00 ]EXCEPTION: SELECT  *  FROM goods WHERE is_bout=1 ORDER BY  sendtime ASC  LIMIT 4 ;BindParams:array (
+)42S22;1054;Unknown column 'sendtime' in 'order clause'
+[ 2016-06-19T19:19:31+08:00 ]NOTICE: Undefined offset: 0E:\wamp\www\Mall\App\Home\Controller\ContentController.php (94).
+[ 2016-06-19T19:19:31+08:00 ]NOTICE: Undefined index: listpicE:\wamp\www\Mall\App\Home\Controller\ContentController.php (96).
+[ 2016-06-19T19:19:32+08:00 ]NOTICE: Undefined index: gnameE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (244).
+[ 2016-06-19T19:19:32+08:00 ]NOTICE: Undefined index: gidE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (244).
+[ 2016-06-19T19:19:32+08:00 ]NOTICE: Undefined index: gnameE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (245).
+[ 2016-06-19T19:19:32+08:00 ]NOTICE: Undefined index: gnameE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (246).
+[ 2016-06-19T19:19:32+08:00 ]NOTICE: Undefined index: mpriceE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (255).
+[ 2016-06-19T19:19:32+08:00 ]NOTICE: Undefined index: mpriceE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (255).
+[ 2016-06-19T19:19:32+08:00 ]NOTICE: Undefined index: mpriceE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (256).
+[ 2016-06-19T19:19:32+08:00 ]NOTICE: Undefined index: detailE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (740).
+[ 2016-06-19T19:25:52+08:00 ]NOTICE: Undefined offset: 0E:\wamp\www\Mall\App\Home\Controller\ContentController.php (94).
+[ 2016-06-19T19:25:52+08:00 ]NOTICE: Undefined index: listpicE:\wamp\www\Mall\App\Home\Controller\ContentController.php (96).
+[ 2016-06-19T19:25:53+08:00 ]NOTICE: Undefined index: gnameE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (244).
+[ 2016-06-19T19:25:53+08:00 ]NOTICE: Undefined index: gidE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (244).
+[ 2016-06-19T19:25:53+08:00 ]NOTICE: Undefined index: gnameE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (245).
+[ 2016-06-19T19:25:53+08:00 ]NOTICE: Undefined index: gnameE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (246).
+[ 2016-06-19T19:25:53+08:00 ]NOTICE: Undefined index: mpriceE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (255).
+[ 2016-06-19T19:25:53+08:00 ]NOTICE: Undefined index: mpriceE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (255).
+[ 2016-06-19T19:25:53+08:00 ]NOTICE: Undefined index: mpriceE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (256).
+[ 2016-06-19T19:25:53+08:00 ]NOTICE: Undefined index: detailE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (740).
+[ 2016-06-19T20:26:22+08:00 ]EXCEPTION: SELECT  *  FROM goods as o INNER JOIN category as c ON goods_gid = gid WHERE c.pid in(12,13,14) ;BindParams:array (
+)42S22;1054;Unknown column 'goods_gid' in 'on clause'
+[ 2016-06-19T20:31:21+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-19T20:31:21+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-19T20:34:24+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-19T20:34:24+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\b0cef37a0386a1faffd967a594ec1e7e.php (157).
+[ 2016-06-19T20:43:14+08:00 ]NOTICE: Undefined variable: abE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (406).
+[ 2016-06-19T20:43:14+08:00 ]NOTICE: Undefined variable: abE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (409).
+[ 2016-06-19T20:43:14+08:00 ]NOTICE: Undefined variable: abE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (406).
+[ 2016-06-19T20:43:14+08:00 ]NOTICE: Undefined variable: abE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (409).
+[ 2016-06-19T20:43:14+08:00 ]NOTICE: Undefined variable: abE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (406).
+[ 2016-06-19T20:43:14+08:00 ]NOTICE: Undefined variable: abE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (409).
+[ 2016-06-19T20:43:14+08:00 ]NOTICE: Undefined variable: abE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (406).
+[ 2016-06-19T20:43:14+08:00 ]NOTICE: Undefined variable: abE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (409).
+[ 2016-06-19T20:43:14+08:00 ]NOTICE: Undefined variable: abE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (406).
+[ 2016-06-19T20:43:14+08:00 ]NOTICE: Undefined variable: abE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (409).
+[ 2016-06-19T20:43:14+08:00 ]NOTICE: Undefined variable: abE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (406).
+[ 2016-06-19T20:43:14+08:00 ]NOTICE: Undefined variable: abE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (409).
+[ 2016-06-19T20:44:24+08:00 ]NOTICE: Undefined index: clidE:\wamp\www\Mall\App\Home\Controller\ContentController.php (17).
+[ 2016-06-19T22:35:09+08:00 ]NOTICE: Undefined variable: vabfE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (393).
+[ 2016-06-19T22:47:25+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (443).
+[ 2016-06-19T22:47:25+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (453).
+[ 2016-06-19T22:47:25+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (453).
+[ 2016-06-19T22:47:25+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (453).
+[ 2016-06-19T22:47:25+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (453).
+[ 2016-06-19T22:47:25+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (453).
+[ 2016-06-19T22:47:25+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (453).
+[ 2016-06-19T22:48:27+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (443).
+[ 2016-06-19T22:48:27+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (453).
+[ 2016-06-19T22:48:27+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (453).
+[ 2016-06-19T22:48:27+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (453).
+[ 2016-06-19T22:48:27+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (453).
+[ 2016-06-19T22:48:27+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (453).
+[ 2016-06-19T22:48:27+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (453).
+[ 2016-06-19T22:50:08+08:00 ]NOTICE: Undefined variable: vabhE:\wamp\www\Mall\Storage\view\compile\0c28e7150ba5d668f4a1564650d3d0d8.php (443).

@@ -1,0 +1,36 @@
+[ 2016-06-23T01:10:05+08:00 ]NOTICE: Undefined index: clidE:\wamp\www\Mall\App\Home\Controller\OrderController.php (164).
+[ 2016-06-23T01:10:05+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-23T10:23:50+08:00 ]NOTICE: Undefined variable: varE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (597).
+[ 2016-06-23T10:23:50+08:00 ]NOTICE: Undefined variable: varE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (598).
+[ 2016-06-23T10:23:50+08:00 ]NOTICE: Undefined variable: varE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (603).
+[ 2016-06-23T10:23:50+08:00 ]NOTICE: Undefined variable: varE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (607).
+[ 2016-06-23T10:23:50+08:00 ]NOTICE: Undefined variable: varE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (607).
+[ 2016-06-23T10:24:20+08:00 ]NOTICE: Undefined variable: varE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (597).
+[ 2016-06-23T10:24:20+08:00 ]NOTICE: Undefined variable: varE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (598).
+[ 2016-06-23T10:24:20+08:00 ]NOTICE: Undefined variable: varE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (603).
+[ 2016-06-23T10:24:20+08:00 ]NOTICE: Undefined variable: varE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (607).
+[ 2016-06-23T10:24:20+08:00 ]NOTICE: Undefined variable: varE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (607).
+[ 2016-06-23T10:24:54+08:00 ]NOTICE: Undefined offset: 6E:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (597).
+[ 2016-06-23T10:24:54+08:00 ]NOTICE: Undefined offset: 6E:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (598).
+[ 2016-06-23T10:24:54+08:00 ]NOTICE: Undefined offset: 6E:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (603).
+[ 2016-06-23T10:24:54+08:00 ]NOTICE: Undefined variable: varE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (607).
+[ 2016-06-23T10:24:54+08:00 ]NOTICE: Undefined variable: varE:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (607).
+[ 2016-06-23T10:25:38+08:00 ]NOTICE: Undefined offset: 6E:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (597).
+[ 2016-06-23T10:25:38+08:00 ]NOTICE: Undefined offset: 6E:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (598).
+[ 2016-06-23T10:25:38+08:00 ]NOTICE: Undefined offset: 6E:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (603).
+[ 2016-06-23T10:25:38+08:00 ]NOTICE: Undefined offset: 10E:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (607).
+[ 2016-06-23T10:25:38+08:00 ]NOTICE: Undefined offset: 6E:\wamp\www\Mall\Storage\view\compile\2285f5ecd290c2ae060f2c24a56dc0d2.php (607).
+[ 2016-06-23T10:44:00+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid=5 ORDER BY  riseTime DESC  LIMIT 1 ;BindParams:array (
+)42S22;1054;Unknown column 'riseTime' in 'order clause'
+[ 2016-06-23T11:10:31+08:00 ]EXCEPTION: DELETE FROM receiptaddress WHERE rid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-23T15:00:22+08:00 ]NOTICE: Undefined index: clidE:\wamp\www\Mall\App\Home\Controller\OrderController.php (164).
+[ 2016-06-23T15:00:22+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= ORDER BY  order_orid DESC  LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY  order_orid DESC  LIMIT 1' at line 1
+[ 2016-06-23T15:41:16+08:00 ]NOTICE: Undefined index: clidE:\wamp\www\Mall\App\Home\Controller\OrderController.php (164).
+[ 2016-06-23T15:41:16+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= ORDER BY  order_orid DESC  LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY  order_orid DESC  LIMIT 1' at line 1
+[ 2016-06-23T15:41:23+08:00 ]NOTICE: Undefined index: clidE:\wamp\www\Mall\App\Home\Controller\OrderController.php (164).
+[ 2016-06-23T15:41:23+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= ORDER BY  order_orid DESC  LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY  order_orid DESC  LIMIT 1' at line 1

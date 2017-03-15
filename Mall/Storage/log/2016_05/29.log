@@ -1,0 +1,147 @@
+[ 2016-05-29T14:12:59+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => '<p>34534<br/></p>',
+  2 => '<p>345345345</p>',
+  3 => '1',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T21:28:20+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (36).
+[ 2016-05-29T21:28:20+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => '<p>23123</p>',
+  2 => '<p>2312</p>',
+  3 => '13',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T21:30:59+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (36).
+[ 2016-05-29T21:30:59+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => NULL,
+  2 => NULL,
+  3 => '15',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T21:34:11+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (36).
+[ 2016-05-29T21:34:11+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => NULL,
+  2 => NULL,
+  3 => '16',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T21:34:39+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (36).
+[ 2016-05-29T21:34:39+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => NULL,
+  2 => NULL,
+  3 => '17',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T21:36:07+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (35).
+[ 2016-05-29T21:36:07+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => NULL,
+  2 => NULL,
+  3 => '18',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T21:44:08+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (35).
+[ 2016-05-29T21:44:08+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => NULL,
+  2 => NULL,
+  3 => '19',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T21:49:07+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (36).
+[ 2016-05-29T21:49:07+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => NULL,
+  2 => NULL,
+  3 => '21',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T21:49:34+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (36).
+[ 2016-05-29T21:49:34+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => NULL,
+  2 => NULL,
+  3 => '22',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T21:50:16+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (36).
+[ 2016-05-29T21:50:16+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => NULL,
+  2 => NULL,
+  3 => '23',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T21:51:48+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (36).
+[ 2016-05-29T21:51:48+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => '<p>234</p>',
+  2 => '<p>234</p>',
+  3 => '24',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T22:08:45+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (36).
+[ 2016-05-29T22:08:45+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => '<p>65765</p>',
+  2 => '<p>675765</p>',
+  3 => '25',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T22:12:23+08:00 ]NOTICE: Undefined variable: cateE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:12:23+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:12:23+08:00 ]NOTICE: Undefined variable: bandE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:12:23+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:12:23+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:12:23+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:19:12+08:00 ]NOTICE: Undefined variable: cateE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:19:12+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:19:12+08:00 ]NOTICE: Undefined variable: bandE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:19:12+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:19:12+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:19:12+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:21:54+08:00 ]NOTICE: Undefined variable: cateE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:21:54+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:21:54+08:00 ]NOTICE: Undefined variable: bandE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:21:54+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:21:54+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:21:54+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:22:59+08:00 ]NOTICE: Undefined variable: cateE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:22:59+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:22:59+08:00 ]NOTICE: Undefined variable: bandE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:22:59+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:22:59+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:22:59+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:33:25+08:00 ]NOTICE: Undefined variable: cateE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:33:25+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:33:25+08:00 ]NOTICE: Undefined variable: bandE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:33:25+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:33:25+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:33:25+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:34:43+08:00 ]NOTICE: Undefined variable: cateE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:34:43+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:34:43+08:00 ]NOTICE: Undefined variable: bandE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:34:43+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:34:43+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:34:43+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:34:47+08:00 ]NOTICE: Undefined variable: cateE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:34:47+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:34:48+08:00 ]NOTICE: Undefined variable: bandE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:34:48+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:34:48+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:34:48+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:35:37+08:00 ]NOTICE: Undefined variable: cateE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:35:37+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (118).
+[ 2016-05-29T22:35:37+08:00 ]NOTICE: Undefined variable: bandE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:35:37+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (127).
+[ 2016-05-29T22:35:37+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:35:37+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\d1789a3e220e607bb98342c6e716939b.php (157).
+[ 2016-05-29T22:36:36+08:00 ]EXCEPTION: Method Admin\Controller\GoodsController::edit() does not exist
+[ 2016-05-29T22:39:05+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (36).
+[ 2016-05-29T22:39:05+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => '<p>方法</p>',
+  2 => '<p>公共</p>',
+  3 => '27',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T22:40:12+08:00 ]NOTICE: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passedE:\wamp\www\Mall\App\Common\Model\Goods.php (36).
+[ 2016-05-29T22:40:12+08:00 ]EXCEPTION: INSERT INTO product_detail (`gallery`,`detail`,`service`,`goods_gid`)VALUES(?,?,?,?) ;BindParams:array (
+  0 => NULL,
+  1 => '<p>方法</p>',
+  2 => '<p>公共</p>',
+  3 => '28',
+)23000;1048;Column 'gallery' cannot be null
+[ 2016-05-29T23:20:21+08:00 ]NOTICE: Array to string conversionE:\wamp\www\Mall\Hdphp\Db\Mysql.php (204).

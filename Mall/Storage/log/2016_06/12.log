@@ -1,0 +1,33 @@
+[ 2016-06-12T00:47:04+08:00 ]NOTICE: Undefined index: clidE:\wamp\www\Mall\App\Home\Controller\OrderController.php (130).
+[ 2016-06-12T00:47:04+08:00 ]EXCEPTION: SELECT  *  FROM orderlist WHERE client_clid= ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 2016-06-12T14:17:54+08:00 ]NOTICE: Undefined variable: goE:\wamp\www\Mall\Storage\view\compile\1b793ad374c08631a1bb6d4f752a12c3.php (281).
+[ 2016-06-12T14:17:54+08:00 ]NOTICE: Invalid argument supplied for foreach()E:\wamp\www\Mall\Storage\view\compile\1b793ad374c08631a1bb6d4f752a12c3.php (281).
+[ 2016-06-12T14:25:01+08:00 ]NOTICE: Use of undefined constant MyOrder - assumed 'MyOrder'E:\wamp\www\Mall\Storage\view\compile\1b793ad374c08631a1bb6d4f752a12c3.php (34).
+[ 2016-06-12T14:25:01+08:00 ]NOTICE: Use of undefined constant center - assumed 'center'E:\wamp\www\Mall\Storage\view\compile\1b793ad374c08631a1bb6d4f752a12c3.php (34).
+[ 2016-06-12T14:25:01+08:00 ]NOTICE: Division by zeroE:\wamp\www\Mall\Storage\view\compile\1b793ad374c08631a1bb6d4f752a12c3.php (34).
+[ 2016-06-12T14:32:02+08:00 ]EXCEPTION: Method Home\Controller\MyOrderController::address() does not exist
+[ 2016-06-12T14:32:17+08:00 ]EXCEPTION: 模板不存在:App/Home/View/MyOrder/address.php
+[ 2016-06-12T16:17:17+08:00 ]EXCEPTION: Method Home\Controller\MyOrderController::rid() does not exist
+[ 2016-06-12T19:49:22+08:00 ]EXCEPTION: Method Home\Controller\MyOrderController::edit() does not exist
+[ 2016-06-12T19:53:25+08:00 ]EXCEPTION: Method Home\Controller\MyOrderController::edit() does not exist
+[ 2016-06-12T19:53:25+08:00 ]EXCEPTION: Method Home\Controller\MyOrderController::edit() does not exist
+[ 2016-06-12T20:33:23+08:00 ]NOTICE: Undefined variable: ridE:\wamp\www\Mall\App\Common\Model\Receipt.php (18).
+[ 2016-06-12T20:33:41+08:00 ]NOTICE: Missing argument 1 for Common\Model\Receipt::editData(), called in E:\wamp\www\Mall\App\Home\Controller\MyOrderController.php on line 22 and definedE:\wamp\www\Mall\App\Common\Model\Receipt.php (16).
+[ 2016-06-12T20:33:41+08:00 ]NOTICE: Undefined variable: ridE:\wamp\www\Mall\App\Common\Model\Receipt.php (18).
+[ 2016-06-12T20:57:04+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\App\Home\Controller\MyOrderController.php (26).
+[ 2016-06-12T21:02:42+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\App\Home\Controller\MyOrderController.php (27).
+[ 2016-06-12T21:03:10+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\App\Home\Controller\MyOrderController.php (27).
+[ 2016-06-12T21:04:16+08:00 ]NOTICE: Undefined variable: dataE:\wamp\www\Mall\App\Home\Controller\MyOrderController.php (28).
+[ 2016-06-12T21:19:02+08:00 ]EXCEPTION: SELECT  *  FROM receiptaddress WHERE rid= LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+[ 2016-06-12T21:19:06+08:00 ]EXCEPTION: SELECT  *  FROM receiptaddress WHERE rid= LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+[ 2016-06-12T21:19:11+08:00 ]EXCEPTION: SELECT  *  FROM receiptaddress WHERE rid= LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+[ 2016-06-12T21:19:19+08:00 ]EXCEPTION: SELECT  *  FROM receiptaddress WHERE rid= LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+[ 2016-06-12T21:19:20+08:00 ]EXCEPTION: SELECT  *  FROM receiptaddress WHERE rid= LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+[ 2016-06-12T21:19:20+08:00 ]EXCEPTION: SELECT  *  FROM receiptaddress WHERE rid= LIMIT 1 ;BindParams:array (
+)42000;1064;You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
